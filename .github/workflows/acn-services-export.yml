@@ -2,7 +2,7 @@ name: Daily ACN Services Export
 
 on:
   schedule:
-    - cron: "30 0 * * *" # 00:30 UTC = 06:00 IST
+    - cron: "30 14 * * *" # 14:30 UTC = 20:00 IST
   workflow_dispatch: {}
 
 jobs:
