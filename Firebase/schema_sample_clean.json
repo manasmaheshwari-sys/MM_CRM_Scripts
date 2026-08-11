@@ -1,0 +1,1758 @@
+{
+  "generatedAt": "2026-08-07T12:57:08.237Z",
+  "collections": {
+    "vaultServices": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "invoiced": "boolean (e.g. true)",
+        "updateBy": [
+          {
+            "serviceAmount": "string (e.g. \"Rohan Rao\")",
+            "subStage": "string (e.g. \"Rohan Rao\")",
+            "tat": "string (e.g. \"Rohan Rao\")",
+            "bucket": "string (e.g. \"Manas Maheshwari\")",
+            "serviceStage": "string (e.g. \"Rohan Rao\")",
+            "invoiced": "string (e.g. \"Rohan Rao\")"
+          },
+          {
+            "oldestPriority": "string (e.g. \"Manas Pandit\")"
+          },
+          {
+            "servicePOC": "string (e.g. \"Aryan Ashish\")",
+            "skipEmailNotification": "string (e.g. \"Aryan Ashish\")"
+          }
+        ],
+        "ASLA": [
+          "number (e.g. 1767386341)",
+          "number (e.g. 1780464469)",
+          "number (e.g. 1777369144)"
+        ],
+        "agentName": "string (e.g. \"Unassigned\")",
+        "reAppliedCount": "number (e.g. 0)",
+        "accountId": [
+          "string (e.g. \"9284177430\")",
+          "string (e.g. \"5582393623\")",
+          "string (e.g. \"944669055\")"
+        ],
+        "summaryEmailSentStatus": "boolean (e.g. false)",
+        "blockerReason": "string (e.g. \"\")",
+        "groundDate": [
+          {
+            "eStampDate": "number (e.g. 1763404200)",
+            "serviceDeliveredDate": "number (e.g. 1763404200)"
+          },
+          {
+            "cxSignDate": "number (e.g. 1760034600)"
+          },
+          {
+            "cxSignDate": "number (e.g. 1764613800)",
+            "eStampDate": "number (e.g. 1763922600)"
+          }
+        ],
+        "phoneNumber": [
+          "string (e.g. \"+919449812885\")",
+          "string (e.g. \"+917204568548\")",
+          "string (e.g. \"+919886830340\")"
+        ],
+        "lastCleanupAt": "Timestamp (e.g. \"2026-02-11T11:31:49.493Z\")",
+        "hasEmail": "boolean (e.g. true)",
+        "lifecycle": "string (e.g. \"customer\")",
+        "amountPaid": [
+          "number (e.g. 4000)",
+          "number (e.g. 0)"
+        ],
+        "serviceStatus": "string (e.g. \"open\")",
+        "serviceId": [
+          "string (e.g. \"BSR1000\")",
+          "string (e.g. \"BSR1001\")",
+          "string (e.g. \"BSR1002\")"
+        ],
+        "blockerPOC": "string (e.g. \"Unassigned\")",
+        "campId": "string (e.g. \"\")",
+        "bucketTransitions": [
+          "array<[object Object]> (length 2, e.g. first item shown)",
+          "array<[object Object]> (length 1, e.g. first item shown)"
+        ],
+        "userName": [
+          "string (e.g. \"Prajwal N\")",
+          "string (e.g. \"Ashish Kumar\")",
+          "string (e.g. \"Mohamed Kashif\")"
+        ],
+        "Links": "array<[object Object]> (length 1, e.g. first item shown)",
+        "contactOverdue": [
+          "boolean (e.g. false)",
+          "boolean (e.g. true)"
+        ],
+        "acquisitionPOC": [
+          "string (e.g. \"Jecko Joseph\")",
+          "string (e.g. \"Somanna\")"
+        ],
+        "updatedAt": "Timestamp (e.g. \"2026-02-11T08:19:39.717Z\")",
+        "lastModifiedBy": "string (e.g. \"reversion-script\")",
+        "serviceAmount": [
+          "number (e.g. 4000)",
+          "number (e.g. 5000)"
+        ],
+        "paymentIds": "array (empty)",
+        "serviceSalesPOC": "string (e.g. \"Rohan Rao\")",
+        "servicePOC": [
+          "string (e.g. \"Rohan Rao\")",
+          "string (e.g. \"Meghana\")",
+          "string (e.g. \"Kousar Shaik\")"
+        ],
+        "userId": [
+          "string (e.g. \"BUID1000\")",
+          "string (e.g. \"BUID1001\")",
+          "string (e.g. \"UIDB3641\")"
+        ],
+        "archivedAt": "number (e.g. 1774857249)",
+        "addressLine3": "string (e.g. \"\")",
+        "srOverdue": [
+          "boolean (e.g. false)",
+          "boolean (e.g. true)"
+        ],
+        "serviceSource": "string (e.g. \"undefined\")",
+        "BBMPStatus": "null",
+        "escalated": "boolean (e.g. false)",
+        "notes": [
+          "array (empty)",
+          "array<[object Object]> (length 6, e.g. first item shown)"
+        ],
+        "currentBucketEnteredAt": [
+          "number (e.g. 1770731536)",
+          "number (e.g. 1783103303)",
+          "number (e.g. 1767386341)"
+        ],
+        "wardNo": "number (e.g. 149)",
+        "ASLC": [
+          "number (e.g. 1767386341)",
+          "number (e.g. 1777369144)"
+        ],
+        "pendingDocs": [
+          "string (e.g. \"\")",
+          "string (e.g. \"Ekhata , bescom bill , bescom metr photo \")",
+          "string (e.g. \"meter photo ,passport size photo ,ekhata , property tax \")"
+        ],
+        "addressLine2": "string (e.g. \"\")",
+        "serviceName": "string (e.g. \"Bescom\")",
+        "completionTime": [
+          "number (e.g. 1770731536)",
+          "number (e.g. 1783103303)"
+        ],
+        "archivedReason": "string (e.g. \"auto-archival-inactive-30days\")",
+        "weeklyTimer": [
+          "number (e.g. 1770100502)",
+          "number (e.g. 1771047011)"
+        ],
+        "tat": [
+          {
+            "serviceTat": "number (e.g. 1700000000)",
+            "stageTat": {
+              "To Close": {
+                "Doc Shared": "object (nested, truncated)",
+                "Paid": "object (nested, truncated)"
+              }
+            }
+          },
+          {
+            "serviceTat": "number (e.g. 1778242610)",
+            "stageTat": {
+              "Applied": {
+                "Awaiting": "object (nested, truncated)"
+              },
+              "To Close": {
+                "Doc Shared": "object (nested, truncated)"
+              }
+            }
+          },
+          {
+            "stageTat": {
+              "To Close": {
+                "Doc Shared": "object (nested, truncated)"
+              },
+              "Applied": {
+                "Awaiting": "object (nested, truncated)"
+              },
+              "Ground": {
+                "Subm-Ground": "object (nested, truncated)",
+                "SubmGround": "object (nested, truncated)",
+                "E Stamp": "object (nested, truncated)",
+                "Subm Pending": "object (nested, truncated)"
+              }
+            },
+            "serviceTat": "number (e.g. 1784546609)"
+          }
+        ],
+        "serviceStage": "string (e.g. \"To Close\")",
+        "added": "number (e.g. 1767386341)",
+        "subStage": [
+          "string (e.g. \"Doc Shared\")",
+          "string (e.g. \"Paid\")"
+        ],
+        "wardName": "string (e.g. \"Varthuru\")",
+        "callStatus": [
+          "string (e.g. \"not connected\")",
+          "string (e.g. \"\")",
+          "string (e.g. \"connected\")"
+        ],
+        "bucket": [
+          "string (e.g. \"archived\")",
+          "string (e.g. \"closed\")",
+          "string (e.g. \"active\")"
+        ],
+        "lastModified": [
+          "number (e.g. 1770731536)",
+          "number (e.g. 1783909811)",
+          "number (e.g. 1785474875)"
+        ],
+        "docummentSubmissionStatus": "boolean (e.g. true)",
+        "lastOperation": "string (e.g. \"B_ALIGN_TOCLOSE_DOCSHARED\")",
+        "addressLine1": [
+          "string (e.g. \"Sobha Dream Acres\")",
+          "string (e.g. \"Brigade Cornerstone Utopia\")"
+        ],
+        "paymentMode": [
+          "string (e.g. \"online\")",
+          "string (e.g. \"ONLINE\")"
+        ],
+        "priority": [
+          "boolean (e.g. false)",
+          "boolean (e.g. true)"
+        ],
+        "oldestPriorityBlockedUntil": [
+          "number (e.g. 1780252199)",
+          "number (e.g. 1777573799)"
+        ],
+        "oldestPriority": "boolean (e.g. false)",
+        "lastPaymentAt": "number (e.g. 1783103303)",
+        "paymentStatus": [
+          "string (e.g. \"PAID\")",
+          "string (e.g. \"PENDING\")"
+        ],
+        "finalInvoiceSent": "boolean (e.g. true)",
+        "feedback_followup_sent_at": "number (e.g. 1783909811)",
+        "totalDocuments": "number (e.g. 4)",
+        "appliedDate": "number (e.g. 1779882693)",
+        "notaryMarked": "boolean (e.g. true)",
+        "eStampMarked": "boolean (e.g. true)",
+        "skipEmailNotification": "boolean (e.g. false)"
+      },
+      "error": null
+    },
+    "vaultUsers": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "latestServiceAdded": "number (e.g. 1767386341)",
+        "mainThreadId": [
+          "string (e.g. \"\")",
+          "string (e.g. \"19b80797379f8c6f\")"
+        ],
+        "callAttempts": "number (e.g. 1)",
+        "ASLC": [
+          "number (e.g. 1767386341)",
+          "number (e.g. 1783081088)"
+        ],
+        "hasEmail": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "serviceIds": [
+          "array<string (e.g. \"BSR1000\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"BSR1001\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"BSR1003\")> (length 1, e.g. first item shown)"
+        ],
+        "callLogs": "array<string (e.g. \"93JyKiX65hA9FyyltvU6\")> (length 1, e.g. first item shown)",
+        "added": "number (e.g. 1767386341)",
+        "camp": "array (empty)",
+        "emailAddress": [
+          "string (e.g. \"prajja1990@gmail.com9284177430\")",
+          "string (e.g. \"meetashishkr@gmail.com\")",
+          "string (e.g. \"\")"
+        ],
+        "proformaCount": "number (e.g. 0)",
+        "callStatus": [
+          "string (e.g. \"rnr1\")",
+          "string (e.g. \"\")",
+          "string (e.g. \"not connected\")"
+        ],
+        "userSource": "string (e.g. \"undefined\")",
+        "addressLine2s": "array (empty)",
+        "invoicedSr": [
+          "number (e.g. 1)",
+          "number (e.g. 0)"
+        ],
+        "threadIds": [
+          "array (empty)",
+          "array<string (e.g. \"19b80797379f8c6f\")> (length 1, e.g. first item shown)"
+        ],
+        "pausedSr": "number (e.g. 0)",
+        "preActiveSr": "number (e.g. 0)",
+        "lifecycle": "string (e.g. \"customer\")",
+        "notConnectedAttempts": "number (e.g. 1)",
+        "ASLA": [
+          "number (e.g. 1774858007)",
+          "number (e.g. 1783081088)",
+          "number (e.g. 1767386341)"
+        ],
+        "updateBy": [
+          {
+            "escalated": "string (e.g. \"Manas Maheshwari\")"
+          },
+          {
+            "escalated": "string (e.g. \"Manas Pandit\")"
+          },
+          {}
+        ],
+        "addressLine1s": [
+          "array<string (e.g. \"Sobha Dream Acres Phase 2\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Brigade Cornerstone Utopia\")> (length 1, e.g. first item shown)"
+        ],
+        "docSubmittedSr": "number (e.g. 1)",
+        "campCount": "number (e.g. 0)",
+        "isThreadAvailable": [
+          "boolean (e.g. false)",
+          "boolean (e.g. true)"
+        ],
+        "blockedSr": "number (e.g. 0)",
+        "rnr": "number (e.g. 1)",
+        "activeSr": [
+          "number (e.g. 0)",
+          "number (e.g. -1)"
+        ],
+        "lastUserResponseTime": "null",
+        "escalated": "boolean (e.g. false)",
+        "prioritySr": "number (e.g. 0)",
+        "lastModified": [
+          "number (e.g. 1774858007)",
+          "number (e.g. 1780464469)",
+          "number (e.g. 1767386341)"
+        ],
+        "hasDocuments": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "addressLine3s": "array (empty)",
+        "qualifiedCount": "number (e.g. 1)",
+        "salesPOC": [
+          "null",
+          "string (e.g. \"Rohan Rao\")",
+          "string (e.g. \"Jecko Joseph\")"
+        ],
+        "lastCommunicationTime": [
+          "number (e.g. 1767386341)",
+          "number (e.g. 1783909812)"
+        ],
+        "notes": "array (empty)",
+        "tag": "string (e.g. \"WARM\")",
+        "userName": [
+          "string (e.g. \"Prajwal N\")",
+          "string (e.g. \"Ashish Kumar\")",
+          "string (e.g. \"Susil Prasad Panda\")"
+        ],
+        "unqualifiedCount": "number (e.g. 0)",
+        "acquisitionPOC": "string (e.g. \"Jecko Joseph\")",
+        "lastAgentResponseTime": [
+          "null",
+          "number (e.g. 1783909820)"
+        ],
+        "closedSr": [
+          "number (e.g. 2)",
+          "number (e.g. 1)"
+        ],
+        "unRead": "boolean (e.g. false)",
+        "userId": [
+          "string (e.g. \"BUID1000\")",
+          "string (e.g. \"BUID1001\")",
+          "string (e.g. \"BUID1002\")"
+        ],
+        "isEscalated": "boolean (e.g. false)",
+        "userInterest": "string (e.g. \"interested\")",
+        "servicePOCs": [
+          "array<string (e.g. \"Rohan Rao\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Meghana\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Anusha Vipuri\")> (length 1, e.g. first item shown)"
+        ],
+        "numberOfServices": "number (e.g. 1)",
+        "phoneNumber": [
+          "string (e.g. \"+447568380870\")",
+          "string (e.g. \"+917204568548\")",
+          "string (e.g. \"+919168693063\")"
+        ],
+        "activity": [
+          "array<[object Object]> (length 13, e.g. first item shown)",
+          "array<[object Object]> (length 46, e.g. first item shown)",
+          "array<[object Object]> (length 35, e.g. first item shown)"
+        ],
+        "communicationTasks": "array<[object Object]> (length 2, e.g. first item shown)",
+        "lost": "boolean (e.g. false)",
+        "paymentStatus": "boolean (e.g. false)",
+        "totalDocuments": "number (e.g. 0)",
+        "userPriority": "boolean (e.g. true)",
+        "followUp": {
+          "date": "null",
+          "reason": "string (e.g. \"\")",
+          "status": "string (e.g. \"completed\")",
+          "updatedAt": "number (e.g. 1780464469)"
+        },
+        "lastPaymentAt": [
+          "number (e.g. 1783103303)",
+          "number (e.g. 1780229222)"
+        ],
+        "totalPaidAmount": "number (e.g. 4000)",
+        "paymentHistory": [
+          {
+            "PAY_1774692470927_6577": {
+              "createdAt": "number (e.g. 1774692470)",
+              "amount": "number (e.g. 4000)",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/fa5cfe8jsibg_AAAAAAARQvI\")",
+              "source": "string (e.g. \"cashfree\")",
+              "paymentStatus": "string (e.g. \"INITIATED\")"
+            },
+            "PAY_1778069784879_2615": {
+              "createdAt": "number (e.g. 1778069784)",
+              "amount": "number (e.g. 4000)",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/Sablp54vi0j0_AAAAAAARQvI\")",
+              "source": "string (e.g. \"cashfree\")",
+              "paymentStatus": "string (e.g. \"INITIATED\")"
+            },
+            "plink_T8yO9d4q8BeBXk": {
+              "createdAt": "number (e.g. 1783069298)",
+              "amount": "number (e.g. 4000)",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentLink": "string (e.g. \"https://rzp.io/rzp/Mxb8W2K\")",
+              "source": "string (e.g. \"razorpay\")",
+              "paymentStatus": "string (e.g. \"INITIATED\")"
+            },
+            "plink_T91iiFtygjJs5R": {
+              "createdAt": "number (e.g. 1783081031)",
+              "amount": "number (e.g. 4000)",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentLink": "string (e.g. \"https://rzp.io/rzp/ZyW6Zjfh\")",
+              "source": "string (e.g. \"razorpay\")",
+              "paymentStatus": "string (e.g. \"INITIATED\")"
+            },
+            "PAY_1783081031783_5174": {
+              "paymentStatus": "string (e.g. \"COMPLETED\")"
+            }
+          },
+          {
+            "PAY_1779458668258_1037": {
+              "source": "string (e.g. \"cashfree\")",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentStatus": "string (e.g. \"INITIATED\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1779458668)",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/eae8i7t2g53g_AAAAAAARQvI\")"
+            },
+            "PAY_1780225512283_3604": {
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/Iafm8sa060lg_AAAAAAARQvI\")",
+              "paymentStatus": "string (e.g. \"COMPLETED\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1780225512)",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "source": "string (e.g. \"cashfree\")"
+            },
+            "PAY_1780203067258_9692": {
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "source": "string (e.g. \"cashfree\")",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/Zafku2c7sv5g_AAAAAAARQvI\")",
+              "paymentStatus": "string (e.g. \"INITIATED\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1780203067)"
+            },
+            "PAY_1779458871214_8397": {
+              "paymentStatus": "string (e.g. \"INITIATED\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1779458871)",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/Xae8ik9d453g_AAAAAAARQvI\")",
+              "source": "string (e.g. \"cashfree\")",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)"
+            },
+            "PAY_1780147661789_6675": {
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "source": "string (e.g. \"cashfree\")",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/oafhkcm9j1a0_AAAAAAARQvI\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1780147661)",
+              "paymentStatus": "string (e.g. \"INITIATED\")"
+            },
+            "PAY_1777537109670_8588": {
+              "source": "string (e.g. \"cashfree\")",
+              "serviceIds": "array<object (nested, truncated)> (length 1, e.g. first item shown)",
+              "paymentStatus": "string (e.g. \"INITIATED\")",
+              "amount": "number (e.g. 4000)",
+              "createdAt": "number (e.g. 1777537109)",
+              "paymentLink": "string (e.g. \"https://payments.cashfree.com/links/Faam157olp40_AAAAAAARQvI\")"
+            }
+          }
+        ]
+      },
+      "error": null
+    },
+    "vaultProforma": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "userSubSource": [
+          "string (e.g. \"-\")",
+          "string (e.g. \"Walk-in\")"
+        ],
+        "servicePOCs": [
+          "array<string (e.g. \"Monica Binny\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Garima Doulani\")> (length 1, e.g. first item shown)"
+        ],
+        "SRStatuses": "array<string (e.g. \"closed\")> (length 1, e.g. first item shown)",
+        "proformaStatus": "string (e.g. \"closed\")",
+        "userId": [
+          "string (e.g. \"UIDA9074\")",
+          "string (e.g. \"UIDA8168\")",
+          "string (e.g. \"UIDA9106\")"
+        ],
+        "serviceBuckets": "array<string (e.g. \"archived\")> (length 1, e.g. first item shown)",
+        "totalAmount": [
+          "number (e.g. 2500)",
+          "number (e.g. 3000)"
+        ],
+        "userName": [
+          "string (e.g. \"Saurabh Singla\")",
+          "string (e.g. \"Sandip Chakraborty \")",
+          "string (e.g. \"Reinbert\")"
+        ],
+        "userSource": [
+          "string (e.g. \"Website\")",
+          "string (e.g. \"Offline Camp\")"
+        ],
+        "phoneNumber": [
+          "string (e.g. \"+919663161100\")",
+          "string (e.g. \"+917011230963\")",
+          "string (e.g. \"+918147933540\")"
+        ],
+        "acquisitionPOC": [
+          "string (e.g. \"Manas Pandit\")",
+          "string (e.g. \"Pratham Lodha\")"
+        ],
+        "salesPOC": [
+          "string (e.g. \"Divesh\")",
+          "string (e.g. \"Nilafar\")",
+          "string (e.g. \"G Pavithra\")"
+        ],
+        "billingStatuses": "array<string (e.g. \"invoiced\")> (length 1, e.g. first item shown)",
+        "piid": [
+          "string (e.g. \"PI-2025-A0001\")",
+          "string (e.g. \"PI-2025-A0002\")",
+          "string (e.g. \"PI-2025-A0003\")"
+        ],
+        "added": [
+          "number (e.g. 1758536958)",
+          "number (e.g. 1758537392)",
+          "number (e.g. 1758538073)"
+        ],
+        "lastUpdatedAt": [
+          "number (e.g. 1774857269)",
+          "number (e.g. 1774857266)"
+        ],
+        "totalPaid": [
+          "number (e.g. 2500)",
+          "number (e.g. 3000)"
+        ],
+        "addressLine1s": [
+          "array<string (e.g. \"Prestige Jade Pavilion\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Purva Venezia\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"Kolte Patil Mirabilis\")> (length 1, e.g. first item shown)"
+        ],
+        "serviceNames": "array<string (e.g. \"E-Khata\")> (length 1, e.g. first item shown)",
+        "proformaServices": "array<[object Object]> (length 1, e.g. first item shown)",
+        "gstNumber": "null"
+      },
+      "error": null
+    },
+    "vaultInvoices": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "payments": "array (empty)",
+        "invoice_date": [
+          "number (e.g. 1756642871)",
+          "number (e.g. 1750677472)",
+          "number (e.g. 1752834158)"
+        ],
+        "invoice_number": [
+          "string (e.g. \"6253166\")",
+          "string (e.g. \"4250935\")",
+          "string (e.g. \"4250253\")"
+        ],
+        "invoice_status": "string (e.g. \"Paid\")",
+        "addressLine1": [
+          "string (e.g. \"Brigade Cornerstone Utopia\")",
+          "string (e.g. \"Cornerstone Utopia\")",
+          "string (e.g. \"Brigade Northridge\")"
+        ],
+        "servicePOC": [
+          "string (e.g. \"Aryan\")",
+          "string (e.g. \"Daksh\")",
+          "string (e.g. \"Dheeraj\")"
+        ],
+        "invoiceId": [
+          "string (e.g. \"6253166\")",
+          "string (e.g. \"4250935\")",
+          "string (e.g. \"4250253\")"
+        ],
+        "deleted": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "invoiceStatus": "string (e.g. \"paid\")",
+        "invoice_type": "string (e.g. \"vault_invoice\")",
+        "gstNumber": "null",
+        "phoneNumber": "string (e.g. \"\")",
+        "piid": "string (e.g. \"\")",
+        "poc": [
+          "string (e.g. \"Aryan\")",
+          "string (e.g. \"Daksh\")",
+          "string (e.g. \"Dheeraj\")"
+        ],
+        "addressLine3": "string (e.g. \"\")",
+        "userId": "string (e.g. \"\")",
+        "amount": [
+          "string (e.g. \"3000\")",
+          "string (e.g. \"10000\")"
+        ],
+        "metadata": [
+          "string (e.g. \"{\"apartment_name\":\"Brigade Cornerstone Utopia\",\"poc\":\"Aryan\",\"status_updates\":[{\"old_status\":\"Unpaid\",\"new_status\":\"Paid\",\"time\":1756642878}],\"deleted_at\":1756642889}\")",
+          "string (e.g. \"{\"apartment_name\":\"Cornerstone Utopia\",\"poc\":\"Daksh\",\"status_updates\":[{\"old_status\":\"Unpaid\",\"new_status\":\"Paid\",\"time\":1751285702}]}\")",
+          "string (e.g. \"{\"apartment_name\":\"Brigade Northridge\",\"poc\":\"Dheeraj\",\"status_updates\":[{\"old_status\":\"Unpaid\",\"new_status\":\"Paid\",\"time\":1754396461}]}\")"
+        ],
+        "userName": [
+          "string (e.g. \"amith behra\")",
+          "string (e.g. \"narendra singh\")",
+          "string (e.g. \"ravi kumar s\")"
+        ],
+        "file_url": [
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/masal-db-6cc78.appspot.com/o/Invoices%2Fvault_invoice%2F1756642871736-invoice-6253166.pdf?alt=media&token=3a8c3c67-b146-4707-bdd6-e6b5b8104a0f\")",
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/masal-db-6cc78.appspot.com/o/Invoices%2Fvault_invoice%2F1750677472404-invoice-4250935.pdf?alt=media&token=80a34d63-9da5-43ed-99ef-fb141a54123f\")",
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/masal-db-6cc78.appspot.com/o/Invoices%2Fvault_invoice%2F1752834158543-invoice-4250253.pdf?alt=media&token=f16a0a7e-9111-49fd-aa83-4b839724b9e3\")"
+        ],
+        "serviceId": "string (e.g. \"\")",
+        "addressLine2": "string (e.g. \"\")",
+        "totalAmount": [
+          "number (e.g. 3000)",
+          "number (e.g. 10000)"
+        ],
+        "added": [
+          "number (e.g. 1756642871)",
+          "number (e.g. 1750677472)",
+          "number (e.g. 1752834158)"
+        ],
+        "customer_name": [
+          "string (e.g. \"amith behra\")",
+          "string (e.g. \"narendra singh\")",
+          "string (e.g. \"ravi kumar s\")"
+        ],
+        "serviceName": "string (e.g. \"\")"
+      },
+      "error": null
+    },
+    "vaultCommunications": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "lastSentimentScore": [
+          "number (e.g. 0)",
+          "number (e.g. 55)"
+        ],
+        "createdAt": [
+          "number (e.g. 1767878802)",
+          "number (e.g. 1764849541)",
+          "number (e.g. 1764913331)"
+        ],
+        "proformaCount": "number (e.g. 0)",
+        "hasDocuments": "boolean (e.g. true)",
+        "lastSentiment": [
+          {
+            "anger": "number (e.g. 0)",
+            "sadness": "number (e.g. 0)",
+            "overall": "number (e.g. 0)",
+            "urgency": "number (e.g. 0)",
+            "frustration": "number (e.g. 0)"
+          },
+          {
+            "sadness": "number (e.g. 0)",
+            "overall": "number (e.g. 55)",
+            "frustration": "number (e.g. 45)",
+            "urgency": "number (e.g. 65)",
+            "anger": "number (e.g. 5)"
+          }
+        ],
+        "threadId": [
+          "string (e.g. \"1954645d6fa83e5d\")",
+          "string (e.g. \"1954716d7e167e0e\")",
+          "string (e.g. \"195472f2a61b533b\")"
+        ],
+        "subject": [
+          "string (e.g. \"Full Package for Flat 14078 and 17043\")",
+          "string (e.g. \"Sobha Dream Acers- Khata & E-Khata for Unit # A2-1014 - Wing 1\")",
+          "string (e.g. \"Ekhata-- Documents needed by you to process\")"
+        ],
+        "userEmail": [
+          "string (e.g. \"amit1187@gmail.com\")",
+          "string (e.g. \"vporwal28@gmail.com\")",
+          "string (e.g. \"anupamsutwala@gmail.com\")"
+        ],
+        "userId": [
+          "string (e.g. \"UIDB1854\")",
+          "string (e.g. \"UIDB2306\")",
+          "null"
+        ],
+        "attachmentsFolderId": "string (e.g. \"1VlC62OnSeYqlAdVN8ZFi4UhGBun1mOwP\")",
+        "systemGeneratedEmail": "boolean (e.g. false)",
+        "attachmentsFolderLink": "string (e.g. \"https://drive.google.com/drive/folders/1VlC62OnSeYqlAdVN8ZFi4UhGBun1mOwP\")",
+        "parentSMTP": [
+          "string (e.g. \"CAKR4onhbxJFKa-nv_uV6qxGquE9ycP-X7hZAwJM3KU0gVgRJ4g@mail.gmail.com\")",
+          "string (e.g. \"CAFHB-bDkaTXzf5Ndzg+uEPiXQ0Y_VUi-WxE=txAF=E6U9-P08g@mail.gmail.com\")",
+          "string (e.g. \"CAOhO=TkVW4D=maH1RtzZ_uhPk51O5r=UzBbDFSwCh15RMqviow@mail.gmail.com\")"
+        ],
+        "firstMessageId": [
+          "string (e.g. \"1954645d6fa83e5d\")",
+          "string (e.g. \"1954716d7e167e0e\")",
+          "string (e.g. \"195472f2a61b533b\")"
+        ],
+        "threadEmails": [
+          "array<string (e.g. \"amit1187@gmail.com\")> (length 7, e.g. first item shown)",
+          "array<string (e.g. \"vporwal28@gmail.com\")> (length 6, e.g. first item shown)",
+          "array<string (e.g. \"anupamsutwala@gmail.com\")> (length 4, e.g. first item shown)"
+        ],
+        "statusTags": [
+          "array<string (e.g. \"AIESCALATED\")> (length 1, e.g. first item shown)",
+          "array (empty)"
+        ],
+        "isEscalated": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "lastAgentResponseTime": [
+          "number (e.g. 1784697548)",
+          "number (e.g. 1762440461)",
+          "number (e.g. 1758349546)"
+        ],
+        "unRead": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "lastUserResponseTime": [
+          "number (e.g. 1785905266)",
+          "number (e.g. 1760700818)",
+          "number (e.g. 1746274064)"
+        ],
+        "communication": [
+          "array<[object Object]> (length 25, e.g. first item shown)",
+          "array<[object Object]> (length 15, e.g. first item shown)",
+          "array<[object Object]> (length 16, e.g. first item shown)"
+        ],
+        "updatedAt": [
+          "number (e.g. 1785905380)",
+          "number (e.g. 1783180542)"
+        ],
+        "aiOverview": [
+          "string (e.g. \"*   Amit Patel's E-Khata application verification is currently pending with the Assistant Revenue Officer (ARO).\n*   The Khata Transfer application for Door No. 17043 was previously submitted to BBMP on July 21, 2026, with an estimated 30-45 day processing time.\n*   Prerana from Vault PropTech will continue to track the application's progress and provide updates.\")",
+          "string (e.g. \"*   Vikas Porwal inquired about his name correction application and later re-shared a document.\n*   Garima confirmed the name correction application has been resubmitted to BBMP and is progressing, with an estimated resolution time of 45 days.\n*   Vault Proptech should continue following up with BBMP, clarify the purpose of the resent document, and provide ongoing updates to Vikas.\")"
+        ],
+        "aiOverviewUpdatedAt": [
+          "number (e.g. 1785905387)",
+          "number (e.g. 1783180584)"
+        ],
+        "task": "boolean (e.g. true)"
+      },
+      "error": null
+    },
+    "vaultAssignmentLogs": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "serviceId": [
+          "string (e.g. \"BSR1005\")",
+          "string (e.g. \"BSR1013\")",
+          "string (e.g. \"BSR1015\")"
+        ],
+        "userId": [
+          "string (e.g. \"BUID1004\")",
+          "string (e.g. \"BUID1009\")",
+          "string (e.g. \"BUID1011\")"
+        ],
+        "serviceName": "string (e.g. \"Bescom\")",
+        "society": [
+          "string (e.g. \"Brigade Bricklane\")",
+          "string (e.g. \"Prestige Lakeside Habitat\")",
+          "string (e.g. \"Candeur Signature\")"
+        ],
+        "teamId": "string (e.g. \"SD-BES-T212\")",
+        "revenueWeight": [
+          "number (e.g. 5500)",
+          "number (e.g. 4000)"
+        ],
+        "agentAssigned": [
+          "string (e.g. \"Anusha Vipuri\")",
+          "string (e.g. \"Kousar Shaik\")"
+        ],
+        "agentId": [
+          "string (e.g. \"VAT153\")",
+          "string (e.g. \"VAT188\")"
+        ],
+        "previousPOC": [
+          "string (e.g. \"Divyansh\")",
+          "string (e.g. \"Balu\")"
+        ],
+        "assignmentReason": "string (e.g. \"SPECIAL_QUEUE\")",
+        "bucket": "string (e.g. \"active\")",
+        "triggerSource": [
+          "string (e.g. \"CT_AUTO_ASSIGN\")",
+          "string (e.g. \"POC_LEFT\")"
+        ],
+        "updatedAt": [
+          "number (e.g. 1783595038)",
+          "number (e.g. 1783595042)",
+          "number (e.g. 1783418225)"
+        ]
+      },
+      "error": null
+    },
+    "vaultServiceSubtasks": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "serviceId": [
+          "string (e.g. \"SRA1172\")",
+          "string (e.g. \"SRA2370\")",
+          "string (e.g. \"SRA4512\")"
+        ],
+        "bucket": [
+          "string (e.g. \"active\")",
+          "string (e.g. \"blocked\")"
+        ],
+        "userId": [
+          "string (e.g. \"UIDA1157\")",
+          "string (e.g. \"UIDA2211\")",
+          "string (e.g. \"UIDA4077\")"
+        ],
+        "userName": [
+          "string (e.g. \"Nikhil Kasture\")",
+          "string (e.g. \"Arpit Gupta\")",
+          "string (e.g. \"Deepayan Choudhury\")"
+        ],
+        "serviceName": "string (e.g. \"E-Khata\")",
+        "title": [
+          "string (e.g. \"Need Docs\")",
+          "string (e.g. \"Blocker Builder Name\")",
+          "string (e.g. \"Assignment of case to me as per amits direction\")"
+        ],
+        "description": [
+          "string (e.g. \"Kindly arrange the docs @Jeeva N.\")",
+          "string (e.g. \"Customer want update and  he is escalating on society group please check and update him and also coordinate with Shivam\n\n@Tushita G.\")",
+          "string (e.g. \"I have done correction and closure for this case please assign this case to me as per amits direction I have attached scrrenshot as proof\")"
+        ],
+        "priority": "string (e.g. \"High\")",
+        "dueDate": [
+          "number (e.g. 1785919500)",
+          "number (e.g. 1784874600)",
+          "number (e.g. 1781764980)"
+        ],
+        "reminderAt": [
+          "number (e.g. 1785918600)",
+          "number (e.g. 1784872800)",
+          "number (e.g. 1781761380)"
+        ],
+        "reminderDismissedAt": [
+          "null",
+          "number (e.g. 1784871273)",
+          "number (e.g. 1781759018)"
+        ],
+        "attachments": [
+          "array (empty)",
+          "array<[object Object]> (length 1, e.g. first item shown)"
+        ],
+        "taggedPocs": [
+          "array<[object Object]> (length 1, e.g. first item shown)",
+          "array (empty)"
+        ],
+        "createdBy": [
+          "string (e.g. \"yashmalik@vaultproptech.com\")",
+          "string (e.g. \"aryan@vaultproptech.com\")",
+          "string (e.g. \"atharva@vaultproptech.com\")"
+        ],
+        "updatedBy": [
+          "string (e.g. \"yashmalik@vaultproptech.com\")",
+          "string (e.g. \"tushita@vaultproptech.com\")",
+          "string (e.g. \"atharva@vaultproptech.com\")"
+        ],
+        "subtaskId": [
+          "string (e.g. \"SRA1172-task1\")",
+          "string (e.g. \"SRA2370-task1\")",
+          "string (e.g. \"SRA4512-task1\")"
+        ],
+        "status": [
+          "string (e.g. \"open\")",
+          "string (e.g. \"completed\")"
+        ],
+        "completedAt": [
+          "null",
+          "number (e.g. 1784871273)",
+          "number (e.g. 1781759018)"
+        ],
+        "createdAt": [
+          "number (e.g. 1785915684)",
+          "number (e.g. 1784871062)",
+          "number (e.g. 1781757783)"
+        ],
+        "updatedAt": [
+          "number (e.g. 1785915684)",
+          "number (e.g. 1784871273)",
+          "number (e.g. 1781759018)"
+        ]
+      },
+      "error": null
+    },
+    "vaultInternalAgents": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "dateOfJoiningTeam": [
+          "Timestamp (e.g. \"2025-07-11T10:14:45.519Z\")",
+          "Timestamp (e.g. \"2025-07-18T09:03:54.897Z\")",
+          "Timestamp (e.g. \"2025-07-29T10:38:50.761Z\")"
+        ],
+        "currentLeave": "null",
+        "createdBy": "string (e.g. \"migration-script\")",
+        "blockViewDueToTasks": "boolean (e.g. false)",
+        "updatedAt": [
+          "Timestamp (e.g. \"2026-02-20T13:38:11.901Z\")",
+          "Timestamp (e.g. \"2026-02-20T13:38:11.889Z\")",
+          "number (e.g. 1774350145)"
+        ],
+        "dueToday": "number (e.g. 0)",
+        "overdueTasks": "number (e.g. 0)",
+        "uid": [
+          "string (e.g. \"mbZoVaxl5NYO4J5MMQfSrvfw0Ol1\")",
+          "string (e.g. \"0M0XGiZhmsQLKuEdORxk7o6jEop1\")",
+          "string (e.g. \"nq7Rn19muZVMFWWkHvgSKPB1UU42\")"
+        ],
+        "agentId": [
+          "string (e.g. \"0000001\")",
+          "string (e.g. \"TRUES00\")",
+          "string (e.g. \"VAT00\")"
+        ],
+        "categoryCounts": [
+          {},
+          {
+            "Khata Transfer": "number (e.g. 7)",
+            "Property Tax Name Change": "number (e.g. 4)",
+            "E khata": "number (e.g. 2)",
+            "Will Deed Drafting": "number (e.g. 0)",
+            "Bescom": "number (e.g. 0)",
+            "E-Khata": "number (e.g. 51)"
+          }
+        ],
+        "tasks": [
+          "array (empty)",
+          "array<[object Object]> (length 3, e.g. first item shown)"
+        ],
+        "showTaskReminder": "boolean (e.g. true)",
+        "dateOfJoining": [
+          "Timestamp (e.g. \"2025-07-11T10:14:45.519Z\")",
+          "Timestamp (e.g. \"2025-07-18T09:03:54.897Z\")",
+          "Timestamp (e.g. \"2025-07-29T10:38:50.761Z\")"
+        ],
+        "approvedGeoCenter": [
+          {
+            "accuracy": "number (e.g. 35)",
+            "long": "number (e.g. 77.27189072531141)",
+            "lat": "number (e.g. 28.611538621043874)"
+          },
+          {
+            "long": "number (e.g. 77.63479814366794)",
+            "lat": "number (e.g. 12.874535977582052)",
+            "accuracy": "number (e.g. 35)"
+          }
+        ],
+        "pastOverdueTasks": "number (e.g. 0)",
+        "lastModifiedBy": "string (e.g. \"migration-script\")",
+        "status": "string (e.g. \"active\")",
+        "allowedSkills": "array (empty)",
+        "name": [
+          "string (e.g. \"Yash Balyan\")",
+          "string (e.g. \"Deepak Goyal\")",
+          "string (e.g. \"Anurag Yadav\")"
+        ],
+        "isTeamLead": [
+          "boolean (e.g. true)",
+          "boolean (e.g. false)"
+        ],
+        "internalAgentDocId": [
+          "string (e.g. \"yash.balyan@truestate.in\")",
+          "string (e.g. \"deepak@truestate.in\")",
+          "string (e.g. \"anurag@truestate.in\")"
+        ],
+        "department": "string (e.g. \"Tech\")",
+        "leaveHistory": "array (empty)",
+        "isOnLeave": "boolean (e.g. false)",
+        "dateOfLeaving": "null",
+        "maxCapacity": "number (e.g. 200)",
+        "approvedHubId": [
+          "string (e.g. \"AS24560\")",
+          "string (e.g. \"AS24309\")"
+        ],
+        "isLoginBlocked": [
+          "boolean (e.g. false)",
+          "boolean (e.g. true)"
+        ],
+        "stream": "string (e.g. \"Tech\")",
+        "createdAt": [
+          "Timestamp (e.g. \"2025-07-11T10:14:45.519Z\")",
+          "Timestamp (e.g. \"2025-07-18T09:03:54.897Z\")",
+          "Timestamp (e.g. \"2025-07-29T10:38:50.761Z\")"
+        ],
+        "wfhExpiry": [
+          "Timestamp (e.g. \"2026-05-14T10:19:33.164Z\")",
+          "Timestamp (e.g. \"2026-05-09T07:58:18.758Z\")"
+        ],
+        "capOverride": "boolean (e.g. false)",
+        "isControlTower": "boolean (e.g. false)",
+        "email": [
+          "string (e.g. \"yash.balyan@truestate.in\")",
+          "string (e.g. \"deepak@truestate.in\")",
+          "string (e.g. \"anurag@truestate.in\")"
+        ],
+        "activeSrs": [
+          "number (e.g. 0)",
+          "number (e.g. 64)"
+        ],
+        "role": "string (e.g. \"vaultAdmin\")",
+        "revenueLoad": [
+          "number (e.g. 0)",
+          "number (e.g. 284720)"
+        ],
+        "phoneNumber": [
+          "string (e.g. \"+917906400078\")",
+          "string (e.g. \"+919358537733\")",
+          "string (e.g. \"+919024846153\")"
+        ],
+        "teamId": "string (e.g. \"\")",
+        "reportingManagerId": "string (e.g. \"\")",
+        "trustedFingerprints": [
+          "array<string (e.g. \"f206302d95d6db98b6866407c1d7ddbc\")> (length 8, e.g. first item shown)",
+          "array<string (e.g. \"71ce9745fafb268f10838a3f59c7aac5\")> (length 6, e.g. first item shown)",
+          "array<string (e.g. \"eee24633edb6af43f7bb30b1e370e587\")> (length 1, e.g. first item shown)"
+        ],
+        "hasLeft": "boolean (e.g. true)",
+        "isDisabled": "boolean (e.g. true)",
+        "oldestPriorityCount": "number (e.g. 1)",
+        "isOnWfh": "boolean (e.g. false)",
+        "preActiveCaseCountUpdatedAt": "number (e.g. 1778763951)",
+        "leftDate": "string (e.g. \"2026-05-11\")",
+        "preActiveCaseCount": "number (e.g. 14)",
+        "immediateReminder": "boolean (e.g. true)",
+        "lastOldestPriorityRun": "number (e.g. 1778448610)",
+        "nextBlockingHour": "number (e.g. 18)"
+      },
+      "error": null
+    },
+    "vaultExpense": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "expenseId": [
+          "string (e.g. \"CEXP-2026-00022\")",
+          "string (e.g. \"CEXP-2026-00023\")",
+          "string (e.g. \"CEXP-2026-00024\")"
+        ],
+        "proofStoragePath": [
+          "string (e.g. \"vaultExpenses/camps/BSR_Towers_1776470400/1776518011_camp---food_WhatsApp Image 2026-04-18 at 3.31.10 PM.jpeg\")",
+          "string (e.g. \"vaultExpenses/camps/BSR_Towers_1776470400/1776518026_camp---travel_WhatsApp Image 2026-04-18 at 3.31.40 PM.jpeg\")",
+          "string (e.g. \"vaultExpenses/camps/Tranquil_at_Brigade_Cornerstone_Utopia_1776470400/1776519829_camp---food_WhatsApp Image 2026-04-18 at 19.10.01.jpeg\")"
+        ],
+        "proofName": [
+          "string (e.g. \"WhatsApp Image 2026-04-18 at 3.31.10 PM.jpeg\")",
+          "string (e.g. \"WhatsApp Image 2026-04-18 at 3.31.40 PM.jpeg\")",
+          "string (e.g. \"WhatsApp Image 2026-04-18 at 19.10.01.jpeg\")"
+        ],
+        "amount": [
+          "number (e.g. 230)",
+          "number (e.g. 500)",
+          "number (e.g. 486)"
+        ],
+        "service_poc_id": [
+          "string (e.g. \"VAT57\")",
+          "string (e.g. \"VAT109\")"
+        ],
+        "createdBy": [
+          "string (e.g. \"Mohammed Mussavir\")",
+          "string (e.g. \"Om Somvanshi\")"
+        ],
+        "isLatest": "boolean (e.g. true)",
+        "createdAt": [
+          "number (e.g. 1776518025)",
+          "number (e.g. 1776518031)",
+          "number (e.g. 1776519836)"
+        ],
+        "service_poc_name": [
+          "string (e.g. \"Mohammed Mussavir\")",
+          "string (e.g. \"Om Somvanshi\")"
+        ],
+        "category": [
+          "string (e.g. \"Camp - Food\")",
+          "string (e.g. \"Camp - Travel\")"
+        ],
+        "serviceId": "null",
+        "expenseDate": "number (e.g. 1776470400)",
+        "serviceName": [
+          "string (e.g. \"BSR Towers Camp\")",
+          "string (e.g. \"Tranquil at Brigade Cornerstone Utopia Camp\")"
+        ],
+        "teamlead_id": "null",
+        "flag": "boolean (e.g. false)",
+        "flag_reason": "null",
+        "campId": [
+          "string (e.g. \"BSR_Towers_1776470400\")",
+          "string (e.g. \"Tranquil_at_Brigade_Cornerstone_Utopia_1776470400\")"
+        ],
+        "proforma_value": [
+          "number (e.g. 230)",
+          "number (e.g. 500)",
+          "number (e.g. 486)"
+        ],
+        "status": "string (e.g. \"Paid\")",
+        "payingToUpiId": "string (e.g. \"8088062642@mbkns\")",
+        "updatedAt": [
+          "number (e.g. 1778163745)",
+          "number (e.g. 1778234113)"
+        ],
+        "version": "number (e.g. 1)",
+        "attachments": [
+          "array<[object Object]> (length 1, e.g. first item shown)",
+          "array<[object Object]> (length 3, e.g. first item shown)"
+        ],
+        "proofUrl": [
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/vault-proptech.firebasestorage.app/o/vaultExpenses%2Fcamps%2FBSR_Towers_1776470400%2F1776518011_camp---food_WhatsApp%20Image%202026-04-18%20at%203.31.10%20PM.jpeg?alt=media&token=9e6749ea-ec9e-417f-8f69-3ceebca7d220\")",
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/vault-proptech.firebasestorage.app/o/vaultExpenses%2Fcamps%2FBSR_Towers_1776470400%2F1776518026_camp---travel_WhatsApp%20Image%202026-04-18%20at%203.31.40%20PM.jpeg?alt=media&token=2343c509-f538-4e8d-a7ad-245b9b5f3d5a\")",
+          "string (e.g. \"https://firebasestorage.googleapis.com/v0/b/vault-proptech.firebasestorage.app/o/vaultExpenses%2Fcamps%2FTranquil_at_Brigade_Cornerstone_Utopia_1776470400%2F1776519829_camp---food_WhatsApp%20Image%202026-04-18%20at%2019.10.01.jpeg?alt=media&token=630f1870-5a8c-47f5-81e4-65761ee38693\")"
+        ]
+      },
+      "error": null
+    },
+    "vaultBlockerAssignmentLogs": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "serviceId": [
+          "string (e.g. \"SRA1182\")",
+          "string (e.g. \"SRA1623\")",
+          "string (e.g. \"SRA1852\")"
+        ],
+        "userId": [
+          "string (e.g. \"UIDA1167\")",
+          "string (e.g. \"UIDA1552\")",
+          "string (e.g. \"UIDA1757\")"
+        ],
+        "serviceName": "string (e.g. \"E-Khata\")",
+        "agentAssigned": [
+          "string (e.g. \"Manjunatha V\")",
+          "string (e.g. \"Shweta Kumari\")"
+        ],
+        "agentId": [
+          "string (e.g. \"VAT226\")",
+          "string (e.g. \"VAT227\")"
+        ],
+        "assignmentReason": "string (e.g. \"LOAD_BASED\")",
+        "bucket": "string (e.g. \"blocked\")",
+        "createdAt": [
+          "number (e.g. 1784192530)",
+          "number (e.g. 1784192538)",
+          "number (e.g. 1784192542)"
+        ]
+      },
+      "error": null
+    },
+    "vaultCustomersFeedback": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "updated_at": [
+          "number (e.g. 1785211904)",
+          "number (e.g. 1777387121)",
+          "number (e.g. 1781410755)"
+        ],
+        "userId": [
+          "string (e.g. \"BUID1006\")",
+          "string (e.g. \"UIDA1511\")",
+          "string (e.g. \"UIDA1659\")"
+        ],
+        "overall_comment": [
+          "string (e.g. \"Thank you for providing updates during the process.\")",
+          "string (e.g. \"Got it done quickly; clear communication\")",
+          "string (e.g. \"Good service\")"
+        ],
+        "token": "null",
+        "request_manager_callback": "null",
+        "created_at": [
+          "number (e.g. 1785211904)",
+          "number (e.g. 1777387121)",
+          "number (e.g. 1781410755)"
+        ],
+        "source": [
+          "string (e.g. \"nudge_single_d10\")",
+          "string (e.g. \"nudge_single_d3)*\")",
+          "string (e.g. \"nudge_single_d3\")"
+        ],
+        "ratings": "array<[object Object]> (length 1, e.g. first item shown)"
+      },
+      "error": null
+    },
+    "vaultCashfreePaymentLinks": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "cf_link": [
+          {
+            "link_notify": {
+              "send_sms": "boolean (e.g. true)",
+              "send_email": "boolean (e.g. true)"
+            },
+            "link_partial_payments": "boolean (e.g. false)",
+            "enable_invoice": "boolean (e.g. false)",
+            "link_meta": {
+              "return_url": "string (e.g. \"https://example.com/payment-success\")",
+              "upi_intent": "string (e.g. \"false\")"
+            },
+            "link_id": "string (e.g. \"TXN1769084432164\")",
+            "thank_you_msg": "string (e.g. \"\")",
+            "customer_details": {
+              "customer_name": "string (e.g. \"Harsh Agarwal\")",
+              "customer_phone": "string (e.g. \"7289836145\")",
+              "customer_email": "string (e.g. \"harshag1606@gmail.com\")",
+              "country_code": "string (e.g. \"+91\")"
+            },
+            "cf_link_id": "string (e.g. \"6815132\")",
+            "link_status": "string (e.g. \"PAID\")",
+            "link_amount_paid": "number (e.g. 1)",
+            "link_url": "string (e.g. \"https://payments-test.cashfree.com/links/i9qu6une1okg_AAAAAACmE7w\")",
+            "link_amount": "number (e.g. 1)",
+            "link_purpose": "string (e.g. \"One-time purchase\")",
+            "link_qrcode": "string (e.g. \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFAAQMAAAD3XjfpAAAABlBMVEX///8AAABVwtN+AAAD0UlEQVR4nOyaP5L7rhLEW6WAkCNwE3Mxl/6UL4ZvwhEICSj1qx7kXe9+X/5bUSaxvftJQMN0z4zwWZ/1WRdaE0k2rEwzN/+skfog57wW1KD/pgHBCuDuD32f+ayYuTO5zDyRNQDwVwIj890fjvbTUeCTGZhKrGHmMTC4uQTc7RdJPWtuiLgmuOvDdk39y3HOCzAwaBG+MyE0nxCBlYdAhfa/V2EQ0JKUjmfOdyWpOS/+WYM+0r/Z7G+DLxWp0D5JAmu5IcyWpP6P3AwCRgRytwtd7F4fOjMlKbisP14HnLpMkknPOjkjpoqGtUSgYWIaD4RL3SqwhUexxLyXqYam4wHmsg4KugwsgFLzTelYBsk8RZLN2F/RcwFwqtH1XZ+plrJ5CC0cntIZjggCUVaQNbbQpK4IGyL7hXZ5Li+dGQqcmCyNycubJ9YvgXkldcuXS4F0eeaBSD5KrGD/3oNeWx8RhKOTGZYuPZhcUnayw1o8md+T1AVAoGIucGyBPFxCoOoTBNu81aADgo41NC8CazFnr5XNLjnCH35AcKqogC60nYTAzQoZ3WvF+3YtUE90UYS3syTVrVVxFh3nL5UZCtSzlnOosGRsZtgnl5vkxmX47S0o/jrYdabXlqpPzl2HFvYC9mp7QNDaCUrN86s/tOpZnx8/bOE4IPTojZjlhsSvxVoNCpEwl6965gLgpPQKv1sDzD97fa0yJRymQJayhgNPZdmUmu14ZJBuQJPIKtqXIcHT2cs7dXeYp66ua+8tbb9KgL8MTjVab6+qFsVNthD91i69j/sVFCOBpy1cJUjoYxSYIGEqchtYLgXGfkH11bOXajcVnCY3c1m+g2IosIbN70ynp2iY+GSWusrg+zedGQecejJea5QgTRboFuHhkLPnuyD9fbDGGh7lNLfoSeo4baHc79sYcBzQCvHV1CS0nqSmYtPAw8qa7wi/AqhiZPOb6usHn7ZPmxedZbYNjUYE6/cA4oYopT0A66UgoE+2RwOtHYaepL7m1wnWS0ENzb+N2P48iN4KOvuyN/SMe9bXZhX8kCBPW2ivjyi0D8+zLP/dQRoG7IIk82flG3t8K7OtfaJ0JbAvRbhJSq+vb6pddtp5bCOCr6m9bu/6aqnAuvBMP96duQLY36ewDT6KOV7paVDgpp+9lKHAyHzHytQC+Xw1Ae3dmfhj7DIguEhWH+Z8g4EyVBF4b/heBfS7ctVdJSl7rmqnifi162FARfjrFQQbmU1lqn0AoXr8+3guAL7eI6UMUjSf5A+7rtKZ3xl3EPCzPuuz/tP1vwAAAP//mwgH/kihVK8AAAAASUVORK5CYII=\")",
+            "link_auto_reminders": "boolean (e.g. false)",
+            "link_currency": "string (e.g. \"INR\")",
+            "link_notes": {},
+            "link_created_at": "string (ISO-date-like: \"2026-01-22T17:50:32+05:30\")",
+            "link_expiry_time": "string (ISO-date-like: \"2026-02-21T17:50:32+05:30\")",
+            "entity": "string (e.g. \"link\")",
+            "order_splits": "array (empty)",
+            "terms_and_conditions": "string (e.g. \"\")",
+            "link_minimum_partial_amount": "null"
+          },
+          {
+            "link_amount_paid": "number (e.g. 1)",
+            "link_url": "string (e.g. \"https://payments-test.cashfree.com/links/r9qu78aj6i40_AAAAAACmE7w\")",
+            "enable_invoice": "boolean (e.g. false)",
+            "link_meta": {
+              "return_url": "string (e.g. \"https://example.com/payment-success\")",
+              "upi_intent": "string (e.g. \"false\")"
+            },
+            "link_notify": {
+              "send_sms": "boolean (e.g. true)",
+              "send_email": "boolean (e.g. true)"
+            },
+            "link_partial_payments": "boolean (e.g. false)",
+            "link_id": "string (e.g. \"TXN1769084589569\")",
+            "thank_you_msg": "string (e.g. \"\")",
+            "customer_details": {
+              "customer_name": "string (e.g. \"Harsh Agarwal\")",
+              "customer_phone": "string (e.g. \"7289836145\")",
+              "customer_email": "string (e.g. \"harshag1606@gmail.com\")",
+              "country_code": "string (e.g. \"+91\")"
+            },
+            "cf_link_id": "string (e.g. \"6815140\")",
+            "link_status": "string (e.g. \"PAID\")",
+            "link_auto_reminders": "boolean (e.g. false)",
+            "link_expiry_time": "string (ISO-date-like: \"2026-02-21T17:53:09+05:30\")",
+            "entity": "string (e.g. \"link\")",
+            "order_splits": "array (empty)",
+            "terms_and_conditions": "string (e.g. \"\")",
+            "link_minimum_partial_amount": "null",
+            "link_currency": "string (e.g. \"INR\")",
+            "link_notes": {},
+            "link_created_at": "string (ISO-date-like: \"2026-01-22T17:53:09+05:30\")",
+            "link_amount": "number (e.g. 1)",
+            "link_qrcode": "string (e.g. \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFAAQMAAAD3XjfpAAAABlBMVEX///8AAABVwtN+AAADzElEQVR4nOyaQY77LAzFHbFgyRG4SblYlKTqxchNOAJLFijv07PTaeebA/wbVDaZJL+OFMD2s418x3d8x4XGBABdFpEegUPElUVSE4mHSIt8mwcEm4jMMiG74qqI8NXhAdyBFkUkXAlMKDP5Hje9wxEOjx5RU4sOx8DgCh070OMRMqfnkCSXBMOmi1xvkniZWuwyVRkY1B0uPve4BU6JrPUmkYac5a8pDAKqkwr3llyZw87LEvYWecl/vdlngzbCnbeO3olfLb5wDtD+RJthwNTUqnOX2QxaXbOjXXuot74SKOLqBDh03qHw4dNce7jXAUGaa+w0V5EVexOUqYoHVDFEYEhQh6trE1dmmyz9dad3aoIf13wFcAINlNsZRcKO7HDH4QvKWhPd1zYiSLuOj2qaghu9x0P9dVnNJ08YEfTwZQW9MIUgI+rGh862tgOeO/wqoAMFUnHqoZUHFW9CAd+MB07NAhIteTVZSJ0Ue7xDw9PLm30+KD4zstBq44Ov1HhtrRPvXht3JJCLvNI1k0/MTKdT41aLMyOC3BRxk4WzNIed0mKTmxl0QunhSqBI8pacOTVX2MPIjZ5/1O9ooEZXR7s+U1Ia9I6ihSEP+RlXANXnahVIw6SWE8JT2eMVZcYCVRVwRfWCxvyaf58lvld0HQoUn7nD0VKXmRPiioolnZ4WXV1Cvgw4IetXt/SKMzUx1i5U9u4VhgcDuas3T0lE13yWw+xf4L3oMhCoHsth8xl41JsH50XzGZ24/m7+Hw+eGckmibKQYoHKqEVNs0XwtsNHAk0ZrVbYpEAyLa8lFc3Hn9NzAZBOilk0BZLGGVdU1WpFkyv/JoYHAjkJZ/Vkfhalk+mkZCJRBgR9fur3uIXss3VfyjlLPVwKFAYYS1N0rZ9lTcpCVfZ1QFAT8ZkXLfupk8LemIgzyP6vqvDhIONMfFDjirVOLHYWZ23AHt6D5kCg7vCN/EardVaUtuLY71rKOOAENCO69SHOkwgiZ+fsrXr98aD4zA9cfvJrBpjjlV9rU2VAEM1qB1YV48+w65Ij+yKyyICglh80iwMe0Iv1C4sdPXlPxD8etEGBRN46udz0FPhgcvar2TQKeHbttRQvWgS0RLzb8SeHOy4EmqRfrY0ytUTvdJzLzK9+heGhQDv+pIUhuVnXHtpGCRm/OxWjgVrHtQKCs+NSev5CosP252jRx4OHaPZ5E9FDXxJdWa0NePxa62FA3eELNSDqzWv/WqdnCbr8y5VAnOdIk50A0lKmHgQ6At417lDgd3zHd/zT8V8AAAD//14X54kgVAXzAAAAAElFTkSuQmCC\")",
+            "link_purpose": "string (e.g. \"One-time purchase\")"
+          },
+          {
+            "customer_details": {
+              "customer_email": "string (e.g. \"ramchoudhary90860@gmail.com\")",
+              "country_code": "string (e.g. \"+91\")",
+              "customer_phone": "string (e.g. \"9785731728\")",
+              "customer_name": "string (e.g. \"Ram Choudhary\")"
+            },
+            "cf_link_id": "string (e.g. \"6815823\")",
+            "link_status": "string (e.g. \"EXPIRED\")",
+            "link_id": "string (e.g. \"TXN1769172158018\")",
+            "thank_you_msg": "string (e.g. \"\")",
+            "link_partial_payments": "boolean (e.g. false)",
+            "link_notify": {
+              "send_sms": "boolean (e.g. true)",
+              "send_email": "boolean (e.g. true)"
+            },
+            "enable_invoice": "boolean (e.g. false)",
+            "link_meta": {
+              "return_url": "string (e.g. \"https://example.com/payment-success\")",
+              "upi_intent": "string (e.g. \"false\")"
+            },
+            "link_url": "string (e.g. \"https://payments-test.cashfree.com/links/D9r3e92cuecg_AAAAAACmE7w\")",
+            "link_amount_paid": "number (e.g. 0)",
+            "link_purpose": "string (e.g. \"One-time purchase\")",
+            "link_qrcode": "string (e.g. \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFAAQMAAAD3XjfpAAAABlBMVEX///8AAABVwtN+AAADyklEQVR4nOyaza3rOgyEx9BCS5WgTuLGgthBGlM6UQleaiF4HoZS/t4p4MZCuPH19ZcDWBbJISn87Gc/O5BNJFlxAWokd8DlC+YCxB0oUU/TgGABcMbFp9qWQY92T/JKlgggHAmcmc/6V42r7hz3sHvWyG0uUXfjggvpyG0iEfeQtDw7ZhwSDNcCxxp2zBRfYsW0YWDQdjh8qnEVCCzbCVGOnPDXFQYBLUiFa5ldPoe7LpdwL1GX9DeafTfYLFx16xSdgMUexTWw/Mk2w4BzkVczVZwfDn1CVNahp9sOBiLeFJ0clWlm5onJZ8hdLd1sA4JTgc/mrvrI94Lup6YY9OshQTO3LQXOkuzcf10VnQpMMx0G1CtiUSplRrgzOV65+8y8bLOFr2c0GwiUxdsmz26aosbd4nVusar9peFAn3xeqCgsIajNvQL+sbUlr3As0HEFmJ1F6NhevgUs6sl44FRaQpInSxnNpNKqZCHTZ2j+fhA+MZtOQrzpESzX2reedfe2cQcC9ZEXhWbxM5PLJunRijNVpgOC2hRxVSGusuaudZGSMoeemd9i+AFAYPb5HFbMcta7laQKwtro6al+RwO1tbUWkg+37QTIoe/MxmuHP+wIoBy2dYGUJq2+thaJY6+1hwRNFeiLkq0kbUEq9xbfK7sOBVp2PQeWueJsWj730LxjLtFtl5AOA05M9tZlfuWZbVauvUjZv9UzI4F9h5ut+ta9Hda7LB+9lHHARzSTHlxx6l0x1TNWj1e8+fXXg6ZkJQutqac7KaMSKcVQwJcrDAV2WdgamxJITcvrP2H1+HNLHAL0rGEVv8hdXTZVax1Nz/pRaY4DahF69+Tcm9JtRoZgEXp9LdBAoE8P/R7XkHyiqcNcWw++hkOBraNpZYp964pJkl5lCqTs15dfjwNaIX7WpS2IghTvJdaoWIX/dRW+HJR6jzdpXLTRifLMndm1MWANz+w6GoiFq/i1RWjrwbfm2EcvZSDQZNDagpRrI9/ese6ycH8fA345CJ/wOEjhTNzlS9if9TW36VWmjATS9Dt7V6yF5gL3GCVdMCBoYtiqOPJGu9hxE5fb0ZP3QvzrwWYSSOL7JJcKzTbJfdvhI4F9am+teFgTsCfZdvzJ8coDgU3SL22MMqlakbu2z6y3fqXhoUA7MdQPsj1r6mxBip+TitFA6+O2AdqjnWsFanRcP48WHQHcfaqx4gTUKAeNLi9tDLh/fOthwH5asS2It/m1Lc8lkO955ggg+znS1iJp3Wj4rJfnu8YdCvzZz372T+2/AAAA///Fj/5nRb8mzQAAAABJRU5ErkJggg==\")",
+            "link_amount": "number (e.g. 1)",
+            "link_currency": "string (e.g. \"INR\")",
+            "link_notes": {},
+            "link_created_at": "string (ISO-date-like: \"2026-01-23T18:12:38+05:30\")",
+            "link_minimum_partial_amount": "null",
+            "link_expiry_time": "string (ISO-date-like: \"2026-02-22T18:12:37+05:30\")",
+            "entity": "string (e.g. \"link\")",
+            "order_splits": "array (empty)",
+            "terms_and_conditions": "string (e.g. \"\")",
+            "link_auto_reminders": "boolean (e.g. false)"
+          }
+        ],
+        "totals": [
+          {
+            "totalPaid": "number (e.g. 1)",
+            "remaining": "number (e.g. 0)",
+            "orderAmount": "number (e.g. 1)"
+          },
+          {
+            "remaining": "number (e.g. 0)",
+            "orderAmount": "number (e.g. 1)",
+            "totalPaid": "number (e.g. 1)"
+          },
+          {
+            "totalPaid": "number (e.g. 0)",
+            "remaining": "number (e.g. 1)",
+            "orderAmount": "number (e.g. 1)"
+          }
+        ],
+        "linkId": [
+          "string (e.g. \"TXN1769084432164\")",
+          "string (e.g. \"TXN1769084589569\")",
+          "string (e.g. \"TXN1769172158018\")"
+        ],
+        "updatedAt": [
+          "string (ISO-date-like: \"2026-01-22T12:21:32.252975+00:00\")",
+          "string (ISO-date-like: \"2026-01-22T12:23:45.300697+00:00\")",
+          "string (ISO-date-like: \"2026-02-22T12:42:51.750948+00:00\")"
+        ],
+        "payments": [
+          "array<[object Object]> (length 1, e.g. first item shown)",
+          "array (empty)"
+        ],
+        "status": [
+          "string (e.g. \"PAID\")",
+          "string (e.g. \"UNPAID\")"
+        ],
+        "orderId": "null"
+      },
+      "error": null
+    },
+    "vaultPayments": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "paymentId": [
+          "string (e.g. \"01nm4prg2DW1PyWIudpq\")",
+          "string (e.g. \"08rUJX6EXZE5rpNLFEnd\")",
+          "string (e.g. \"0CdmgdqTclTaAh1WWS1w\")"
+        ],
+        "proformaId": [
+          "string (e.g. \"PI-2025-A0231\")",
+          "string (e.g. \"PI-2026-A6105\")",
+          "string (e.g. \"PI-2026-A1690\")"
+        ],
+        "piid": [
+          "string (e.g. \"PI-2025-A0231\")",
+          "string (e.g. \"PI-2026-A6105\")",
+          "string (e.g. \"PI-2026-A1690\")"
+        ],
+        "userId": [
+          "string (e.g. \"UIDA8310\")",
+          "string (e.g. \"UIDE4702\")",
+          "string (e.g. \"UIDB2165\")"
+        ],
+        "serviceIds": [
+          "array<[object Object]> (length 1, e.g. first item shown)",
+          "array<[object Object]> (length 2, e.g. first item shown)"
+        ],
+        "paymentLink": [
+          "string (e.g. \"https://rzp.io/rzp/BYlivUSr\")",
+          "string (e.g. \"https://rzp.io/rzp/Xsmze62\")",
+          "string (e.g. \"https://rzp.io/rzp/ph64gXv\")"
+        ],
+        "linkId": [
+          "string (e.g. \"plink_TD0lcmhIMsdDww\")",
+          "string (e.g. \"plink_T8zxCB3fJfdt9f\")",
+          "string (e.g. \"plink_T8zlRsMJV5agu7\")"
+        ],
+        "paymentAmount": [
+          "number (e.g. 3000)",
+          "number (e.g. 8)",
+          "number (e.g. 5000)"
+        ],
+        "isFullPayment": "boolean (e.g. false)",
+        "isCancelled": "boolean (e.g. false)",
+        "isDeleted": "boolean (e.g. false)",
+        "paymentStatus": "string (e.g. \"pending\")",
+        "paymentDate": "null",
+        "added": [
+          "number (e.g. 1783951036)",
+          "number (e.g. 1783074811)",
+          "number (e.g. 1783074144)"
+        ],
+        "createdAt": [
+          "number (e.g. 1783951036)",
+          "number (e.g. 1783074811)",
+          "number (e.g. 1783074144)"
+        ],
+        "agentName": "string (e.g. \"Vault - Tech Bulk Script\")",
+        "generatedBy": "string (e.g. \"Vault - Tech Bulk Script\")"
+      },
+      "error": null
+    },
+    "vaultCamps": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "societyName": [
+          "string (e.g. \"ANkit ka ghar\")",
+          "string (e.g. \"ASN Gardenia \")",
+          "string (e.g. \"Aashish Jk Apartments\")"
+        ],
+        "salesPOC": [
+          "string (e.g. \"Anurag Yadav\")",
+          "string (e.g. \"Kunal Kulthe\")",
+          "string (e.g. \"Anjanesh\")"
+        ],
+        "salesPOCNumber": [
+          "string (e.g. \"7024396102\")",
+          "string (e.g. \"8951524747\")",
+          "string (e.g. \"7625 051 036\")"
+        ],
+        "whatsappGrpLink": [
+          "string (e.g. \"am\")",
+          "string (e.g. \"https://chat.whatsapp.com/IfhTextgFCV39x8tN3bGen\")",
+          "string (e.g. \"https://chat.whatsapp.com/Hoy0ZxElz2E8S2nMicZvsM\")"
+        ],
+        "formLink": [
+          "string (e.g. \"https://services.vaultproptech.com/?society=ANkit%20ka%20ghar&CampId=ANkit_ka_ghar_967680000\")",
+          "string (e.g. \"https://services.vaultproptech.com/?society=ASN%20Gardenia%20&CampId=ASN_Gardenia__1769212800\")",
+          "string (e.g. \"https://services.vaultproptech.com/?society=Aashish%20Jk%20Apartments&CampId=Aashish_Jk_Apartments_1774656000\")"
+        ],
+        "createdAt": [
+          "number (e.g. 1764393722)",
+          "number (e.g. 1769064863)",
+          "number (e.g. 1773905393)"
+        ],
+        "lifecycle": [
+          "string (e.g. \"walk-in\")",
+          "string (e.g. \"pre-camp\")"
+        ],
+        "campCost": "number (e.g. 80)",
+        "campDate": [
+          "number (e.g. 967766400)",
+          "number (e.g. 1769212800)",
+          "number (e.g. 1774656000)"
+        ],
+        "campPOCs": "array<string (e.g. \"Priyanshu\")> (length 3, e.g. first item shown)",
+        "totalServiceAmount": [
+          "number (e.g. 3850)",
+          "number (e.g. 56000)",
+          "number (e.g. 5000)"
+        ],
+        "proformaValue": [
+          "number (e.g. 3650)",
+          "number (e.g. 56000)",
+          "number (e.g. 5000)"
+        ],
+        "campId": [
+          "string (e.g. \"ANkit_ka_ghar_967680000\")",
+          "string (e.g. \"ASN_Gardenia__1769212800\")",
+          "string (e.g. \"Aashish_Jk_Apartments_1774656000\")"
+        ],
+        "advancePaymentAmount": [
+          "number (e.g. 106.5)",
+          "number (e.g. 34000)",
+          "number (e.g. 0)"
+        ],
+        "docSubmissionCount": [
+          "number (e.g. -1)",
+          "number (e.g. 1)",
+          "number (e.g. 0)"
+        ]
+      },
+      "error": null
+    },
+    "vaultSocietiesData": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "primaryAro": "null",
+        "pincode": [
+          "string (e.g. \"562125\")",
+          "string (e.g. \"560037\")",
+          "string (e.g. \"560068\")"
+        ],
+        "parentSocietyId": "string (e.g. \"\")",
+        "source": "string (e.g. \"\")",
+        "documents": "array (empty)",
+        "landmark": "string (e.g. \"\")",
+        "aroPhone": "string (e.g. \"\")",
+        "streetName": "string (e.g. \"Unknown - Update\")",
+        "locationLink": "string (e.g. \"\")",
+        "aroDetails": "array (empty)",
+        "verified": "boolean (e.g. false)",
+        "nearbyRoad": "string (e.g. \"\")",
+        "address": [
+          "string (e.g. \"Green Glen Layout, Bellandur, Sarjapur Road, Bangalore, Karnataka\")",
+          "string (e.g. \"DSR Spring Beauty, ITPL Main Rd, AECS Layout, Marathahalli, Bengaluru\")",
+          "string (e.g. \"Begur Main Rd, DLF Newtown, Akshayanagar, Bengaluru, Karnataka 560068\")"
+        ],
+        "name": [
+          "string (e.g. \"Sobha Mayflower\")",
+          "string (e.g. \"DSR Spring Beauty\")",
+          "string (e.g. \"DLF Westend Heights\")"
+        ],
+        "aroName": "string (e.g. \"\")",
+        "jurisdiction": "string (e.g. \"BBMP\")",
+        "wardNo": [
+          "number (e.g. 150)",
+          "number (e.g. 85)",
+          "number (e.g. 192)"
+        ],
+        "parentSocietyName": "string (e.g. \"\")",
+        "wardName": [
+          "string (e.g. \"Bellanduru\")",
+          "string (e.g. \"Dodda Nekkundi\")",
+          "string (e.g. \"Begur\")"
+        ],
+        "notes": "array<[object Object]> (length 2, e.g. first item shown)",
+        "nameNormalized": [
+          "string (e.g. \"dsr spring beauty\")",
+          "string (e.g. \"dlf westend heights\")"
+        ]
+      },
+      "error": null
+    },
+    "vaultMyGateLeads": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "campaignName": [
+          "string (e.g. \"Gruhjyoti 22/3\")",
+          "string (e.g. \"MyGate – 2026-02-11\")",
+          "string (e.g. \"Vault 4\")"
+        ],
+        "mobileNumber": [
+          "string (e.g. \"+919902544505\")",
+          "string (e.g. \"8050501693\")",
+          "string (e.g. \"9888651892\")"
+        ],
+        "status": "string (e.g. \"new\")",
+        "utmSource": "string (e.g. \"facebook\")",
+        "email": [
+          "null",
+          "string (e.g. \"ashritb@gmail.com\")",
+          "string (e.g. \"abhi.sharma1889@gmail.com\")"
+        ],
+        "source": [
+          "string (e.g. \"Meta\")",
+          "string (e.g. \"MyGate\")"
+        ],
+        "userName": [
+          "string (e.g. \"Ravipratap Tripathi\")",
+          "string (e.g. \"Ashrit Badachikar\")",
+          "string (e.g. \"abhishek sharma\")"
+        ],
+        "campaignId": [
+          "string (e.g. \"120242507159760515\")",
+          "string (e.g. \"IQO110526124365\")",
+          "string (e.g. \"IQO070726129338\")"
+        ],
+        "leadId": "string (e.g. \"1614729596894290\")",
+        "createdAt": [
+          "string (ISO-date-like: \"2026-03-30T17:45:12.003Z\")",
+          "string (ISO-date-like: \"2026-05-12T14:46:32.969Z\")",
+          "string (ISO-date-like: \"2026-07-07T14:01:42.290Z\")"
+        ],
+        "rawPayload": [
+          {
+            "utmSource": "string (e.g. \"facebook\")",
+            "adId": "string (e.g. \"120242507159770515\")",
+            "utmService": "null",
+            "email": "null",
+            "adName": "string (e.g. \"Gruhjyoti 22/3\")",
+            "fullName": "string (e.g. \"Ravipratap Tripathi\")",
+            "campaignName": "string (e.g. \"Gruhjyoti 22/3\")",
+            "campaignId": "string (e.g. \"120242507159760515\")",
+            "leadId": "string (e.g. \"1614729596894290\")",
+            "streetAddress": "null",
+            "createdTime": "string (ISO-date-like: \"2026-03-30T17:33:01+0000\")",
+            "phoneNumber": "string (e.g. \"+919902544505\")"
+          },
+          {
+            "pincode": "string (e.g. \"560064\")",
+            "cityName": "string (e.g. \"Bengaluru\")",
+            "campaignName": "string (e.g. \"MyGate – 2026-02-11\")",
+            "userName": "string (e.g. \"Ashrit Badachikar\")",
+            "email": "string (e.g. \"ashritb@gmail.com\")",
+            "mobileNumber": "string (e.g. \"8050501693\")",
+            "campaignId": "string (e.g. \"IQO110526124365\")",
+            "societyName": "string (e.g. \"Goyal Footprints\")"
+          },
+          {
+            "campaignId": "string (e.g. \"IQO070726129338\")",
+            "campaignName": "string (e.g. \"Vault 4\")",
+            "userName": "string (e.g. \"abhishek sharma\")",
+            "mobileNumber": "string (e.g. \"9888651892\")",
+            "email": "string (e.g. \"abhi.sharma1889@gmail.com\")",
+            "societyName": "string (e.g. \"Prestige Lake Ridge\")",
+            "cityName": "string (e.g. \"Bengaluru\")",
+            "pincode": "string (e.g. \"560061\")"
+          }
+        ],
+        "utmService": "null",
+        "societyName": [
+          "null",
+          "string (e.g. \"Goyal Footprints\")",
+          "string (e.g. \"Prestige Lake Ridge\")"
+        ]
+      },
+      "error": null
+    },
+    "vaultWhatsappBotSessions": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "userId": [
+          "string (e.g. \"UIDF1256\")",
+          "string (e.g. \"UIDF1489\")",
+          "string (e.g. \"UIDE9116\")"
+        ],
+        "userName": [
+          "string (e.g. \"Swati Sinha \")",
+          "string (e.g. \"Ram Prasad Choudhary\")",
+          "string (e.g. \"Virag Agar\")"
+        ],
+        "phoneNumber": [
+          "string (e.g. \"+912243236309\")",
+          "string (e.g. \"+912345698765\")",
+          "string (e.g. \"+914088988585\")"
+        ],
+        "step": "string (e.g. \"awaiting_reply\")",
+        "flow": "string (e.g. \"ekhata\")",
+        "added": [
+          "number (e.g. 1782561253)",
+          "number (e.g. 1782282177)",
+          "number (e.g. 1782561336)"
+        ],
+        "a": [
+          "number (e.g. 1782561254)",
+          "number (e.g. 1782282179)",
+          "number (e.g. 1782561337)"
+        ],
+        "chatHistory": [
+          "array<[object Object]> (length 44, e.g. first item shown)",
+          "array<[object Object]> (length 1, e.g. first item shown)",
+          "array<[object Object]> (length 39, e.g. first item shown)"
+        ],
+        "updatedAt": [
+          "number (e.g. 1782732628)",
+          "number (e.g. 1782282179)",
+          "number (e.g. 1782728122)"
+        ],
+        "remindersMap": {
+          "inactive": "array<string (e.g. \"nudge\")> (length 1, e.g. first item shown)"
+        }
+      },
+      "error": null
+    },
+    "vaultWhatsappConversations": {
+      "exists": false,
+      "approxSampleCount": 0,
+      "fieldShapes": null,
+      "error": "Collection empty or does not exist"
+    },
+    "vaultWhatsappMessages": {
+      "exists": false,
+      "approxSampleCount": 0,
+      "fieldShapes": null,
+      "error": "Collection empty or does not exist"
+    },
+    "vaultReports": {
+      "exists": true,
+      "approxSampleCount": 3,
+      "fieldShapes": {
+        "allFilters": {},
+        "updatedBy": "string (e.g. \"Manas Maheshwari\")",
+        "createdBy": "string (e.g. \"Manas Maheshwari\")",
+        "updatedAt": [
+          "number (e.g. 1782467396452)",
+          "number (e.g. 1784645265602)",
+          "number (e.g. 1784645229185)"
+        ],
+        "entity": "string (e.g. \"service\")",
+        "filters": {},
+        "enrichments": "array<string (e.g. \"paymentLinks\")> (length 2, e.g. first item shown)",
+        "name": "string (e.g. \"PRE\")",
+        "allEnrichments": {
+          "proforma": "array<string (e.g. \"allFields\")> (length 1, e.g. first item shown)",
+          "payment": "array (empty)",
+          "user": "array<string (e.g. \"paymentLinks\")> (length 2, e.g. first item shown)",
+          "service": "array<string (e.g. \"paymentLinks\")> (length 2, e.g. first item shown)"
+        },
+        "createdByEmail": "string (e.g. \"manas@truestate.in\")",
+        "createdAt": [
+          "number (e.g. 1782467396452)",
+          "number (e.g. 1784645265602)",
+          "number (e.g. 1784645229185)"
+        ],
+        "recipients": "array<string (e.g. \"raghur@vaultproptech.com\")> (length 3, e.g. first item shown)",
+        "timeOfDay": "string (e.g. \"09:30\")",
+        "reportNames": [
+          "array<string (e.g. \"Fresh Recent Hot Dialer\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"PI Created Non-Active Dialer\")> (length 1, e.g. first item shown)"
+        ],
+        "docType": "string (e.g. \"schedule\")",
+        "timezone": "string (e.g. \"Asia/Kolkata\")",
+        "reportKeys": [
+          "array<string (e.g. \"IaiSWXUVQR2Rze2L3Gke\")> (length 1, e.g. first item shown)",
+          "array<string (e.g. \"9w9pLNys3FQzNGpvgPUs\")> (length 1, e.g. first item shown)"
+        ],
+        "frequency": "string (e.g. \"daily\")",
+        "enabled": "boolean (e.g. true)",
+        "reportName": [
+          "string (e.g. \"Fresh Recent Hot Dialer\")",
+          "string (e.g. \"PI Created Non-Active Dialer\")"
+        ],
+        "reportKey": [
+          "string (e.g. \"IaiSWXUVQR2Rze2L3Gke\")",
+          "string (e.g. \"9w9pLNys3FQzNGpvgPUs\")"
+        ],
+        "lastError": "string (e.g. \"\")",
+        "lastRunStatus": "string (e.g. \"success\")",
+        "lastSentAt": [
+          "number (e.g. 1786075405369)",
+          "number (e.g. 1786075405373)"
+        ],
+        "lastRowCount": "number (e.g. 33217)"
+      },
+      "error": null
+    }
+  }
+}

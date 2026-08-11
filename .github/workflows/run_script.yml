@@ -1,0 +1,29 @@
+name: Scheduled CRM Run
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy Repository Code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies
+        run: npm install
+
+      # This step creates the physical JSON file using your GitHub Secret
+      - name: Create Firebase Service Account File
+        run: |
+          echo '${{ secrets.FIREBASE_KEY }}' > service_account_key.json
+
+      - name: Run Script
+        run: node C:\Users\manas\Downloads\MM_CRM_Scripts\Subtasks\exportSubtasks.js

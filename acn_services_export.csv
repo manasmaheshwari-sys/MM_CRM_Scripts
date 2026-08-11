@@ -1,0 +1,1204 @@
+Service Id,Service Name,Customer Name,Customer Number,Agent Name,Agent Number,Proforma Id,PI Status,PI Created Date,PI Total Amount,PI Total Amount Received,Service Amount,Service Amount Received,Service Bucket,Service Status,Service Stage,Service Substage,Service Creation Date,Service Closed Date
+SRA3902,E-Khata,Sudharshan Praveen,+919619204117,,,,,,,,0,0,pre active,lost,unqualified,,2025-03-27,2025-03-27
+SRA5732,E-Khata,Tamal Roy,+919880778240,,,,,,,,0,0,pre active,lost,unqualified,,2025-03-24,2025-03-24
+SRB3101,Khata Transfer,Lambert Gilbert,+913108730156,,,PI-2025-A1953,lost,2025-11-19,10000,0,10000,0,active,lost,Filing,In Queue,2025-09-16,2025-09-16
+SRB3335,Agreement to Sale Drafting,Vijay B - Agent,+918310964897,,,,,,,,0,0,active,lost,To Close,Doc Shared,2025-08-07,2025-08-07
+SRB3336,E-Khata,Vijay B - Agent,+918310964897,,,,,,,,0,0,active,lost,Filing,In Queue,2025-07-11,2025-07-11
+SRB3337,Khata Transfer,Vijay B - Agent,+918310964897,,,,,,,,0,0,active,lost,Filing,In Queue,2025-04-09,2025-04-09
+SRB3338,Registry at SRO,Vijay B - Agent,+918310964897,,,,,,,,0,0,archived,open,Doc,To Validate,2025-06-07,2025-06-07
+SRB3345,E-Khata,Bharath - Agent,+918420835767,,,,,,,,0,0,blocked,lost,Applied,Approved,2025-05-14,2025-05-14
+SRB3382,Registry at SRO,Mitesh Bhodia,+918806240495,,,,,,,,0,0,archived,open,Doc,To Validate,2025-04-26,2025-04-26
+SRB3383,Khata Transfer,Mitesh Bhodia,+918806240495,,,,,,,,0,0,archived,open,Doc,To Validate,2025-05-09,2025-05-09
+SRB3399,Affidavit Drafting,Prateek Kadam - Agent,+918861987965,,,,,,,,0,0,archived,open,To Close,Paid,2025-07-20,2025-07-20
+SRB3723,E-Khata,suraj dubey - Agent,+919620844894,,,,,,,,0,0,blocked,open,Applied,Awaiting,2025-08-10,2025-08-10
+SRB3738,Khata Transfer,"Uma, Sushant",+919642664400,,,,,,,,0,0,active,lost,Filing,In Queue,2025-07-11,2025-07-11
+SRB3764,E-Khata,Aniket Arvind - Agent,+919665550005,,,PI-2025-A1551,lost,2025-11-14,18000,0,18000,0,active,lost,Filing,In Queue,2025-03-05,2025-03-05
+SRB3788,E-Khata,Mukesh,+919686900994,,,,,,,,0,0,active,lost,Filing,In Queue,2025-04-11,2025-04-11
+SRB3810,E-Khata,vaseem - Amjad Pasha,+919731398349,,,,,,,,0,0,active,lost,Filing,In Queue,2025-04-03,2025-04-03
+SRB3895,E-Khata,abhilash,+919790762552,,,PI-2025-A0416,closed,2025-10-09,4000,4000,4000,0,archived,open,To Close,Paid,2025-06-09,2025-06-09
+SRB3946,Khata Transfer,Anuj Dixit,+919833980350,,,PI-2025-A3424,closed,2025-12-12,10000,10000,10000,10000,archived,open,To Close,Doc Shared,2025-03-19,2025-03-19
+SRB3982,Khata Transfer,Naresh Vithal Bathija - Agent,+919845207846,,,,,,,,0,0,active,lost,Filing,In Queue,2025-08-10,2025-08-10
+SRB3994,E-Khata,ML Venkatasubbarao (Bijay) - Pramod Vistarealty,+919845400420,,,,,,,,0,0,active,lost,Filing,In Queue,2025-03-29,2025-03-29
+SRB4070,Khata Transfer,Vijay Bathija,+919880405041,,,,,,,,0,0,active,lost,Applied,Awaiting,2025-08-06,2025-08-06
+SRB4184,E-Khata,Sridhar Rao - Agent,+919886981115,,,,,,,,0,0,archived,lost,To Close,Paid,2025-06-21,2025-06-21
+SRB4305,E-Khata,Venkatarami Reddy Somu,+919916272944,,,PI-2026-A3848,closed,2026-03-05,3000,3000,3000,3000,archived,open,To Close,Paid,2025-09-18,2025-09-18
+SRB4470,E-Khata,PRASHANT D - Agent,+919986500805,,,PI-2025-A0071,lost,2025-09-27,4000,0,4000,0,active,lost,Filing,In Queue,2025-03-05,2025-03-05
+SRB4476,Khata Transfer,Utkarsh Jain,+919986661377,,,,,,,,0,0,active,lost,Filing,In Queue,2025-02-20,2025-02-20
+SRB4741,E-Khata,Ruchi - Agent,+919845413513,,,PI-2025-A0050,open,2025-09-26,4000,0,4000,0,archived,open,To Close,Paid,2025-09-26,2025-09-26
+SRB4796,E-Khata,Sunil - Agent,+919686266629,,,PI-2025-A0067,closed,2025-09-27,4000,4000,4000,0,archived,open,To Close,Paid,2025-09-27,2025-10-24
+SRB4797,E-Khata,Sandhya,+918951277761,,,,,,,,3000,0,pre active,lost,Doc,To Validate,2025-09-27,
+SRB4802,E-Khata,Tauseef - Agent,+919880363399,,,PI-2025-A0078,lost,2025-09-27,4000,0,4000,0,active,lost,Applied,Approved,2025-09-27,
+SRB4803,Bescom,Syed - Agent,+916363144076,,,,,,,,4000,0,active,open,Ground,Subm Pending,2025-09-27,
+SRB4804,E-Khata,Vasu Jain - Agent,+919964985128,,,PI-2025-A0076,closed,2025-09-27,3000,3000,3000,0,archived,open,To Close,Paid,2025-09-27,2025-10-13
+SRB4805,E-Khata,Swamy-Agent ,+916364730901,,,PI-2025-A0075,open,2025-09-27,4000,0,4000,0,archived,open,To Close,Verified,2025-09-27,2025-12-03
+SRB4807,Khata Transfer,Fazals Dress Point,+919845088806,,,PI-2025-A0074,lost,2025-09-27,12000,0,12000,0,active,lost,Applied,Approved,2025-09-27,
+SRB4808,E-Khata,Shabir - Agent,+918310260741,,,PI-2025-A1198,lost,2025-11-07,3000,0,3000,0,active,lost,Doc,To Validate,2025-09-27,
+SRB5062,Bescom,Syed - Agent,+916363144076,,,,,,,,4000,0,pre active,lost,unqualified,,2025-09-27,
+SRB5229,E-Khata,Vasu Jain - Agent,+919964985128,,,PI-2025-A0201,open,2025-09-30,3000,0,3000,0,archived,open,To Close,Paid,2025-09-30,2025-10-10
+SRB5242,E-Khata,Tauseef - Agent,+919880363399,,,PI-2025-A0210,open,2025-09-30,3999,0,3999,0,pre active,open,unqualified,,2025-09-30,
+SRB5243,E-Khata,Tauseef - Agent,+919880363399,,,PI-2025-A0212,open,2025-09-30,12000,0,12000,0,pre active,open,unqualified,,2025-09-30,
+SRB5254,E-Khata,Archana Nair,+919740355811,,,PI-2025-A0219,open,2025-09-30,6000,0,3000,0,blocked,open,To Close,Paid,2025-09-30,2025-11-21
+SRB5255,E-Khata,Archana Nair,+919740355811,,,PI-2025-A0219,open,2025-09-30,6000,0,3000,0,blocked,open,To Close,Paid,2025-09-30,2025-11-21
+SRB5993,E-Khata,abhinash kashay,+919845032595,,,,,,,,3000,0,pre active,lost,unqualified,,2025-10-10,
+SRB6063,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A0526,closed,2025-10-13,3000,3000,3000,0,closed,open,To Close,Paid,2025-10-13,2025-10-13
+SRB6068,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,,,,,,3000,0,pre active,lost,unqualified,,2025-10-13,
+SRB6202,Bescom,Anuj Dixit,+919833980350,,,PI-2025-A0573,closed,2025-10-15,5000,5000,5000,5000,archived,open,To Close,Paid,2025-10-15,2026-05-31
+SRB6329,Encumbrance Certificate,Sunil Info Asset Makers,+919243024730,,,PI-2025-A0606,open,2025-10-17,1000,0,1000,0,closed,open,To Close,Paid,2025-10-17,2025-11-21
+SRB6925,E-Khata,Prerna Impex,+919845471770,,,PI-2025-A2445,closed,2025-11-26,6000,6000,3000,6000,archived,open,Doc,To Validate,2025-10-27,2025-12-24
+SRB7129,E-Khata,Janardhan Baliga,+918105838981,,,PI-2025-A0882,closed,2025-10-30,0,0,3000,0,archived,open,To Close,Paid,2025-10-30,2025-11-11
+SRB7135,Due diligence,Sourabh Malhotra,+918882070526,,,PI-2025-A0879,closed,2025-10-30,12000,12000,12000,0,archived,open,To Close,Paid,2025-10-30,2025-10-30
+SRB7201,E-Khata,Nikhil bansal,+918879752410,,,,,,,,3000,0,pre active,open,unqualified,,2025-10-31,
+SRB7221,E-Khata,Harish - Agent,+918904279890,,,PI-2025-A1430,closed,2025-11-10,4000,4000,4000,1000,closed,open,Applied,Awaiting,2025-10-31,2026-02-09
+SRB7433,E-Khata,Rohit,+919060707275,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7434,Registry at SRO,Ritik Paul,+917022843311,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7435,E-Khata,Manoj,+917259409555,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7436,Registry at SRO,Arka Datta,+919742019093,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7437,Khata Transfer,Nikhil,+919999999999,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7438,Khata Transfer,Amit Patil,+919588090817,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7439,E-Khata,Ashray,+917760336666,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7440,E-Khata,Arindam Mandel,+919901533770,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7441,E-Khata,Asfaq Hazarika,+919900084106,,,,,,,,3000,0,pre active,open,qualified,,2025-11-03,
+SRB7442,Registry at SRO,Kaushik,+918861406361,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7443,E-Khata,Umar Sheriff - Arun,+919886994012,,,,,,,,4000,0,pre active,open,unqualified,,2025-11-03,
+SRB7444,Bescom,Mayur,+917353717414,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7445,E-Khata,Bharath,+919845555202,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7446,E-Khata,Tushar,+919738877561,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7447,Registry at SRO,Nikhil - Agent,+919632861268,,,,,,,,6000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7448,E-Khata,Arun - Agent,+918867562433,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7449,E-Khata,Devesh,+919708045117,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7450,Registry at SRO,Devesh,+919708045117,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7451,Bescom,Devesh,+919708045117,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7452,Registry at SRO,Yashbir Singh,+919910010252,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7453,Registry at SRO,Kuldeep,+919964507844,,,,,,,,6000,0,pre active,open,unqualified,,2025-11-03,
+SRB7454,E-Khata,Kuldeep,+919964507844,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7455,EC,Praveen Arora - Neha / Ritesh,+919343834850,,,,,,,,0,0,pre active,open,qualified,,2025-11-03,
+SRB7456,Legal consultancy,Praveen Arora - Neha / Ritesh,+919343834850,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-03,
+SRB7457,E-Khata,Mudit,+917760631093,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7458,E-Khata,Debashish,+919916110453,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7459,E-Khata,Ramesh,+919886192220,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7461,E-Khata,Shilpi,+917829980041,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7465,E-Khata,Dhiman - Joby,+917022707240,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7466,EC,Dhiman - Joby,+917022707240,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-03,
+SRB7467,E-Khata,Chandan - Agent,+917975796563,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7470,E-Khata,Sanat Shah-Agent,+919916136020,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7471,EC,Reema-Agent,+918660347718,,,PI-2025-A1052,lost,2025-11-04,1800,0,1800,0,active,lost,Filing,In Process,2025-11-03,
+SRB7473,Rental Agreement,Vikram-Agent,+919986873748,,,,,,,,7000,0,pre active,open,unqualified,,2025-11-03,
+SRB7476,Legal consultancy,Kabir-Agent,+919901898057,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7478,E-Khata,Noor Ahmed-Agent,+917411679809,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7481,E-Khata,Rhythm-Agent,+919902711138,,,PI-2025-A1913,lost,2025-11-19,6000,0,6000,0,active,lost,Applied,Awaiting,2025-11-03,
+SRB7482,Khata Transfer,Umair Fazal,+919880077225,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7483,Khata Transfer,Rahul Mohare,+919844966603,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7484,Khata Transfer,Gaurav Naik,+919901033845,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7485,E-Khata,Sitesh,+919886669658,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7486,E-Khata,sudheer - akhilesh,+919686422112,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7487,Bescom,Krishna,+919741144418,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-03,
+SRB7488,E-Khata,Sandeep Reddy,+919440870208,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7489,Legal consultancy,Sandeep Reddy,+919440870208,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7490,E-Khata,Chintan,+917450425062,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7491,E-Khata,Vishnu - Agent,+917619311666,,,PI-2025-A2011,closed,2025-11-20,6000,0,0,0,archived,open,To Close,Doc Shared,2025-11-03,
+SRB7492,E-Khata,Hemalatha,+917760389234,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7493,E-Khata,Shivappa,+919945685379,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7494,E-Khata,Hari Prasad - Bilal,+919916322901,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7495,Khata Transfer,Arkadip Basu - Pranay/Amit Mozico Realty Private Limited,+918100595920,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-03,
+SRB7496,Legal consultancy,Sunita,+918971033355,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7498,E-Khata,Satyajeet,+919844105503,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7499,Bescom,Roopesh Ranjan - Moti Lal,+917483844968,,,PI-2025-A1473,open,2025-11-12,6500,6500,6500,6500,active,open,Ground,Subm Pending,2025-11-03,
+SRB7500,Bescom,Mukund - Moti Lal,+919730126698,,,,,,,,6500,0,pre active,lost,qualified,,2025-11-03,
+SRB7501,Bescom,Santosh Rao - Moti Lal,+918197152519,,,PI-2025-A1262,lost,2025-11-08,6500,0,6500,0,active,lost,Ground,Notary,2025-11-03,
+SRB7502,Legal consultancy,Pps Chandrani,+919972459800,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7503,Legal consultancy,Shwetha,+918123548782,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7504,E-Khata,Srinivasa,+919845409679,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7505,E-Khata,Avs Rao,+919989366019,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7506,Legal consultancy,Shinoj,+919008456983,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7507,Legal consultancy,Abhijeet,+919702494666,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7508,Khata Transfer,Tapas Ranjan-Agent,+919880269695,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7509,Legal consultancy,Syed-Agent,+919845441769,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7510,E-Khata,Syed-Agent,+919845441769,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7511,E-Khata,Abdullah Majeed-Agent,+919845222169,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7512,Khata Transfer,Abdullah Majeed-Agent,+919845222169,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7513,Legal consultancy,Abdullah Majeed-Agent,+919845222169,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7514,E-Khata,Manuel Fernandez-Agent,+919886762669,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7515,E-Khata,Anupam-Agent,+917717787613,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7516,Khata Transfer,Anupam-Agent,+917717787613,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7517,E-Khata,Abdul Azeem-Agent,+919148502930,,,,,,,,3000,0,active,lost,Doc,To Validate,2025-11-03,
+SRB7518,E-Khata,Akash-Agent,+919110874382,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7519,E-Khata,Akhilesh-Agent,+919803330688,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7520,E-Khata,Chandra Shekar-Agent,+919035533944,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7521,Bescom,Chandra Shekar-Agent,+919035533944,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7522,Khata Transfer,Chandra Shekar-Agent,+919035533944,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7523,E-Khata,Venkat Reddy-Agent,+919035546537,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7524,Bescom,Venkat Reddy-Agent,+919035546537,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7525,Khata Transfer,Venkat Reddy-Agent,+919035546537,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7526,Bescom,Mohammad Waseem-Agent,+919739482981,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7527,Legal consultancy,Mohammad Waseem-Agent,+919739482981,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7528,E-Khata,Sangram Mohapatra,+919886690815,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7529,E-Khata,Charan Teja-Agent,+917338459279,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7530,Legal consultancy,Anil-Agent,+919036018662,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7531,E-Khata,Sachin (BricksAndRoof) - Agent,+919901055002,,,PI-2025-A1974,closed,2025-11-19,0,0,3000,0,archived,open,To Close,Doc Shared,2025-11-03,2025-11-28
+SRB7532,Bescom,Sachin (BricksAndRoof) - Agent,+919901055002,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-03,
+SRB7533,E-Khata,Arvind-Agent,+919663700704,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7534,Bescom,Arvind-Agent,+919663700704,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7535,E-Khata,Surajit Pal-Agent,+919980056474,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7536,Legal consultancy,Surajit Pal-Agent,+919980056474,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7537,Legal consultancy,Ashwin Vinod-Agent,+919845111497,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7538,E-Khata,Ahmed-Agent,+919845342749,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7539,Legal consultancy,Ahmed-Agent,+919845342749,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7540,E-Khata,Venkatesh-Agent,+918095963666,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7541,Legal consultancy,Venkatesh-Agent,+918095963666,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7542,E-Khata,Arif Iqbal-Agent,+919886322800,,,PI-2025-A2075,lost,2025-11-22,6000,0,6000,0,active,lost,Doc,To Validate,2025-11-03,
+SRB7543,Khata Transfer,Arif Iqbal-Agent,+919886322800,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7546,E-Khata,Sanjay M-Agent,+919606429555,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7547,Bescom,Sanjay M-Agent,+919606429555,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7548,E-Khata,Kiran Kumar-Agent,+918073324941,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7549,Bescom,Kiran Kumar-Agent,+918073324941,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7550,E-Khata,Manoj-Agent,+919632875666,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7551,E-Khata,Ravi M-Agent,+919945022432,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7552,Khata Transfer,Rajiv Menon-Agent,+919819074829,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7553,E-Khata,Rajiv Menon-Agent,+919819074829,,,PI-2025-A1196,closed,2025-11-07,6000,6000,0,0,archived,open,To Close,Paid,2025-11-03,2025-11-21
+SRB7554,Legal consultancy,Nazir-Agent,+918797739202,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-03,
+SRB7555,Khata Transfer,Nazir-Agent,+918797739202,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7560,E-Khata,Syed Abrar-Agent,+918660304161,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7561,Legal consultancy,Syed Abrar-Agent,+918660304161,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-03,
+SRB7564,Legal consultancy,Shubham-Agent,+919108727042,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7565,E-Khata,Shubham-Agent,+919108727042,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7566,Bescom,Mujeeb-Agent,+919036201193,,,,,,,,4000,0,pre active,open,qualified,,2025-11-03,
+SRB7567,Legal consultancy,Mujeeb-Agent,+919036201193,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7574,E-Khata,Ramsreekant -Agent,+918884004114,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7575,Bescom,Zublon-Agent,+916360885163,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-03,
+SRB7576,E-Khata,Zublon-Agent,+916360885163,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7577,Khata Transfer,Zublon-Agent,+916360885163,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7578,Khata Transfer,Raj Sharma-Agent,+919964508500,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7579,E-Khata,Raj Sharma-Agent,+919964508500,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7580,Khata Transfer,Devanath-Agent,+919880087276,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-03,
+SRB7581,Legal consultancy,Vikrant Singh-Agent,+918495989879,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-03,
+SRB7582,E-Khata,Vikrant Singh-Agent,+918495989879,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7583,Tax Paid Name Change,Raghav Sureka - Agent,+919538455783,,,PI-2025-A1074,closed,2025-11-04,8000,7000,1000,1000,archived,open,To Close,Doc Shared,2025-11-03,2026-03-13
+SRB7584,Khata Transfer,Raghav Sureka - Agent,+919538455783,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7585,Bescom,Raghav Sureka - Agent,+919538455783,,,PI-2025-A1074,closed,2025-11-04,8000,7000,4000,3000,archived,open,To Close,Doc Shared,2025-11-03,2026-04-30
+SRB7587,E-Khata,Rohan Kulkarni-Agent,+919964440090,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-03,
+SRB7588,Legal consultancy,Nikita - Sandhya,+919686123589,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7590,Legal consultancy,Sanketh-Agent,+918217864483,,,,,,,,0,0,pre active,open,unqualified,,2025-11-03,
+SRB7739,E-Khata,Rajiv Menon-Agent,+919819074829,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-03,
+SRB7755,E-Khata,Joby - Agent,+919945045451,,,,,,,,3000,0,pre active,lost,Doc,To Validate,2025-11-03,
+SRB7768,E-Khata,Prateek Kadam - Agent,+918861987965,,,,,,,,4000,0,pre active,lost,Doc,To Validate,2025-11-04,
+SRB7771,E-Khata,Harish - Agent,+918904279890,,,,,,,,3000,0,pre active,lost,unqualified,To Validate,2025-11-04,
+SRB7783,Khata Transfer,Shilpi - Kareem,+919920388209,,,PI-2025-A1056,closed,2025-11-04,12000,12000,12000,12000,archived,open,To Close,Paid,2025-11-04,2026-02-28
+SRB7788,Khata Transfer,Shilpi - Kareem,+919920388209,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7798,E-Khata,Syed Tauseef - Agent,+919739457386,,,PI-2025-A1066,closed,2025-11-04,3500,3500,3500,3500,archived,open,To Close,Paid,2025-11-04,2025-11-12
+SRB7858,E-E (Electronic Transfer),Raghav Sureka - Agent,+919538455783,,,PI-2025-A1074,closed,2025-11-04,8000,7000,3000,3000,archived,open,To Close,Doc Shared,2025-11-04,2026-03-13
+SRB7861,E-E (Electronic Transfer),Raghav Sureka - Agent,+919538455783,,,PI-2025-A2079,open,2025-11-22,8000,8000,3000,3000,archived,open,To Close,Verified,2025-11-04,2026-01-03
+SRB7862,Bescom,Raghav Sureka - Agent,+919538455783,,,PI-2025-A2079,open,2025-11-22,8000,8000,4000,4000,closed,open,To Close,Doc Shared,2025-11-04,2026-08-08
+SRB7863,Property Tax Name Change,Raghav Sureka - Agent,+919538455783,,,PI-2025-A2079,open,2025-11-22,8000,8000,1000,1000,archived,open,To Close,Doc Shared,2025-11-04,2026-03-13
+SRB7870,Khata Transfer,Altafahmad Lakshmeshwar - Agent,+917760661786,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-04,
+SRB7873,E-Khata,Aala Ausaf Ahmed,+919902785831,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7874,E-Khata,Ruben Pal - Agent,+917406639554,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7875,E-Khata,Ruben Pal - Agent,+917406639554,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7876,EC,Hafeez,+919845516692,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7877,Khata Transfer,Pavithra K,+919632654714,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7878,E-Khata,Ahmed Ameen,+919606965871,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7879,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,active,open,Ground,Subm Pending,2025-11-04,
+SRB7880,E-Khata,Moti Lal - Agent,+919916768919,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7881,E-Khata,Moti Lal - Agent,+919916768919,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7882,Not Captured,Moti Lal - Agent,+919916768919,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7883,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7884,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7885,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7886,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7887,Bescom,Moti Lal - Agent,+919916768919,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7888,E-Khata,Anil,+91936018662,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7890,Khata Transfer,Neerabh - Agent,+918970107101,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7891,E-Khata,Neerabh - Agent,+918970107101,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7892,Khata Transfer,Neerabh - Agent,+918970107101,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7893,Khata Transfer,Radhesh,+919886029772,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7894,EC,Radhesh,+919886029772,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7895,EC,Radhesh,+919886029772,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7896,E-Khata,Ashutosh Prasad,+919731406201,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7897,E-Khata,Ashutosh Prasad,+919731406201,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7898,EC,Ashutosh Prasad,+919731406201,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7899,E-Khata,Ashutosh Prasad,+919731406201,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7900,Not Captured,Akshay,+919606009264,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7901,E-Khata,Chandra Sekhar P,+91935533944,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7902,Not Captured,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7903,Not Captured,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7904,Khata Transfer,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7905,EC,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7906,E-Khata,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7907,E-Khata,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7908,E-Khata,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7909,Not Captured,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7910,Not Captured,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7911,Not Captured,Ritesh Kumar Jha - Agent,+919620500676,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7912,Khata Transfer,Lavanya,+919901342204,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7913,Not Captured,Pranjal,+918217834479,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7914,E-Khata,Amit,+919910156636,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7915,E-Khata,faisal khan,+919538345550,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7916,E-Khata,Hema Krishnadas,+9198611779,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7917,E-Khata,Hema Krishnadas,+9198611779,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7918,EC,Hema Krishnadas,+9198611779,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7919,EC,Hema Krishnadas,+9198611779,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7920,EC,Hema Krishnadas,+9198611779,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7921,E-Khata,ishita agarwal,+919844055555,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7922,E-Khata,Mohd Shabeer,+919632366085,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7923,E-Khata,Syed Muzamil,+919916395884,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7924,E-Khata,Syed Muzamil,+919916395884,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7925,E-Khata,Syed Muzamil,+919916395884,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7926,Not Captured,B Mohan Reddy,+918197869738,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7927,Not Captured,Jennifer Rodrigues,+918149010986,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7928,Not Captured,Jennifer Rodrigues,+918149010986,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7929,Khata Transfer,Jennifer Rodrigues,+918149010986,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7930,Not Captured,Jennifer Rodrigues,+918149010986,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7931,E-Khata,Martin Yesudass-Agent,+919902925519,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7932,E-Khata,Martin Yesudass-Agent,+919902925519,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7933,E-Khata,Martin Yesudass-Agent,+919902925519,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7935,Not Captured,Ashutosh Kumar,+9198409569,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7936,Khata Transfer,Priya,+919741026060,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7937,Not Captured,Thabrez Iqbal,+919886181782,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7938,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7939,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7940,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7941,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7942,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7943,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7944,E-Khata,Prabhakar,+91850942425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7945,Khata Transfer,Prabhakar,+91850942425,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7946,E-Khata,Naveen,+91719296659,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7947,E-Khata,Poola Surendra Reddy,+919880549875,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7948,E-Khata,Prithvi,+916366955159,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7949,Khata Transfer,Rijesh Kumar,+919663400076,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7950,E-Khata,Ravindra R Baraddi,+919686009394,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7951,E-Khata,Nisha bansal,+917899775598,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7952,Khata Transfer,Nisha bansal,+917899775598,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7953,Not Captured,Nisha bansal,+917899775598,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7954,Khata Transfer,Nisha bansal,+917899775598,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7955,Khata Transfer,Mozico Realty Private Limited,+917483082673,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7956,Khata Transfer,Mozico Realty Private Limited,+917483082673,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7959,Not Captured,Roopesh,+91919545210,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7960,Not Captured,Abdul Munawar,+919110690642,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7962,Not Captured,Rudransh,+917725807804,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7963,EC,Satish,+919964227777,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7964,Not Captured,a91 realty advisory services,+919900169612,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7965,E-Khata,Sridhar G R,+919743142444,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7966,E-Khata,Sujeet Kumar Singh,+91966226623,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7968,E-Khata,Shivalingaiah Ramanna,+91971100099,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7969,Not Captured,Sivaraman - Agent,+918870673194,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7970,E-Khata,Sivaraman - Agent,+918870673194,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7971,E-Khata,Sivaraman - Agent,+918870673194,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7972,E-Khata,Sivaraman - Agent,+918870673194,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7973,E-Khata,Sivaraman - Agent,+918870673194,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7974,Khata Transfer,roshini,+91719698881,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7975,E-Khata,Vinod Gokaldas,+919845089110,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7976,Khata Transfer,Vinayak Khandare,+918618206969,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7977,E-Khata,Vinayak Khandare,+918618206969,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7978,E-Khata,Zia Khan,+919900413919,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7979,E-Khata,Zia Khan,+919900413919,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7980,E-Khata,Zia Khan,+919900413919,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7981,Khata Transfer,Mohan Jk - Agent,+918884441368,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7982,E-Khata,Mohan Jk - Agent,+918884441368,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7983,E-Khata,Ajith,+91722267289,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7984,E-Khata,arun,+917204843609,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB7985,Not Captured,Amarnadh,+917207201102,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7986,E-Khata,Aleema,+917259219786,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7987,E-Khata,Wajid,+917337791858,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7988,E-Khata,Payal,+919535690555,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7989,EC,Payal,+919535690555,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7990,EC,Sayyam jain,+917482422099,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB7991,Khata Transfer,Suresh odw,+919741854323,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB7992,E-Khata,Suresh odw,+919741854323,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7993,Not Captured,Sarfaraz - Agent,+917483907923,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB7994,E-Khata,Pavan,+917676006702,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB7998,Not Captured,Vishwa Vijay Kumar,+917975382949,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8000,Not Captured,Dale,+91850133326,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8001,E-Khata,Sagar S,+91850523008,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8002,Not Captured,Pramod Vistarealty,+918236823601,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8003,Khata Transfer,Bint Jain,+918310381667,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8004,E-Khata,Dev,+918431229079,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8005,E-Khata,Dhruv Kumar,+918431565164,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8006,E-Khata,Kishor,+918618365020,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8007,Khata Transfer,Mohammed Fasiullah,+918618823513,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8008,Not Captured,Sahil,+918625911069,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB8009,Khata Transfer,Ankit - Agent,+918660212300,,,PI-2025-A3066,open,2025-12-05,15000,2500,10000,0,active,lost,Doc,To Validate,2025-11-04,
+SRB8011,Khata Transfer,Hamza Consultancy Services Private Limited,+918792404212,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8013,Khata Transfer,Syed Toufiq,+918867868486,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8014,Khata Transfer,amjad pasha - Agent,+918880888075,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8015,E-Khata,Gokul Ms,+918904562021,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8016,E-Khata,Mohammed Mubarak,+918951285893,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8017,Khata Transfer,Krishna Kumar,+91919356319,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8018,E-Khata,Raghavendra L,+91935139829,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8019,Khata Transfer,Yaseen,+919108345231,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8020,E-Khata,vishal,+919113948145,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8021,E-Khata,Shivashankar - Agent,+919148050154,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8022,E-Khata,Naveen Reddy,+919380003447,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8023,Bescom,Akhil Taneja,+919380159893,,,,,,,,4000,0,pre active,open,unqualified,,2025-11-04,
+SRB8024,E-Khata,B Prakash - Agent,+919448233885,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8025,Bescom,B Prakash - Agent,+919448233885,,,,,,,,4000,0,pre active,open,qualified,,2025-11-04,
+SRB8026,E-Khata,B Prakash - Agent,+919448233885,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8027,Bescom,B Prakash - Agent,+919448233885,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8028,E-Khata,Neha,+919513075222,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8029,E-Khata,Propline realty,+919620047666,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8030,Bescom,Arbaaz,+919731496172,,,,,,,,4000,0,pre active,open,qualified,,2025-11-04,
+SRB8032,E-Khata,Nawaz,+919739221522,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8033,EC,Billa Billesh,+919739430520,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8034,Not Captured,Satyam - Agent,+919739490514,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB8035,E-Khata,Manha,+919739601014,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8036,E-Khata,Divya,+919740681036,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8037,E-Khata,Junaid Ahmed,+919845012053,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8038,Not Captured,Junaid Ahmed,+919845012053,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8039,E-Khata,Vishwa Vijay,+919742036620,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8040,Khata Transfer,Chandrasekhar - Agent,+919742521323,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-04,
+SRB8041,E-Khata,Wasim Pasha,+919880225333,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8042,E-Khata,Wasim Pasha,+919880225333,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8043,E-Khata,Sreenivasulu Pokala,+919880227333,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8044,E-Khata,Sreenivasulu Pokala,+919880227333,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8045,E-Khata,Samir,+919845023377,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8046,E-Khata,Guruprasad,+919845077219,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8047,E-Khata,Dhiren Talreja,+919845599026,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8048,Khata Transfer,Dhiren Talreja,+919845599026,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8049,Not Captured,Dhiren Talreja,+919845599026,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8050,Not Captured,Dhiren Talreja,+919845599026,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8051,Khata Transfer,Dhiren Talreja,+919845599026,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8052,EC,Karthik C,+919980289720,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8053,Khata Transfer,Karthik C,+919980289720,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8054,E-Khata,Amit Banerjee - Agent,+919880434206,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-04,
+SRB8055,E-Khata,Vishukumar Hichkad,+919886404680,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8056,Not Captured,Amit Bhargava - Agent,+919898027250,,,,,,,,0,0,pre active,lost,unqualified,,2025-11-04,
+SRB8057,E-Khata,Shivaraj Malimath,+919900055518,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8058,Not Captured,Zunaid,+919902054631,,,,,,,,0,0,pre active,open,unqualified,,2025-11-04,
+SRB8061,E-Khata,naveen john,+919945711666,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8062,Khata Transfer,Abdul,+919964969497,,,,,,,,10000,0,pre active,open,unqualified,,2025-11-04,
+SRB8063,E-Khata,Raghavendra L,+919986042246,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8064,E-Khata,Bilal,+919986225430,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8065,E-Khata,Akhil Taneja,+919986825425,,,,,,,,3000,0,pre active,open,unqualified,,2025-11-04,
+SRB8067,Due diligence,Nikhil - Agent,+919632861268,,,PI-2025-A1120,closed,2025-11-05,10000,10000,10000,0,archived,open,To Close,Paid,2025-11-05,2025-11-05
+SRB8083,E-E (Electronic Transfer),Fazals Dress Point,+919845088806,,,PI-2025-A1236,open,2025-11-07,20000,0,3000,0,active,lost,Applied,Approved,2025-11-05,
+SRB8084,Bescom,Fazals Dress Point,+919845088806,,,PI-2025-A1236,open,2025-11-07,20000,0,5000,0,active,open,Doc,To Validate,2025-11-05,
+SRB8089,Khata Transfer,Srinivasa,+919845409679,,,,,,,,10000,0,pre active,lost,unqualified,,2025-11-05,
+SRB8090,Khata Transfer,Srinivasa,+919845409679,,,PI-2025-A1100,closed,2025-11-05,4000,4000,4000,4000,archived,open,To Close,Paid,2025-11-05,2025-11-05
+SRB8118,E-Khata,Tauseef - Agent,+919880363399,,,,,,,,4000,0,pre active,lost,Doc,To Validate,2025-11-05,
+SRB8121,New Khata,B Prakash - Agent,+919448233885,,,,,,,,15000,0,pre active,lost,Doc,To Validate,2025-11-05,
+SRB8123,E-Khata,Amit Bhargava - Agent,+919898027250,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-05,
+SRB8128,E-E (Electronic Transfer),Raghav Sureka - Agent,+919538455783,,,PI-2025-A1474,closed,2025-11-12,8000,8000,3000,3000,archived,open,To Close,Doc Shared,2025-11-05,2026-03-13
+SRB8129,Bescom,Raghav Sureka - Agent,+919538455783,,,PI-2025-A1474,closed,2025-11-12,8000,8000,4000,4000,archived,open,To Close,Paid,2025-11-05,2026-03-13
+SRB8130,Property Tax Name Change,Raghav Sureka - Agent,+919538455783,,,PI-2025-A1474,closed,2025-11-12,8000,8000,1000,1000,archived,open,To Close,Doc Shared,2025-11-05,2026-03-13
+SRB8133,Bescom,Syed - Agent,+916363144076,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-05,
+SRB8134,Bescom,Syed - Agent,+916363144076,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-05,
+SRB8135,Bescom,Syed - Agent,+916363144076,,,,,,,,4000,0,pre active,lost,unqualified,,2025-11-05,
+SRB8137,Encumbrance Certificate,Prateek Kadam - Agent,+918861987965,,,PI-2025-A1121,closed,2025-11-05,1000,1000,1000,0,archived,open,To Close,Paid,2025-11-05,2025-11-05
+SRB8149,Bescom,Rajeev Ranjan - Syed,+918140612738,,,PI-2025-A1395,open,2025-11-10,4800,2400,4800,2400,active,open,To Close,Doc Shared,2025-11-05,
+SRB8153,Bescom,Amar Jeet - Syed,+918145126216,,,PI-2025-A1172,open,2025-11-06,4800,2400,4800,0,active,open,Ground,Subm Pending,2025-11-05,
+SRB8162,Bescom,Rohit - Syed,+919735111441,,,PI-2025-A1147,open,2025-11-06,4800,2400,4800,0,active,open,Ground,Subm Pending,2025-11-05,
+SRB8165,Bescom,Ravi Ranjan - Syed,+918210544796,,,PI-2025-A1146,open,2025-11-06,4800,2400,4800,0,active,open,Applied,Awaiting,2025-11-05,
+SRB8177,Khata Transfer,Anupam - Chandan Kumar Goswami,+919075518544,,,PI-2025-A1849,open,2025-11-17,20000,4000,15000,4000,active,open,To Close,Doc Shared,2025-11-06,
+SRB8178,Bescom,Anupam - Chandan Kumar Goswami,+919075518544,,,PI-2025-A1849,open,2025-11-17,20000,4000,5000,0,active,open,Ground,SubmGround,2025-11-06,
+SRB8210,E-Khata,Anupam Dutta - Owais,+919620038885,,,PI-2025-A1158,closed,2025-11-06,4000,4000,4000,2000,archived,open,To Close,Paid,2025-11-06,2025-11-22
+SRB8262,Bescom,Harsh Jain - Moti Lal,+919886286122,,,PI-2025-A1175,closed,2025-11-06,6500,6500,6500,0,archived,open,To Close,Paid,2025-11-06,2025-11-17
+SRB8267,Bescom,Komal - Moti Lal,+917027336546,,,PI-2025-A1178,closed,2025-11-06,6500,6500,6500,1250,archived,open,To Close,Doc Shared,2025-11-06,2026-02-10
+SRB8269,Bescom,Georlin - Moti lal,+919899795181,,,PI-2025-A1183,closed,2025-11-06,6500,6500,6500,6500,archived,open,To Close,Paid,2025-11-06,2026-06-16
+SRB8301,Bescom,Rajiv Menon-Agent,+919819074829,,,PI-2025-A1196,closed,2025-11-07,6000,6000,5000,5000,archived,open,To Close,Paid,2025-11-07,2026-06-08
+SRB8302,Encumbrance Certificate,Rajiv Menon-Agent,+919819074829,,,PI-2025-A1196,closed,2025-11-07,6000,6000,1000,0,archived,open,Doc,To Validate,2025-11-07,2025-11-24
+SRB8364,Khata Transfer,Satyajeet - Sunil,+918197672828,,,PI-2025-A1210,closed,2025-11-07,12500,12500,12500,12500,archived,open,Doc,To Validate,2025-11-07,2025-12-03
+SRB8415,Address name correction,Fazals Dress Point,+919845088806,,,PI-2025-A1236,open,2025-11-07,20000,0,12000,0,active,lost,To Close,Doc Shared,2025-11-07,
+SRB8420,Bescom,Fazals Dress Point,+919845088806,,,,,,,,4000,0,active,open,Doc,To Validate,2025-11-07,
+SRB8599,E-E (Electronic Transfer),Sunil Info Asset Makers,+919243024730,,,,,,,,3000,0,pre active,lost,Doc,To Validate,2025-11-07,
+SRB8609,Agreement to Sale Drafting,Nabasmriti - Sandhya,+917063805027,,,,,,,,7000,0,pre active,open,unqualified,,2025-11-07,
+SRB8610,Due diligence,Nabasmriti - Sandhya,+917063805027,,,,,,,,15000,0,pre active,open,unqualified,,2025-11-07,
+SRB8615,E-E (Electronic Transfer),suraj dubey - Agent,+919620844894,,,PI-2025-A1310,closed,2025-11-08,12000,12000,12000,12000,closed,open,To Close,Doc Shared,2025-11-07,2026-01-07
+SRB8616,Bescom,suraj dubey - Agent,+919620844894,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-07,
+SRB8741,New Khata,Naveen - Agent,+917019296659,,,,,,,,15000,0,pre active,lost,Doc,To Validate,2025-11-08,
+SRB8742,Bescom,Naveen - Agent,+917019296659,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-08,
+SRB9129,Khata Transfer,Fazals Dress Point,+919845088806,,,PI-2025-A1415,lost,2025-11-10,12000,0,12000,0,blocked,lost,Doc,To Validate,2025-11-10,
+SRB9390,New Khata,Syed Tauseef - Agent,+919739457386,,,PI-2025-A1471,lost,2025-11-12,15000,0,15000,0,active,lost,Doc,To Validate,2025-11-12,
+SRB9398,Bescom,Reema-Agent,+918660347718,,,PI-2025-A1477,closed,2025-11-12,5000,5000,5000,5000,archived,open,Ground,Paid,2025-11-12,2026-06-06
+SRB9403,E-Khata,Renji Andreka - Hema Krishnadas,+16172832354,,,PI-2025-A1481,closed,2025-11-12,4000,4000,4000,0,archived,open,To Close,Paid,2025-11-12,2025-11-15
+SRB9442,E-Khata,Debasish Pattanayak - Hema Krishnadas,+919880322669,,,PI-2025-A1942,closed,2025-11-19,4500,4500,3000,3000,archived,open,To Close,Doc Shared,2025-11-12,2026-01-05
+SRB9517,New Khata,Shivashankar - Agent,+919148050154,,,,,,,,15000,0,pre active,lost,Doc,To Validate,2025-11-12,
+SRB9521,Address name correction,Deepak - Raghavendra L,+919663375342,,,PI-2025-A1932,closed,2025-11-19,3000,3000,3000,3000,closed,open,To Close,Paid,2025-11-12,2026-07-15
+SRB9670,E-Khata,Aniket Arvind - Agent,+919665550005,,,PI-2025-A1550,lost,2025-11-14,6000,0,6000,0,active,lost,Filing,In Queue,2025-11-14,
+SRB9678,E-Khata,Imran (Wasim) Pasha - Agent,+918050505151,,,PI-2025-A1554,lost,2025-11-14,3000,0,3000,0,blocked,lost,Doc,To Validate,2025-11-14,
+SRB9679,E-E (Electronic Transfer),Rhythm-Agent,+919902711138,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-14,
+SRB9799,Bescom,Radha Krishnan - Agent,+919663933100,,,,,,,,4000,0,active,open,Doc,To Validate,2025-11-15,
+SRB9814,Bescom,Arun - Agent,+918867562433,,,,,,,,5000,0,pre active,open,qualified,,2025-11-15,
+SRC1293,Bescom,Vijay B - Agent,+918310964897,,,,,,,,5000,0,pre active,lost,qualified,,2025-11-15,
+SRC1429,E-Khata,Sridhar Rao - Agent,+919886981115,,,PI-2025-A1920,closed,2025-11-19,6000,6000,6000,6000,archived,open,To Close,Paid,2025-11-15,2026-01-06
+SRC1546,E-Khata,Chandrasekhar - Agent,+919742521323,,,,,,,,3000,0,pre active,lost,Doc,To Validate,2025-11-17,
+SRC1886,E-Khata,Bharath - Agent,+918420835767,,,PI-2025-A2010,open,2025-11-20,7000,3500,6000,3000,blocked,lost,Applied,Approved,2025-11-17,
+SRC1887,Property Tax Name Change,Bharath - Agent,+918420835767,,,PI-2025-A2010,open,2025-11-20,7000,3500,1000,500,blocked,lost,Doc,To Validate,2025-11-17,
+SRC1888,Khata Transfer,Sanjay M-Agent,+919606429555,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-17,
+SRC1890,E-Khata,vaseem - Amjad Pasha,+919731398349,,,,,,,,3000,0,pre active,lost,Doc,To Validate,2025-11-17,
+SRC1920,E-Khata,Dhiman - Joby,+917022707240,,,PI-2025-A1875,closed,2025-11-18,4000,4000,4000,0,archived,open,Doc,To Validate,2025-11-18,2025-12-02
+SRC1929,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A1903,closed,2025-11-18,6000,6000,6000,6000,closed,open,To Close,Paid,2025-11-18,2026-06-20
+SRC1933,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A1905,closed,2025-11-19,5000,5000,5000,5000,closed,open,To Close,Paid,2025-11-19,2026-06-05
+SRC1955,Memorandum of Understanding (MoU),Prateek Kadam - Agent,+918861987965,,,PI-2025-A1939,closed,2025-11-19,2500,2500,2500,0,archived,open,To Close,Paid,2025-11-19,2025-11-19
+SRC1956,Property Tax Name Change,Debasish Pattanayak - Hema Krishnadas,+919880322669,,,PI-2025-A1942,closed,2025-11-19,4500,4500,1500,1500,archived,open,To Close,Doc Shared,2025-11-19,2026-01-05
+SRC1958,Sale Deed Drafting,Sarfaraz - Agent,+917483907923,,,PI-2025-A1962,lost,2025-11-19,25000,0,5000,0,active,lost,Filing,In Queue,2025-11-19,
+SRC1959,Registry at SRO,Sarfaraz - Agent,+917483907923,,,PI-2025-A1962,lost,2025-11-19,25000,0,20000,0,active,lost,Doc,To Validate,2025-11-19,
+SRC1969,Khata Transfer,Balaji - Agent,+919649788444,,,PI-2025-A1988,lost,2025-11-20,13000,0,13000,0,blocked,lost,Doc,Incomplete,2025-11-20,
+SRC1978,E-E (Electronic Transfer),Sunil Info Asset Makers,+919243024730,,,PI-2025-A2002,closed,2025-11-20,3000,3000,3000,3000,closed,open,Doc,To Validate,2025-11-20,2025-11-27
+SRC1979,Khata Transfer,Ujjwal Singh - Dhiren,+919845379396,,,,,,,,10000,0,pre active,lost,qualified,,2025-11-20,
+SRC1980,Bescom,Ujjwal Singh - Dhiren,+919845379396,,,,,,,,4000,0,pre active,lost,qualified,,2025-11-20,
+SRC1994,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A2019,closed,2025-11-20,6000,6000,6000,6000,closed,open,To Close,Doc Shared,2025-11-20,2026-01-08
+SRC2016,Address name correction,Imran (Wasim) Pasha - Agent,+918050505151,,,PI-2025-A2038,open,2025-11-21,4000,0,4000,0,blocked,open,Doc,To Validate,2025-11-21,
+SRC2038,E-E (Electronic Transfer),Naveen - Agent,+917019296659,,,,,,,,5000,0,pre active,lost,Doc,To Validate,2025-11-21,
+SRC2039,Khata Transfer,Deepak - Venky,+917411598241,,,,,,,,10000,0,pre active,lost,Doc,To Validate,2025-11-21,
+SRC2040,E-E (Electronic Transfer),Nazir-Agent,+918797739202,,,PI-2025-A2427,lost,2025-11-25,3000,0,3000,0,active,lost,To Close,Doc Shared,2025-11-21,
+SRC2081,Assignment Agreement,Satyam - Agent,+919739490514,,,PI-2025-A2082,open,2025-11-22,18500,8500,10000,0,active,lost,Filing,In Process,2025-11-22,
+SRC2082,Memorandum of Understanding (MoU),Satyam - Agent,+919739490514,,,PI-2025-A2082,open,2025-11-22,18500,8500,8000,0,archived,open,To Close,Paid,2025-11-22,2025-11-23
+SRC2093,E-Khata,Ruchi - Agent,+919845413513,,,PI-2025-A2089,lost,2025-11-22,3000,0,3000,0,active,lost,Doc,Incomplete,2025-11-22,
+SRC2264,E-Khata,Bharath - Agent,+918420835767,,,PI-2025-A2300,open,2025-11-24,7500,3750,6000,3000,blocked,lost,Applied,Approved,2025-11-24,
+SRC2265,Property Tax Name Change,Bharath - Agent,+918420835767,,,PI-2025-A2300,open,2025-11-24,7500,3750,1500,750,active,paused,Applied,Awaiting,2025-11-24,
+SRC2266,Address name correction,Bharath - Agent,+918420835767,,,PI-2025-A2228,open,2025-11-24,1500,0,1500,0,blocked,open,Doc,To Validate,2025-11-24,
+SRC2278,Due diligence,Sarfaraz - Agent,+917483907923,,,PI-2025-A2241,lost,2025-11-24,15000,0,20000,0,active,lost,Applied,Awaiting,2025-11-24,
+SRC2571,Khata Transfer,Lambert - Thabrez,+919654996224,,,PI-2025-A2289,lost,2025-11-24,20000,0,13500,0,active,lost,Filing,EC Applied,2025-11-24,
+SRC2572,Bescom,Lambert - Thabrez,+919654996224,,,PI-2025-A2289,lost,2025-11-24,20000,0,6500,0,active,lost,Ground,SubmGround,2025-11-24,
+SRC2836,Address name correction,Bharath - Agent,+918420835767,,,PI-2025-A2334,open,2025-11-24,1500,0,1500,0,blocked,open,Doc,To Validate,2025-11-24,
+SRC2990,E-Khata,Praveen Arora - Neha / Ritesh,+919343834850,,,,,,,,3000,0,pre active,open,qualified,,2025-11-25,
+SRC2995,New Khata,Imran - Agent,+919108143439,,,PI-2025-A2387,closed,2025-11-25,15000,7500,15000,15000,archived,open,To Close,Paid,2025-11-25,2026-04-02
+SRC2996,New Khata,Imran - Agent,+919108143439,,,,,,,,15000,0,pre active,lost,unqualified,,2025-11-25,
+SRC2997,New Khata,Imran - Agent,+919108143439,,,,,,,,15000,0,pre active,lost,unqualified,,2025-11-25,
+SRC3012,Legal Consultation,Nikhil - Agent,+919632861268,,,PI-2025-A2393,closed,2025-11-25,5000,5000,5000,5000,archived,open,Doc,To Validate,2025-11-25,2025-12-17
+SRC3032,E-Khata,Anupam - Chandan Kumar Goswami,+919075518544,,,,,,,,3000,0,pre active,lost,unqualified,,2025-11-25,
+SRC3045,E-E (Electronic Transfer),Mohammed Navid - Agent,+919886000033,,,PI-2025-A2413,closed,2025-11-25,5000,5000,5000,5000,archived,open,Doc,To Validate,2025-11-25,2025-12-13
+SRC3061,New Khata,Ruchi - Agent,+919845413513,,,PI-2025-A2417,lost,2025-11-25,15000,0,15000,0,active,lost,Doc,To Validate,2025-11-25,
+SRC3072,E-Khata,Lakshman - Agent,+918151925456,,,PI-2025-A2421,lost,2025-11-25,25000,0,25000,0,active,lost,Filing,EC Approved,2025-11-25,
+SRC3136,Property Tax Payment Assistance,Naveen - Agent,+917019296659,,,PI-2025-A2442,open,2025-11-26,14400,7200,1000,450,active,lost,Doc,To Validate,2025-11-26,
+SRC3137,New Khata,Naveen - Agent,+917019296659,,,PI-2025-A2442,open,2025-11-26,14400,7200,15000,6750,active,lost,Doc,To Validate,2025-11-26,
+SRC3207,Encumbrance Certificate,Deepak - Venky,+917411598241,,,PI-2025-A2467,open,2025-11-26,26000,13000,2000,1000,active,paused,To Close,Doc Shared,2025-11-26,
+SRC3208,Property Tax Payment Assistance,Deepak - Venky,+917411598241,,,PI-2025-A2467,open,2025-11-26,26000,13000,4000,2000,active,open,Doc,To Validate,2025-11-26,
+SRC3209,New Khata,Deepak - Venky,+917411598241,,,PI-2025-A2467,open,2025-11-26,26000,13000,20000,10000,active,paused,Doc,To Validate,2025-11-26,
+SRC3242,Rental Agreement,Mohammed Navid - Agent,+919886000033,,,PI-2025-A2478,closed,2025-11-27,1200,1200,1200,1200,archived,open,Doc,To Validate,2025-11-27,2025-12-03
+SRC3252,Bescom,Naveen - Agent,+917019296659,,,PI-2025-A2485,lost,2025-11-27,5000,0,5000,0,active,lost,Ground,E Stamp,2025-11-27,
+SRC3297,Khata Transfer,Fazals Dress Point,+919845088806,,,,,,,,10000,0,blocked,open,Doc,To Validate,2025-11-27,
+SRC3306,E-Khata,Aniket Arvind - Agent,+919665550005,,,PI-2025-A2620,closed,2025-11-29,3000,3000,3000,3000,archived,open,To Close,Paid,2025-11-28,2026-01-21
+SRC3326,E-E (Electronic Transfer),Raghav Sureka - Agent,+919538455783,,,,,,,,10000,0,pre active,lost,qualified,,2025-11-28,
+SRC3711,New Khata,Naveen - Agent,+917019296659,,,PI-2025-A2629,closed,2025-11-29,14400,14400,15000,13500,archived,open,To Close,Doc Shared,2025-11-29,2026-03-02
+SRC3712,Property Tax Payment Assistance,Naveen - Agent,+917019296659,,,PI-2025-A2629,closed,2025-11-29,14400,14400,900,900,archived,open,To Close,Paid,2025-11-29,2026-02-28
+SRC4508,Bescom,Ankit - Agent,+918660212300,,,PI-2025-A3066,open,2025-12-05,15000,2500,5000,2500,active,open,Applied,Awaiting,2025-12-02,
+SRC4509,E-E (Electronic Transfer),Ankit - Agent,+918660212300,,,PI-2025-A2970,closed,2025-12-02,3000,3000,3000,3000,closed,open,To Close,Paid,2025-12-02,2026-01-23
+SRC4573,New Khata,Sunil Info Asset Makers,+919243024730,,,PI-2025-A3028,closed,2025-12-04,11000,11000,11000,11000,closed,open,To Close,Paid,2025-12-04,2026-03-17
+SRC4603,Bescom,Swamy-Agent ,+916364730901,,,PI-2025-A3042,closed,2025-12-04,5000,2500,5000,2500,archived,open,To Close,Doc Shared,2025-12-04,2026-07-03
+SRC4617,Encumbrance Certificate,Habib-Agent,+919844414800,,,PI-2025-A3052,closed,2025-12-04,1000,1000,1000,1000,archived,open,Doc,To Validate,2025-12-04,2025-12-10
+SRC5065,E-Khata,Sashi-Agent ,+918123967810,,,PI-2025-A3070,open,2025-12-05,7000,3500,7000,3500,blocked,lost,Doc,To Validate,2025-12-05,
+SRC5066,E-Khata,Sashi-Agent ,+918123967810,,,PI-2025-A3073,open,2025-12-05,7000,3500,7000,3500,blocked,lost,Doc,To Validate,2025-12-05,
+SRC5162,MODT Removal,Rajiv Menon-Agent,+919819074829,,,PI-2025-A3078,closed,2025-12-05,5000,5000,5000,5000,closed,open,Doc,To Validate,2025-12-05,2025-12-06
+SRC5630,E-Khata,Aniket Arvind - Agent,+919665550005,,,PI-2025-A3299,closed,2025-12-08,3000,3000,3000,3000,closed,open,To Close,Doc Shared,2025-12-08,2026-01-22
+SRC5631,E-Khata,Aniket Arvind - Agent,+919665550005,,,PI-2025-A3300,closed,2025-12-08,3000,3000,3000,3000,closed,open,To Close,Paid,2025-12-08,2026-01-21
+SRC5662,Rental Agreement,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A3326,lost,2025-12-09,1000,0,1000,0,active,lost,Doc,To Validate,2025-12-09,
+SRC5680,Encumbrance Certificate,Hema Krishnadas - Agent ,+919008611779,,,,,,,,1000,0,active,open,Applied,Awaiting,2025-12-09,
+SRC5689,E-Khata,Narayan - Anand Nachaya(AGENT),+919820125218,,,PI-2025-A3341,closed,2025-12-09,4000,4000,4000,4000,archived,open,To Close,Paid,2025-12-09,2025-12-27
+SRC5948,Property Tax Payment Assistance,amit banerjee- Agent ,+919880434206,,,PI-2025-A3363,lost,2025-12-10,4000,0,4000,0,active,lost,Doc,To Validate,2025-12-10,
+SRC5950,Property Tax Payment Assistance,amit banerjee- Agent ,+919880434206,,,PI-2025-A3364,lost,2025-12-10,4000,0,4000,0,active,lost,Doc,To Validate,2025-12-10,
+SRC6057,Property Tax Payment Assistance,Deepak - Venky,+917411598241,,,,,,,,10000,0,pre active,lost,unqualified,,2025-12-11,
+SRC6598,E-Khata,Naveen - Agent,+917019296659,,,,,,,,3000,0,pre active,lost,unqualified,,2025-12-11,
+SRC6599,Property Tax Payment Assistance,Naveen - Agent,+917019296659,,,PI-2025-A3382,lost,2025-12-11,16000,0,1000,0,active,lost,Doc,To Validate,2025-12-11,
+SRC6601,New Khata,Naveen - Agent,+917019296659,,,PI-2025-A3382,lost,2025-12-11,16000,0,15000,0,active,lost,Doc,To Validate,2025-12-11,
+SRC6607,Khata Transfer,Sunil Info Asset Makers,+919243024730,,,PI-2025-A3384,closed,2025-12-11,22000,22000,22000,22000,closed,open,To Close,Paid,2025-12-11,2026-05-19
+SRC6629,Property Tax Payment Assistance,Naveen - Agent,+917019296659,,,,,,,,10000,0,pre active,lost,unqualified,,2025-12-11,
+SRC6667,E-Khata,Martin Yesudass-Agent,+919902925519,,,PI-2025-A3394,closed,2025-12-11,6000,6000,6000,6000,archived,open,To Close,Paid,2025-12-11,2026-06-04
+SRC6668,Khata Transfer,Dhruva kumar - venugopal agente ,+919880005729,,,,,,,,13500,0,active,lost,Doc,To Validate,2025-12-11,
+SRC6669,Bescom,Dhruva kumar - venugopal agente ,+919880005729,,,,,,,,6500,0,pre active,lost,qualified,,2025-12-11,
+SRC6670,Property Tax Name Change,Dhruva kumar - venugopal agente ,+919880005729,,,,,,,,1500,0,active,lost,qualified,To Validate,2025-12-11,
+SRC7209,E-Khata,Illiyaz ahmed- agent ,+919380563996,,,PI-2025-A3429,open,2025-12-12,4300,1300,3000,0,active,lost,To Close,Doc Shared,2025-12-12,
+SRC7210,Encumbrance Certificate,Illiyaz ahmed- agent ,+919380563996,,,PI-2025-A3429,open,2025-12-12,4300,1300,1300,1300,archived,open,To Close,Doc Shared,2025-12-12,2026-01-31
+SRC7212,Encumbrance Certificate,Nazir-Agent,+918797739202,,,PI-2025-A3433,closed,2025-12-12,500,500,500,500,archived,open,Applied,Awaiting,2025-12-12,2025-12-17
+SRC7217,E-Khata,SUBHRO KAR -Neerabh,+917091318473,,,PI-2025-A3441,open,2025-12-12,10500,10500,4000,4000,archived,open,To Close,Paid,2025-12-12,2026-01-21
+SRC7218,Bescom,SUBHRO KAR -Neerabh,+917091318473,,,PI-2025-A3441,open,2025-12-12,10500,10500,6500,6500,active,open,Filing,,2025-12-12,
+SRC8000,Khata Transfer,Illiyaz ahmed- agent ,+919380563996,,,PI-2025-A3733,closed,2025-12-15,10000,10000,10000,10000,archived,open,To Close,Doc Shared,2025-12-15,2026-01-31
+SRC8041,Encumbrance Certificate,Amit-  agent ,+918700342528,,,PI-2025-A3767,closed,2025-12-15,1000,1000,1000,1000,archived,open,To Close,Doc Shared,2025-12-15,2026-01-07
+SRC8372,New Khata,Balaji - Agent,+919649788444,,,PI-2025-A3846,open,2025-12-16,18000,9000,15000,7500,active,lost,Filing,EC Applied,2025-12-16,
+SRC8373,Property Tax Slab Change,Balaji - Agent,+919649788444,,,PI-2025-A3846,open,2025-12-16,18000,9000,3000,1500,active,lost,Doc,To Validate,2025-12-16,
+SRC8389,New Khata,Imran - Agent,+919108143439,,,PI-2025-A3855,lost,2025-12-16,15000,7500,15000,0,blocked,lost,Applied,Approved,2025-12-16,
+SRC8393,E-E (Electronic Transfer),Nikhil,+919999999999,,,,,,,,3000,0,pre active,open,qualified,,2025-12-16,
+SRC8399,E-Khata,Illiyaz ahmed- agent ,+919380563996,,,PI-2025-A3867,closed,2025-12-17,3000,3000,3000,3000,archived,open,To Close,Doc Shared,2025-12-17,2026-01-31
+SRC8402,Address name correction,kareem -Agent ,+917829980041,,,PI-2025-A3873,closed,2025-12-17,3000,3000,3000,3000,archived,open,To Close,Paid,2025-12-17,2026-02-28
+SRC8406,Legal Consultation,Avishek,+919743613253,,,PI-2025-A3877,closed,2025-12-17,1000,1000,1000,1000,archived,open,Doc,To Validate,2025-12-17,2025-12-17
+SRC8408,Legal Consultation,Anand - agent ,+917975266038,,,PI-2025-A3879,open,2025-12-17,1000,1000,1000,1000,active,lost,Doc,To Validate,2025-12-17,
+SRC8744,Khata Transfer,Abdul Azeem-Agent,+919148502930,,,,,,,,10000,0,active,lost,Doc,To Validate,2025-12-18,
+SRC8762,New Khata,Abdul Azeem-Agent,+919148502930,,,PI-2025-A3937,lost,2025-12-18,15000,0,15000,0,active,lost,Filing,EC Applied,2025-12-18,
+SRC9838,Khata Transfer,sudheer - akhilesh,+919686422112,,,,,,,,12000,0,active,lost,Doc,To Validate,2025-12-20,
+SRC9887,Khata Transfer,Ujjwal Singh - Dhiren,+919845379396,,,PI-2025-A4102,closed,2025-12-20,13000,13000,13000,13000,archived,open,To Close,Paid,2025-12-20,2026-03-21
+SRD2223,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2025-A4438,closed,2025-12-24,5000,5000,5000,5000,closed,open,Applied,Paid,2025-12-24,2026-04-16
+SRD2282,Bescom,Vijay B - Agent,+918310964897,,,PI-2025-A4463,closed,2025-12-26,5000,5000,5000,5000,archived,open,To Close,Paid,2025-12-26,2026-04-11
+SRD2302,MODT Removal,kareem -Agent ,+917829980041,,,PI-2025-A4475,closed,2025-12-26,12000,12000,12000,12000,archived,open,To Close,Doc Shared,2025-12-26,2025-12-30
+SRD2932,E-E (Electronic Transfer),Rajiv Menon-Agent,+919819074829,,,PI-2025-A4689,closed,2025-12-29,8000,8000,3000,3000,closed,open,To Close,Paid,2025-12-29,2026-02-27
+SRD2933,Bescom,Rajiv Menon-Agent,+919819074829,,,PI-2025-A4689,closed,2025-12-29,8000,8000,5000,5000,closed,open,To Close,Paid,2025-12-29,2026-06-08
+SRD2949,Bescom,Dhruva kumar - venugopal agente ,+919880005729,,,PI-2025-A4701,open,2025-12-29,21500,16500,5000,0,active,paused,Doc,To Validate,2025-12-29,
+SRD2950,New Khata,Dhruva kumar - venugopal agente ,+919880005729,,,PI-2025-A4701,open,2025-12-29,21500,16500,15000,15000,archived,open,To Close,Paid,2025-12-29,2026-05-24
+SRD2951,Property Tax Name Change,Dhruva kumar - venugopal agente ,+919880005729,,,PI-2025-A4701,open,2025-12-29,21500,16500,1500,1500,archived,open,To Close,Paid,2025-12-29,2026-05-28
+SRD2953,Bescom,Nirmal - Reema,+919711537138,,,PI-2025-A4702,open,2025-12-29,5000,1000,5000,1000,active,open,To Close,Doc Shared,2025-12-29,
+SRD3024,MODT Removal,Kareem-Agent (Wridhee Bhattacharya),+918511723731,,,,,,,,7000,0,active,lost,Filing,In Queue,2025-12-30,
+SRD3025,Registry at SRO,Amulya Kumar - Raza,+919650095082,,,PI-2025-A4736,open,2025-12-30,34500,32750,31500,31500,archived,open,To Close,Doc Shared,2025-12-30,2026-01-06
+SRD3026,E-E (Electronic Transfer),Amulya Kumar - Raza,+919650095082,,,PI-2025-A4736,open,2025-12-30,34500,32750,3000,1250,archived,open,To Close,Doc Shared,2025-12-30,2026-01-14
+SRD3088,New Khata,Sanjib - Raza,+917406012226,,,PI-2026-A0021,closed,2026-01-02,19000,19000,19000,19000,archived,open,To Close,Paid,2026-01-02,2026-03-03
+SRD3152,Encumbrance Certificate,Archana Nair,+919740355811,,,PI-2026-A0087,closed,2026-01-03,1200,1200,1200,1200,archived,open,To Close,Doc Shared,2026-01-03,2026-01-05
+SRD3156,Khata Transfer,Sohan Upadhye - Reema,+919920359070,,,PI-2026-A0095,open,2026-01-03,40000,35500,33500,33500,archived,open,To Close,Paid,2026-01-03,2026-05-19
+SRD3157,Bescom,Sohan Upadhye - Reema,+919920359070,,,PI-2026-A0095,open,2026-01-03,40000,35500,6500,2000,active,open,Applied,Awaiting,2026-01-03,
+SRD3313,Khata Transfer,Soma Bose - Debashish Pattnaik  Hema's Client,+919972523451,,,PI-2026-A0146,open,2026-01-06,19500,16250,13000,13000,closed,open,To Close,Paid,2026-01-06,2026-06-02
+SRD3314,Bescom,Soma Bose - Debashish Pattnaik  Hema's Client,+919972523451,,,PI-2026-A0146,open,2026-01-06,19500,16250,6500,3250,active,open,Applied,Awaiting,2026-01-06,
+SRD3315,E-Khata,Soma Bose - Debashish Pattnaik  Hema's Client,+919972523451,,,PI-2026-A0147,open,2026-01-06,6000,3000,6000,3000,blocked,open,Applied,Approved,2026-01-06,
+SRD3553,Memorandum of Understanding (MoU),Prateek Kadam - Agent,+918861987965,,,PI-2026-A0175,closed,2026-01-06,2950,2950,5500,2950,archived,open,To Close,Verified,2026-01-06,2026-01-16
+SRD3569,Agreement to Sale Drafting,Chandan - Agent,+917975796563,,,PI-2026-A0191,closed,2026-01-06,23000,23000,3000,3000,archived,open,To Close,Doc Shared,2026-01-06,2026-01-19
+SRD3570,Registry at SRO,Chandan - Agent,+917975796563,,,PI-2026-A0191,closed,2026-01-06,23000,23000,20000,20000,archived,open,To Close,Paid,2026-01-06,2026-04-04
+SRD3576,Assignment Agreement,Satyam - Agent,+919739490514,,,PI-2026-A0194,closed,2026-01-07,10000,10000,10000,10000,archived,open,To Close,Doc Shared,2026-01-07,2026-01-15
+SRD3599,E-E (Electronic Transfer),Harish - Agent,+918904279890,,,PI-2026-A0209,open,2026-01-07,9000,6000,3000,3000,closed,open,To Close,Paid,2026-01-07,2026-03-24
+SRD3600,Bescom,Harish - Agent,+918904279890,,,PI-2026-A0209,open,2026-01-07,9000,6000,5000,2500,active,open,Applied,Awaiting,2026-01-07,
+SRD3601,Property Tax Name Change,Harish - Agent,+918904279890,,,PI-2026-A0209,open,2026-01-07,9000,6000,1000,500,active,open,Applied,Awaiting,2026-01-07,
+SRD3686,E-Khata,Aditya Ranjan - Chandan,+918431841394,,,PI-2026-A0219,closed,2026-01-07,4000,4000,4000,4000,archived,open,To Close,Doc Shared,2026-01-07,2026-01-17
+SRD3696,Encumbrance Certificate,Archana Nair,+919740355811,,,,,,,,500,0,pre active,lost,unqualified,,2026-01-08,
+SRD3697,Encumbrance Certificate,Archana Nair,+919740355811,,,,,,,,500,0,pre active,open,unqualified,,2026-01-08,
+SRD3862,New Khata,sudheer - akhilesh,+919686422112,,,PI-2026-A0233,closed,2026-01-08,15000,15000,15000,15000,archived,open,To Close,Paid,2026-01-08,2026-04-21
+SRD3869,Bescom,Deepak - Joby,+919883080620,,,PI-2026-A0239,open,2026-01-08,6500,3250,6500,3250,active,open,To Close,Doc Shared,2026-01-08,
+SRD3870,Bescom,Saurabh-motilal,+919869441144,,,PI-2026-A1676,open,2026-01-30,7000,7000,7000,7000,active,open,Applied,Awaiting,2026-01-08,
+SRD3986,New Khata,Naresh Cityblocks - Agent,+916361283601,,,PI-2026-A0247,open,2026-01-08,15000,7500,15000,7500,blocked,open,To Close,Doc Shared,2026-01-08,
+SRD4094,Property Tax Payment Assistance,Bharath - Agent,+918420835767,,,PI-2026-A0266,open,2026-01-09,10000,5000,4000,2000,active,paused,Doc,To Validate,2026-01-09,
+SRD4095,E-Khata,Bharath - Agent,+918420835767,,,PI-2026-A0266,open,2026-01-09,10000,5000,6000,3000,blocked,lost,Doc,To Validate,2026-01-09,
+SRD4098,E-Khata,Bharath - Agent,+918420835767,,,,,,,,3000,0,pre active,lost,unqualified,,2026-01-09,
+SRD4099,Property Tax Payment Assistance,Bharath - Agent,+918420835767,,,,,,,,500,0,pre active,lost,unqualified,,2026-01-09,
+SRD4651,Family Tree Drafting,Manoj - Vijay B,+918310235378,,,PI-2026-A0419,closed,2026-01-10,35000,35000,17500,17500,archived,open,To Close,Doc Shared,2026-01-10,2026-03-07
+SRD4652,Khata Transfer,Manoj - Vijay B,+918310235378,,,PI-2026-A0419,closed,2026-01-10,35000,35000,17500,17500,archived,open,To Close,Paid,2026-01-10,2026-06-17
+SRD4896,Khata Transfer,Aakar - Joby,+919711996022,,,PI-2026-A0604,closed,2026-01-12,20000,20000,13500,13500,archived,open,To Close,Doc Shared,2026-01-12,2026-01-28
+SRD4897,Bescom,Aakar - Joby,+919711996022,,,PI-2026-A0604,closed,2026-01-12,20000,20000,6500,6500,closed,open,To Close,Paid,2026-01-12,2026-07-20
+SRD5365,Family Tree Drafting,Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0688,open,2026-01-13,63000,24500,20000,20000,closed,open,To Close,Paid,2026-01-12,2026-05-18
+SRD5366,New Khata,Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0688,open,2026-01-13,63000,24500,15000,4500,active,open,Applied,Awaiting,2026-01-12,
+SRD5367,Release Deed Drafting,Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0688,open,2026-01-13,63000,24500,20000,0,active,lost,Doc,To Validate,2026-01-12,
+SRD5368,E-E (Electronic Transfer),Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0688,open,2026-01-13,63000,24500,3000,0,active,paused,Doc,To Validate,2026-01-12,
+SRD5369,Bescom,Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0688,open,2026-01-13,63000,24500,5000,0,active,open,Ground,SubmGround,2026-01-12,
+SRD5570,Legal Consultation,Vikrant Singh-Agent,+918495989879,,,PI-2026-A0706,closed,2026-01-15,1000,1000,1000,1000,archived,open,To Close,Doc Shared,2026-01-15,2026-01-16
+SRD5914,Property Tax Payment Assistance,Prasad - Agent,+919966696397,,,PI-2026-A0721,open,2026-01-15,25500,20000,4000,2000,active,open,To Close,Doc Shared,2026-01-15,
+SRD5915,New Khata,Prasad - Agent,+919966696397,,,PI-2026-A0721,open,2026-01-15,25500,20000,15000,15000,archived,open,To Close,Paid,2026-01-15,2026-06-25
+SRD5916,Bescom,Prasad - Agent,+919966696397,,,PI-2026-A0721,open,2026-01-15,25500,20000,6500,3250,active,open,Ground,E Stamp,2026-01-15,
+SRD6056,Khata Transfer,Ruben Pal - Agent,+917406639554,,,PI-2026-A0741,open,2026-01-16,15000,10000,10000,10000,archived,open,To Close,Paid,2026-01-16,2026-04-22
+SRD6057,Bescom,Ruben Pal - Agent,+917406639554,,,PI-2026-A0741,open,2026-01-16,15000,10000,5000,0,active,lost,Ground,E Stamp,2026-01-16,
+SRD6608,E-Khata,Steve - Agent,+919742799117,,,PI-2026-A0746,closed,2026-01-16,3000,3000,4000,3000,archived,open,To Close,Doc Shared,2026-01-16,2026-01-28
+SRD6767,Address name correction,Neerabh - Agent,+918970107101,,,PI-2026-A0760,lost,2026-01-16,3000,1500,3000,1500,active,lost,Doc,To Validate,2026-01-16,
+SRD6830,Will Deed Drafting,Hamza Consultancy Services Private Limited,+918792404212,,,PI-2026-A0791,lost,2026-01-17,25000,0,25000,0,active,lost,Doc,To Validate,2026-01-17,
+SRD6831,Will Deed Drafting,Hamza Consultancy Services Private Limited,+918792404212,,,,,,,,10000,0,pre active,lost,unqualified,,2026-01-17,
+SRD6835,Khata Transfer,Nikhil Joseph - Azhar,+919945473715,,,PI-2026-A0796,open,2026-01-17,23300,11650,13500,6750,blocked,open,Applied,Approved,2026-01-17,
+SRD6836,Property Tax Name Change,Nikhil Joseph - Azhar,+919945473715,,,PI-2026-A0796,open,2026-01-17,23300,11650,2000,1000,active,paused,Applied,Approved,2026-01-17,
+SRD6837,Encumbrance Certificate,Nikhil Joseph - Azhar,+919945473715,,,PI-2026-A0796,open,2026-01-17,23300,11650,1300,650,active,paused,Applied,Approved,2026-01-17,
+SRD6838,Bescom,Nikhil Joseph - Azhar,+919945473715,,,PI-2026-A0796,open,2026-01-17,23300,11650,6500,3250,active,paused,Ground,E Stamp,2026-01-17,
+SRD6839,Encumbrance Certificate,Prateek Kadam - Agent,+918861987965,,,,,,,,1500,0,pre active,lost,qualified,,2026-01-17,
+SRD7819,E-Khata,Zublon-Agent,+916360885163,,,PI-2026-A1056,closed,2026-01-19,4000,4000,4000,4000,archived,open,To Close,Paid,2026-01-19,2026-02-26
+SRD7839,New Khata,Fuzail - Agent,+917019787181,,,PI-2026-A1071,closed,2026-01-20,10000,10000,10000,10000,archived,open,To Close,Doc Shared,2026-01-20,2026-05-06
+SRD7845,E-Khata,Deepak Singh - Hemraj,+4525288277,,,PI-2026-A1074,open,2026-01-15,45500,49500,4000,8000,archived,open,To Close,Doc Shared,2026-01-20,2026-01-27
+SRD7846,Encumbrance Certificate,Deepak Singh - Hemraj,+4525288277,,,PI-2026-A1074,open,2026-01-15,45500,49500,1500,1500,archived,open,To Close,Doc Shared,2026-01-20,2026-01-28
+SRD7847,Deed Drafting and Registration,Deepak Singh - Hemraj,+4525288277,,,PI-2026-A1074,open,2026-01-15,45500,49500,30000,30000,archived,open,To Close,Doc Shared,2026-01-20,2026-02-25
+SRD7848,Will Deed Drafting,Deepak Singh - Hemraj,+4525288277,,,PI-2026-A1074,open,2026-01-15,45500,49500,6000,6000,archived,open,To Close,Doc Shared,2026-01-20,2026-02-25
+SRD7849,E-E (Electronic Transfer),Deepak Singh - Hemraj,+4525288277,,,PI-2026-A1074,open,2026-01-15,45500,49500,4000,4000,archived,open,To Close,Paid,2026-01-20,2026-04-17
+SRD9096,Encumbrance Certificate,Prateek Kadam - Agent,+918861987965,,,PI-2026-A1129,open,2026-01-21,1500,1500,1500,1500,active,lost,Filing,In Process,2026-01-21,
+SRD9178,E-Khata,Sankunny G - Anand Nachaya,+919449835908,,,PI-2026-A1125,closed,2026-01-21,4000,4000,4000,4000,archived,open,To Close,Paid,2026-01-21,2026-03-30
+SRD9179,New Khata,Sankunny G - Anand Nachaya,+919449835908,,,PI-2026-A1126,closed,2026-01-21,25000,25000,25000,25000,archived,open,To Close,Paid,2026-01-21,2026-05-30
+SRD9181,Khata Transfer,Ankit - Agent,+918660212300,,,PI-2026-A1127,closed,2026-01-21,8500,8500,8500,8500,closed,open,To Close,Doc Shared,2026-01-21,2026-04-27
+SRD9182,E-Khata,Debasish Pattanayak - Hema Krishnadas,+919880322669,,,PI-2026-A1128,closed,2026-01-21,10000,10000,3000,3000,closed,open,To Close,Paid,2026-01-21,2026-02-28
+SRD9183,Bescom,Debasish Pattanayak - Hema Krishnadas,+919880322669,,,PI-2026-A1128,closed,2026-01-21,10000,10000,7000,7000,closed,open,To Close,Doc Shared,2026-01-21,2026-07-31
+SRD9515,E-Khata,Preethi - Hema Krishandas,+919886964588,,,PI-2026-A1160,closed,2026-01-22,4000,4000,4000,4000,closed,open,To Close,Paid,2026-01-22,2026-02-20
+SRD9516,Memorandum of Understanding (MoU),Prasad Potdar,+918007976137,,,PI-2026-A1161,closed,2026-01-22,55000,53517,3500,3500,closed,open,To Close,Doc Shared,2026-01-22,2026-01-30
+SRD9521,E-Khata,Mathew - Joby,+919663395906,,,PI-2026-A1162,open,2026-01-22,11000,7500,4000,4000,archived,open,To Close,Doc Shared,2026-01-22,2026-01-29
+SRD9522,Bescom,Mathew - Joby,+919663395906,,,PI-2026-A1162,open,2026-01-22,11000,7500,7000,3500,active,lost,Applied,Awaiting,2026-01-22,
+SRD9523,E-Khata,Apka Complex - Vijay,+917349385109,,,PI-2026-A2688,open,2026-02-09,4000,0,3000,3000,closed,open,To Close,Paid,2026-01-22,2026-06-02
+SRD9524,E-E (Electronic Transfer),Aditya Provo Halder - Salman,+919051369554,,,PI-2026-A1164,open,2026-01-22,12000,6000,4000,2000,active,open,Applied,Awaiting,2026-01-22,
+SRD9525,Bescom,Aditya Provo Halder - Salman,+919051369554,,,PI-2026-A1164,open,2026-01-22,12000,6000,6000,3000,active,open,Ground,E Stamp,2026-01-22,
+SRD9526,Property Tax Name Change,Aditya Provo Halder - Salman,+919051369554,,,PI-2026-A1164,open,2026-01-22,12000,6000,2000,1000,active,paused,Applied,Awaiting,2026-01-22,
+SRD9549,Khata Transfer,Harish - Agent,+918904279890,,,PI-2026-A1167,open,2026-01-15,9000,6500,3000,3000,closed,open,To Close,Paid,2026-01-23,2026-02-21
+SRD9550,Bescom,Harish - Agent,+918904279890,,,PI-2026-A1167,open,2026-01-15,9000,6500,5000,2500,active,open,To Close,Doc Shared,2026-01-23,
+SRD9551,Property Tax Name Change,Harish - Agent,+918904279890,,,PI-2026-A1167,open,2026-01-15,9000,6500,1000,1000,active,open,Applied,Awaiting,2026-01-23,
+SRD9687,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1170,closed,2026-01-23,2500,2500,2500,2500,closed,open,To Close,Doc Shared,2026-01-23,2026-01-29
+SRD9702,E-Khata,Joby - Agent,+919945045451,,,PI-2026-A1173,closed,2026-01-23,4000,4000,4000,4000,archived,open,To Close,Doc Shared,2026-01-23,2026-01-30
+SRD9831,Rental Agreement,Prabhakar - Agent,+918050942425,,,PI-2026-A1190,closed,2026-01-23,1400,1400,1400,1400,archived,open,To Close,Doc Shared,2026-01-23,2026-01-26
+SRE1345,Due diligence,NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,10500,5250,closed,open,To Close,Doc Shared,2026-01-27,2026-02-07
+SRE1346,Memorandum of Understanding (MoU),NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,3500,0,active,lost,Doc,To Validate,2026-01-27,
+SRE1347,Agreement to Sale Drafting,NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,7000,0,active,lost,Doc,To Validate,2026-01-27,
+SRE1348,Registry at SRO,NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,28000,0,active,lost,Filing,In Queue,2026-01-27,
+SRE1349,E-E (Electronic Transfer),NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,4000,0,active,lost,Doc,To Validate,2026-01-27,
+SRE1350,Bescom,NN Varma,+919810368897,,,PI-2026-A1546,open,2026-01-27,60000,10500,7000,0,active,lost,Doc,To Validate,2026-01-27,
+SRE1724,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1565,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Doc Shared,2026-01-27,2026-01-31
+SRE1725,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1566,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Paid,2026-01-27,2026-02-21
+SRE1726,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1567,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Paid,2026-01-27,2026-02-21
+SRE1727,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1568,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Paid,2026-01-27,2026-02-21
+SRE1728,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1569,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Doc Shared,2026-01-27,2026-02-09
+SRE1729,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1570,closed,2026-01-27,2500,2500,2500,2500,closed,open,To Close,Paid,2026-01-27,2026-02-21
+SRE1733,E-Khata,Fuzail - Agent,+917019787181,,,PI-2026-A1571,open,2026-01-28,8000,4000,8000,4000,active,lost,Doc,To Validate,2026-01-28,
+SRE1739,E-Khata,Abhishek - Joby,+918197956677,,,,,,,,3000,0,pre active,lost,unqualified,,2026-01-28,
+SRE1740,Bescom,Abhishek - Joby,+918197956677,,,PI-2026-A1577,closed,2026-01-28,7000,7000,7000,7000,closed,open,To Close,Doc Shared,2026-01-28,2026-07-31
+SRE1743,Khata Transfer,Rishil - Zain,+919901800422,,,PI-2026-A1582,open,2026-01-28,15000,12500,10000,10000,archived,open,To Close,Paid,2026-01-28,2026-04-02
+SRE1744,Bescom,Rishil - Zain,+919901800422,,,PI-2026-A1582,open,2026-01-28,15000,12500,5000,2500,active,open,Applied,Awaiting,2026-01-28,
+SRE2015,Agreement to Sale Drafting,Hiren Dixit,+919033283963,,,PI-2026-A1632,closed,2026-01-28,40500,40500,7000,7000,archived,open,To Close,Doc Shared,2026-01-28,2026-02-07
+SRE2016,Registry at SRO,Hiren Dixit,+919033283963,,,PI-2026-A1632,closed,2026-01-28,40500,40500,33500,33500,archived,open,Applied,Paid,2026-01-28,2026-05-05
+SRE2017,E-Khata,Shinto - Joby,+919686915895,,,PI-2026-A1633,closed,2026-01-28,4000,4000,4000,4000,archived,open,To Close,Doc Shared,2026-01-28,2026-02-05
+SRE2018,Khata Transfer,Archana - Agent,+919632070001,,,PI-2026-A1634,lost,2026-01-28,10000,0,10000,0,blocked,lost,Filing,EC Applied,2026-01-28,
+SRE2019,Address name correction,Ankit - Agent,+918660212300,,,PI-2026-A1635,closed,2026-01-28,3000,3000,3000,3000,closed,open,To Close,Paid,2026-01-28,2026-06-26
+SRE2158,New Khata,Ashfaq Pasha - Agent,+919606322881,,,PI-2026-A1674,lost,2026-01-30,20000,0,20000,0,active,lost,Filing,In Queue,2026-01-30,
+SRE2164,Encumbrance Certificate,Mohammad Ismail - Agent,+919886878787,,,PI-2026-A1677,lost,2026-01-30,2000,0,2000,0,active,lost,Doc,To Validate,2026-01-30,
+SRE2169,Khata Transfer,Nagul Meera - Agent,+919972247674,,,PI-2026-A1678,open,2026-01-30,22000,11000,21000,11000,active,open,Applied,Awaiting,2026-01-30,
+SRE2170,Property Tax Payment Assistance,Nagul Meera - Agent,+919972247674,,,PI-2026-A1678,open,2026-01-30,22000,11000,1000,0,active,open,Applied,Awaiting,2026-01-30,
+SRE2181,E-E (Electronic Transfer),Sunil Info Asset Makers,+919243024730,,,PI-2026-A1685,closed,2026-01-30,5000,5000,4000,4000,closed,open,To Close,Paid,2026-01-30,2026-03-02
+SRE2182,Property Tax Name Change,Sunil Info Asset Makers,+919243024730,,,PI-2026-A1685,closed,2026-01-30,5000,5000,1000,1000,closed,open,To Close,Paid,2026-01-30,2026-03-02
+SRE2184,Agreement to Sale Drafting,Apka Complex,+918971521806,,,PI-2026-A1689,closed,2026-01-30,21000,21000,1000,1000,archived,open,To Close,Paid,2026-01-30,2026-04-30
+SRE2185,Registry at SRO,Apka Complex,+918971521806,,,PI-2026-A1689,closed,2026-01-30,21000,21000,20000,20000,archived,open,To Close,Paid,2026-01-30,2026-04-29
+SRE2186,Agreement to Sale Drafting,Apka Complex,+918971521806,,,PI-2026-A1691,closed,2026-01-30,21000,1000,1000,1000,archived,open,To Close,Doc Shared,2026-01-30,2026-03-23
+SRE2187,Registry at SRO,Apka Complex,+918971521806,,,PI-2026-A1691,closed,2026-01-30,21000,1000,20000,0,archived,open,To Close,Doc Shared,2026-01-30,2026-03-23
+SRE2347,E-Khata,Hema Krishnadas - Agent ,+919008611779,,,PI-2026-A1787,open,2026-01-30,8000,4000,8000,4000,active,open,To Close,Doc Shared,2026-01-30,
+SRE2393,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1835,open,2026-01-31,4500,0,4500,0,active,open,Doc,To Validate,2026-01-31,
+SRE2394,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1834,open,2026-01-31,4500,0,4500,0,active,paused,Doc,To Validate,2026-01-31,
+SRE2395,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1832,open,2026-01-31,4500,0,4500,0,active,paused,Doc,File Incomplete,2026-01-31,
+SRE2396,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1829,open,2026-01-31,4500,0,4500,0,active,paused,Doc,To Validate,2026-01-31,
+SRE2397,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1828,open,2026-01-31,4500,0,4500,0,active,paused,Doc,To Validate,2026-01-31,
+SRE2398,Bescom,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A1826,open,2026-01-31,4500,0,4500,0,active,paused,Doc,To Validate,2026-01-31,
+SRE2500,Address name correction,Harish - Agent,+918904279890,,,PI-2026-A1904,open,2026-01-31,10000,10000,10000,10000,active,open,Applied,Awaiting,2026-01-31,
+SRE2521,Khata Transfer,Sekhar - Agent,+919606597810,,,PI-2026-A1927,open,2026-01-31,20500,10250,13500,6750,blocked,open,Applied,Approved,2026-01-31,
+SRE2522,Bescom,Sekhar - Agent,+919606597810,,,PI-2026-A1927,open,2026-01-31,20500,10250,7000,3500,active,open,Ground,Subm Pending,2026-01-31,
+SRE2715,E-Khata,Tarun - Sayyam,+919910133599,,,,,,,,3000,0,pre active,lost,unqualified,,2026-02-02,
+SRE2783,Due diligence,Alok Bose - Kaushik Das,+917795829943,,,PI-2026-A2197,lost,2026-02-02,10500,0,10500,0,active,lost,Filing,In Queue,2026-02-02,
+SRE2784,E-Khata,Rajaram,+919880046664,,,PI-2026-A2198,closed,2026-02-02,8000,8000,8000,8000,archived,open,To Close,Paid,2026-02-02,2026-05-22
+SRE2785,Encumbrance Certificate,Imran - Agent,+919108143439,,,PI-2026-A2199,open,2026-02-02,1500,0,1500,0,pre active,open,qualified,,2026-02-02,
+SRE3147,Bescom,Apka Complex,+918971521806,,,PI-2026-A2255,open,2026-02-04,5000,0,5000,0,active,open,Ground,Cx Sign,2026-02-04,
+SRE3148,Bescom,Nagul Meera - Agent,+919972247674,,,PI-2026-A2256,open,2026-02-04,10000,0,10000,0,active,open,Ground,E Stamp,2026-02-04,
+SRE3152,Due diligence,Athrey Ranjith K - Prashant Ashok,+919496913984,,,PI-2026-A2257,closed,2026-02-04,54500,54500,10500,10500,closed,open,To Close,Paid,2026-02-04,2026-03-05
+SRE3153,Memorandum of Understanding (MoU),Athrey Ranjith K - Prashant Ashok,+919496913984,,,PI-2026-A2257,closed,2026-02-04,54500,54500,3500,3500,closed,open,To Close,Paid,2026-02-04,2026-04-29
+SRE3154,Agreement to Sale Drafting,Athrey Ranjith K - Prashant Ashok,+919496913984,,,PI-2026-A2257,closed,2026-02-04,54500,54500,7000,7000,closed,open,To Close,Paid,2026-02-04,2026-05-25
+SRE3155,Registry at SRO,Athrey Ranjith K - Prashant Ashok,+919496913984,,,PI-2026-A2257,closed,2026-02-04,54500,54500,33500,33500,closed,open,To Close,Paid,2026-02-04,2026-07-17
+SRE3156,Legal Consultation,Alok Bose - Kaushik Das,+917795829943,,,PI-2026-A2258,closed,2026-02-04,2500,2500,2500,2500,archived,open,To Close,Doc Shared,2026-02-04,2026-02-05
+SRE3158,E-Khata,Sanjay - Joby,+918618622385,,,,,,,,4000,2000,active,lost,Filing,In Queue,2026-02-04,
+SRE3186,Bescom,Sangeeta Dutta - Salman,+919899650753,,,PI-2026-A2265,closed,2026-02-05,7000,7000,7000,7000,archived,open,To Close,Paid,2026-02-05,2026-06-07
+SRE3246,Legal Consultation,Alok Bose - Kaushik Das,+917795829943,,,PI-2026-A2282,closed,2026-02-05,5000,5000,5000,5000,archived,open,To Close,Doc Shared,2026-02-05,2026-02-06
+SRE3436,E-Khata,Smruti Satpathy,+917022005540,,,PI-2026-A2303,closed,2026-02-06,4000,4000,4000,4000,archived,open,To Close,Paid,2026-02-06,2026-02-12
+SRE3449,E-Khata,Keerthi - Mujeeb,+919980010027,,,PI-2026-A2315,closed,2026-02-06,8000,8000,8000,8000,archived,open,To Close,Paid,2026-02-06,2026-02-17
+SRE3451,Khata Transfer,Amrita - Sivaraman,+918018193553,,,PI-2026-A2316,lost,2026-02-06,32000,0,25000,0,active,lost,Filing,EC Approved,2026-02-06,
+SRE3452,Bescom,Amrita - Sivaraman,+918018193553,,,PI-2026-A2316,lost,2026-02-06,32000,0,7000,0,active,lost,Doc,To Validate,2026-02-06,
+SRE3453,Address name correction,suraj dubey - Agent,+919620844894,,,PI-2026-A2317,open,2026-02-06,40000,10000,10000,10000,closed,open,To Close,Paid,2026-02-06,2026-03-14
+SRE3454,Registry at SRO,suraj dubey - Agent,+919620844894,,,PI-2026-A2317,open,2026-02-06,40000,10000,30000,0,active,paused,Doc,To Validate,2026-02-06,
+SRE3458,Address name correction,Raza - Agent,+919880092127,,,PI-2026-A2318,open,2026-02-06,10000,5000,10000,5000,active,open,Applied,Awaiting,2026-02-06,
+SRE3461,Memorandum of Understanding (MoU),Prateek Kadam - Agent,+918861987965,,,,,,,,2000,0,active,lost,Doc,To Validate,2026-02-06,
+SRE3462,Agreement to Sale Drafting,Prateek Kadam - Agent,+918861987965,,,PI-2026-A2352,open,2026-02-06,30000,2118,5000,2118,archived,open,To Close,Doc Shared,2026-02-06,2026-02-23
+SRE3463,Registry at SRO,Prateek Kadam - Agent,+918861987965,,,PI-2026-A2352,open,2026-02-06,30000,2118,25000,0,active,paused,Doc,To Validate,2026-02-06,
+SRE3735,E-Khata,Lalitha - Agent,+918971794348,,,PI-2026-A2471,open,2026-02-07,3000,1500,3000,1500,active,open,Applied,Approved,2026-02-07,
+SRE3738,Khata Transfer,Lalitha - Agent,+918971794348,,,PI-2026-A2474,closed,2026-02-07,10000,10000,10000,10000,archived,open,To Close,Paid,2026-02-07,2026-03-29
+SRE3739,E-Khata,Lalitha - Agent,+918971794348,,,PI-2026-A2475,closed,2026-02-07,3000,3000,3000,3000,archived,open,To Close,Paid,2026-02-07,2026-03-06
+SRE3742,Khata Transfer,Lalitha - Agent,+918971794348,,,PI-2026-A2480,closed,2026-02-07,10000,10000,10000,10000,archived,open,To Close,Paid,2026-02-07,2026-06-05
+SRE3744,E-Khata,Lalitha - Agent,+918971794348,,,PI-2026-A2482,closed,2026-02-07,8000,8000,8000,8000,archived,open,To Close,Paid,2026-02-07,2026-02-28
+SRE3748,Khata Transfer,Lalitha - Agent,+918971794348,,,PI-2026-A2486,closed,2026-02-07,10000,10000,10000,10000,archived,open,To Close,Paid,2026-02-07,2026-03-27
+SRE3750,New Khata,Lalitha - Agent,+918971794348,,,PI-2026-A2487,closed,2026-02-07,15000,15000,15000,15000,archived,open,To Close,Paid,2026-02-07,2026-03-15
+SRE3765,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A4137,open,2026-03-09,2500,1500,2500,1500,active,lost,Filing,In Queue,2026-02-07,
+SRE3770,Registry at SRO,NN Varma,+919810368897,,,,,,,,10000,0,pre active,open,unqualified,,2026-02-07,
+SRE4034,E-E (Electronic Transfer),Shreyan G P - Agent,+919113237675,,,PI-2026-A3156,closed,2026-02-17,3500,3500,3500,3500,archived,open,To Close,Paid,2026-02-09,2026-02-21
+SRE4092,Property Tax Name Change,Alim - Sreekhant,+919849970070,,,PI-2026-A2736,closed,2026-02-10,1500,1500,1500,1500,archived,open,To Close,Paid,2026-02-10,2026-02-19
+SRE4192,Khata Transfer,Pulkit Vinayak,+919901511244,,,PI-2026-A2758,closed,2026-02-11,13500,13500,13500,13500,archived,open,To Close,Paid,2026-02-11,2026-05-27
+SRE4334,E-Khata,Grace - Agent,+919738461850,,,PI-2026-A2813,closed,2026-02-12,3000,3000,3000,3000,archived,open,To Close,Paid,2026-02-12,2026-03-11
+SRE4387,Bescom,Sreekumaran Nair - Joby,+919845124161,,,PI-2026-A2825,open,2026-02-12,15000,7500,7000,0,active,lost,Ground,SubmGround,2026-02-12,
+SRE4388,Address name correction,Sreekumaran Nair - Joby,+919845124161,,,PI-2026-A2825,open,2026-02-12,15000,7500,8000,0,blocked,lost,Filing,In Queue,2026-02-12,
+SRE4485,Memorandum of Understanding (MoU),Shashank - Ashok Kumar,+919945304600,,,PI-2026-A2848,closed,2026-02-12,3500,3500,3500,3500,archived,open,To Close,Doc Shared,2026-02-12,2026-02-27
+SRE4486,Registry at SRO,Shreey M - Agent,+916363313722,,,PI-2026-A2849,open,2026-02-12,20000,0,20000,0,pre active,open,qualified,,2026-02-12,
+SRE4507,Bescom,Deepak Sharma - Sunil Asset,+919910994193,,,PI-2026-A2856,closed,2026-02-13,7000,7000,7000,7000,archived,open,To Close,Paid,2026-02-13,2026-03-28
+SRE4688,Khata Transfer,Dharamkriti - Prateek Kadam,+919503016498,,,PI-2026-A2903,closed,2026-02-13,35000,35000,33500,33500,archived,open,To Close,Paid,2026-02-13,2026-05-06
+SRE4689,Property Tax Payment Assistance,Dharamkriti - Prateek Kadam,+919503016498,,,PI-2026-A2903,closed,2026-02-13,35000,35000,1500,1500,archived,open,To Close,Doc Shared,2026-02-13,2026-05-28
+SRE4739,Rental Agreement,Naushad - Agent,+919986442680,,,PI-2026-A2908,open,2026-02-13,800,0,800,0,pre active,open,qualified,,2026-02-13,
+SRE4759,E-Khata,Nitin - Joby,+919920186870,,,PI-2026-A2915,closed,2026-02-14,4000,4000,4000,4000,archived,open,To Close,Paid,2026-02-14,2026-03-30
+SRE4799,E-Khata,testacn,+912345678800,,,,,,,,10,0,pre active,open,qualified,,2026-02-14,
+SRE4802,E-Khata,testacn,+912342342341,,,,,,,,10,0,pre active,open,qualified,,2026-02-14,
+SRE4804,Bescom,testacn,+912342342341,,,,,,,,5000,0,pre active,open,unqualified,,2026-02-14,
+SRE4805,Khata Transfer,testacn,+912342342341,,,,,,,,10000,0,pre active,open,unqualified,,2026-02-14,
+SRE5031,Agreement to Sale Drafting,Roshan Hegde,+919611757977,,,PI-2026-A3099,open,2026-02-16,30000,35000,5000,15000,archived,open,To Close,Doc Shared,2026-02-16,2026-02-28
+SRE5032,Registry at SRO,Roshan Hegde,+919611757977,,,PI-2026-A3099,open,2026-02-16,30000,35000,25000,25000,archived,open,To Close,Paid,2026-02-16,2026-05-01
+SRE5223,Khata Transfer,test_user,+917272727272,,,,,,,,10000,0,active,lost,Applied,Awaiting,2026-02-18,
+SRE5228,Khata Transfer,TEST,+917373737373,,,,,,,,12,0,active,lost,Applied,Approved,2026-02-18,
+SRE5288,Encumbrance Certificate,Grace - Agent,+919738461850,,,PI-2026-A3214,closed,2026-02-19,1000,1000,1000,1000,archived,open,To Close,Paid,2026-02-19,2026-02-26
+SRE5293,Khata Transfer,test_doc,+919898989898,,,,,,,,10000,0,blocked,lost,Doc,To Validate,2026-02-19,
+SRE5419,Bescom,test_acn_lead,+918888889999,,,,,,,,5000,0,pre active,open,Unqualified,Incomplete,2026-02-20,
+SRE5421,Khata Transfer,test_others,+9112121212,,,,,,,,10000,0,pre active,open,unqualified,,2026-02-20,
+SRE5519,Agreement to Sale Drafting,Shashank - Ashok Kumar,+919945304600,,,PI-2026-A3277,closed,2026-02-20,7000,7000,7000,7000,archived,open,To Close,Doc Shared,2026-02-20,2026-02-27
+SRE5520,Due diligence,Shantanu - Kesow,+917838266327,,,PI-2026-A3278,open,2026-02-20,13000,0,10500,0,pre active,open,qualified,,2026-02-20,
+SRE5521,Legal Consultation,Shantanu - Kesow,+917838266327,,,PI-2026-A3278,open,2026-02-20,13000,0,2500,0,pre active,open,qualified,,2026-02-20,
+SRE5524,E-E (Electronic Transfer),Yuvraj - Salman,+919243400555,,,PI-2026-A3279,open,2026-02-20,10000,7000,4000,4000,closed,open,To Close,Paid,2026-02-20,2026-02-26
+SRE5525,Bescom,Yuvraj - Salman,+919243400555,,,PI-2026-A3279,open,2026-02-20,10000,7000,6000,3000,active,open,Applied,Awaiting,2026-02-20,
+SRE5645,Registry at SRO,Rakhi - Kaushik Das,+919609567690,,,PI-2026-A3315,closed,2026-02-21,33500,33500,33500,33500,archived,open,To Close,Doc Shared,2026-02-21,2026-03-13
+SRE5893,Due diligence,Rohit - Mujeeb,+917859863083,,,PI-2026-A3420,open,2026-02-23,10500,10500,10499,10499,archived,open,To Close,Doc Shared,2026-02-23,2026-03-08
+SRE5894,Legal Consultation,Rohit - Mujeeb,+917859863083,,,PI-2026-A3420,open,2026-02-23,10500,10500,1,1,active,lost,Doc,To Validate,2026-02-23,
+SRE5917,Due diligence,Amit - Vikrant Singh,+919535917184,,,PI-2026-A3433,closed,2026-02-23,10000,10000,10000,10000,archived,open,To Close,Paid,2026-02-23,2026-03-10
+SRE6115,POA Drafting,Nishant,+6582051461,Raza,+919880092127,PI-2026-A3489,closed,2026-02-25,48500,48500,15000,15000,archived,open,To Close,Paid,2026-02-25,2026-04-18
+SRE6116,Registry at SRO,Nishant,+6582051461,Raza,+919880092127,PI-2026-A3489,closed,2026-02-25,48500,48500,33500,33500,archived,open,To Close,Paid,2026-02-25,2026-05-23
+SRE6123,Agreement to Sale Drafting,Aakash-Joe Godwin,+918128517342,,,PI-2026-A3493,open,2026-02-25,32000,32000,7000,8499,archived,open,To Close,Doc Shared,2026-02-25,2026-03-09
+SRE6124,Registry at SRO,Aakash-Joe Godwin,+918128517342,,,PI-2026-A3493,open,2026-02-25,32000,32000,25000,23501,archived,open,To Close,Paid,2026-02-25,2026-03-09
+SRE6277,E-E (Electronic Transfer),Vishal - Agent,+919900369244,,,PI-2026-A3516,closed,2026-02-26,4000,4000,4000,4000,archived,open,To Close,Paid,2026-02-26,2026-02-26
+SRE6282,Rental Agreement,RudraSarkar - Sunil Info Asset Makers,+918884493480,,,PI-2026-A3523,closed,2026-02-26,1200,1200,1200,1200,archived,open,To Close,Paid,2026-02-26,2026-04-09
+SRE6286,Encumbrance Certificate,Grace - Agent,+919738461850,,,PI-2026-A3522,closed,2026-02-26,1000,1000,1000,1000,archived,open,To Close,Paid,2026-02-26,2026-03-11
+SRE6307,Due diligence,Ripudaman - Prashant Ashok,+919111023146,,,,,,,,15000,0,pre active,lost,unqualified,,2026-02-26,
+SRE6308,Registry at SRO,Ripudaman - Prashant Ashok,+919111023146,,,PI-2026-A3535,open,2026-02-26,20000,0,15000,0,pre active,open,qualified,,2026-02-26,
+SRE6309,POA Drafting,Ripudaman - Prashant Ashok,+919111023146,,,PI-2026-A3535,open,2026-02-26,20000,0,5000,0,pre active,open,qualified,,2026-02-26,
+SRE6507,Due diligence,Tirthendu - Chirag,+919535856012,,,PI-2026-A3543,closed,2026-02-27,13500,13500,13500,13500,archived,open,To Close,Paid,2026-02-27,2026-03-18
+SRE6528,Due diligence,NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,10500,10500,closed,open,To Close,Paid,2026-02-27,2026-04-11
+SRE6529,Memorandum of Understanding (MoU),NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,3500,3500,closed,open,To Close,Doc Shared,2026-02-27,2026-03-27
+SRE6530,Agreement to Sale Drafting,NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,7000,7000,closed,open,To Close,Doc Shared,2026-02-27,2026-03-27
+SRE6531,Registry at SRO,NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,28000,28000,closed,open,To Close,Paid,2026-02-27,2026-04-29
+SRE6532,E-E (Electronic Transfer),NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,4000,2000,active,paused,Doc,To Validate,2026-02-27,
+SRE6533,Bescom,NN Varma,+919810368897,,,PI-2026-A3546,open,2026-02-27,60000,51000,7000,0,pre active,open,unqualified,Incomplete,2026-02-27,
+SRE6867,E-Khata,Syed Tauseef - Agent,+919739457386,,,PI-2026-A3571,closed,2026-02-28,3000,3000,3000,3000,archived,open,To Close,Paid,2026-02-28,2026-04-04
+SRE6874,E-Khata,Syed Tauseef - Agent,+919739457386,,,PI-2026-A3573,closed,2026-02-28,3000,3000,3000,3000,archived,open,To Close,Paid,2026-02-28,2026-05-09
+SRE6878,E-Khata,Syed Tauseef - Agent,+919739457386,,,PI-2026-A3576,closed,2026-02-28,3000,3000,3000,3000,archived,open,To Close,Paid,2026-02-28,2026-04-04
+SRE7079,Khata Transfer,Anupa Shreedhar - Noor Ahmed,+919886050819,,,PI-2026-A3663,open,2026-02-28,60500,37000,13500,13500,closed,open,To Close,Paid,2026-02-28,2026-05-25
+SRE7080,Deed Drafting and Registration,Anupa Shreedhar - Noor Ahmed,+919886050819,,,PI-2026-A3663,open,2026-02-28,60500,37000,33500,16750,active,open,Applied,Awaiting,2026-02-28,
+SRE7081,Khata Transfer,Anupa Shreedhar - Noor Ahmed,+919886050819,,,PI-2026-A3663,open,2026-02-28,60500,37000,13500,6750,active,paused,Doc,To Validate,2026-02-28,
+SRE8205,E-Khata,Mohammed Sidique - Agent,+919740297901,,,PI-2026-A3875,closed,2026-03-05,3000,3000,3000,3000,archived,open,To Close,Paid,2026-03-05,2026-06-03
+SRE8206,Khata Transfer,Sanjay - Joby,+918618622385,,,PI-2026-A3877,open,2026-03-05,20500,2000,13500,2000,active,lost,Filing,EC Applied,2026-03-05,
+SRE8207,Bescom,Sanjay - Joby,+918618622385,,,PI-2026-A3877,open,2026-03-05,20500,2000,7000,0,pre active,open,qualified,,2026-03-05,
+SRE8245,New Khata,Grace - Agent,+919738461850,,,PI-2026-A3888,closed,2026-03-06,15000,15000,15000,15000,closed,open,To Close,Paid,2026-03-06,2026-06-15
+SRE8352,E-E (Electronic Transfer),Ravi Mokashi,+919954029136,,,PI-2026-A3924,closed,2026-03-06,10000,10000,4000,4000,closed,open,To Close,Paid,2026-03-06,2026-03-16
+SRE8353,Bescom,Ravi Mokashi,+919954029136,,,PI-2026-A3924,closed,2026-03-06,10000,10000,6000,6000,closed,open,To Close,Paid,2026-03-06,2026-04-19
+SRE8354,Memorandum of Understanding (MoU),Prateek Kadam - Agent,+918861987965,,,PI-2026-A3926,open,2026-03-06,800,800,800,800,active,lost,Filing,In Queue,2026-03-06,
+SRE8413,Due diligence,Niyati - Chirag,+919972008777,,,PI-2026-A3937,closed,2026-03-07,13500,13500,13500,13500,archived,open,To Close,Paid,2026-03-07,2026-03-25
+SRE8653,Agreement to Sale Drafting,Joby - Mohammed Ismail,+919886913316,,,PI-2026-A4128,closed,2026-03-09,38000,38000,8000,8000,archived,open,To Close,Doc Shared,2026-03-09,2026-03-27
+SRE8654,Registry at SRO,Joby - Mohammed Ismail,+919886913316,,,PI-2026-A4128,closed,2026-03-09,38000,38000,30000,30000,archived,open,To Close,Doc Shared,2026-03-09,2026-03-27
+SRE8947,Legal Consultation,testtanflow,+918218687246,,,,,,,,5000,0,active,lost,Filing,In Queue,2026-03-10,
+SRE8970,Bescom,testp1,+9112348888,,,PI-2026-A4178,lost,2026-03-10,5000,0,5000,0,pre active,open,unqualified,,2026-03-10,
+SRE8971,E-E (Electronic Transfer),testp1,+9112348888,,,PI-2026-A4180,lost,2026-03-10,30,0,30,0,pre active,open,unqualified,,2026-03-10,
+SRE9164,Bescom,Shiv Pratap - Sunil Info Asset Makers,+918299779926,,,PI-2026-A4200,closed,2026-03-10,7000,3500,7000,3500,archived,open,To Close,Doc Shared,2026-03-10,2026-04-24
+SRE9165,E-Khata,Vaibhav - Shreey M,+918105955677,,,PI-2026-A4201,closed,2026-03-10,17000,17000,8000,8000,closed,open,To Close,Doc Shared,2026-03-10,2026-06-05
+SRE9166,Bescom,Vaibhav - Shreey M,+918105955677,,,PI-2026-A4201,closed,2026-03-10,17000,17000,7000,7000,closed,open,To Close,Doc Shared,2026-03-10,2026-07-31
+SRE9167,Property Tax Name Change,Vaibhav - Shreey M,+918105955677,,,PI-2026-A4201,closed,2026-03-10,17000,17000,2000,2000,closed,open,To Close,Paid,2026-03-10,2026-07-20
+SRE9168,Due diligence,Mohan G - Sangram,+919591399667,,,PI-2026-A4202,closed,2026-03-10,13500,13500,13500,13500,archived,open,To Close,Paid,2026-03-10,2026-03-25
+SRE9436,E-Khata,Pankaj Bihani - VaibhavShreey M,+15103587391,,,PI-2026-A4250,closed,2026-03-11,17000,17000,8000,8000,closed,open,To Close,Paid,2026-03-11,2026-06-05
+SRE9437,Bescom,Pankaj Bihani - VaibhavShreey M,+15103587391,,,PI-2026-A4250,closed,2026-03-11,17000,17000,7000,7000,closed,open,To Close,Doc Shared,2026-03-11,2026-07-31
+SRE9438,Property Tax Name Change,Pankaj Bihani - VaibhavShreey M,+15103587391,,,PI-2026-A4250,closed,2026-03-11,17000,17000,2000,2000,closed,open,To Close,Paid,2026-03-11,2026-07-20
+SRE9439,Due diligence,Chitrarath,+6581615110,,,,,,,,13500,0,pre active,lost,qualified,,2026-03-11,
+SRE9590,Legal Consultation,Namarta - Abhishek Dey,+919167331176,,,PI-2026-A4281,closed,2026-03-12,1500,1500,1500,1500,archived,open,To Close,Doc Shared,2026-03-12,2026-03-12
+SRE9596,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A4287,closed,2026-03-13,2500,6500,2500,6500,closed,open,To Close,Paid,2026-03-12,2026-06-04
+SRE9598,E-Khata,Naresh Vithal Bathija - Agent,+919845207846,,,PI-2026-A4282,closed,2026-03-12,8000,8000,8000,8000,closed,open,To Close,Paid,2026-03-12,2026-08-07
+SRE9635,Property Tax Name Change,Sunil Info Asset Makers,+919243024730,,,,,,,,1500,0,active,open,Applied,Awaiting,2026-03-13,
+SRE9812,New Khata,Kiran-Agent,+919353630472,,,PI-2026-A4346,open,2026-03-13,35000,0,35000,0,pre active,open,unqualified,,2026-03-13,
+SRE9846,Agreement to Sale Drafting,Yuvaraj - Keerthi,+919986780693,,,PI-2026-A4362,lost,2026-03-13,40500,0,7000,0,pre active,lost,qualified,,2026-03-13,
+SRE9847,Registry at SRO,Yuvaraj - Keerthi,+919986780693,,,PI-2026-A4362,lost,2026-03-13,40500,0,33500,0,pre active,lost,qualified,,2026-03-13,
+SRE9852,Address name correction,Keerthi - Mujeeb,+919980010027,,,PI-2026-A4365,open,2026-03-13,5000,2500,5000,2500,blocked,lost,Doc,To Validate,2026-03-13,
+SRF2214,Due diligence,Fahad - Devanath,+919945001777,,,PI-2026-A4594,open,2026-03-16,13500,0,13500,0,pre active,open,qualified,,2026-03-16,
+SRF2245,Bescom,xyzacn,+911234545678,aikansh,+917776665553,,,,,,5000,0,blocked,open,unqualified,,2026-03-16,
+SRF2271,Bescom,testingacnflow,+918888800000,parthsarthi,+911234567891,,,,,,5000,0,pre active,open,unqualified,,2026-03-16,
+SRF2272,Khata Transfer,testingacnflow,+918888800000,parthsarthi,+911234567891,,,,,,10000,0,pre active,open,unqualified,,2026-03-16,
+SRF2274,Khata Transfer,testacnflow2,+917676767676,parthsarthi,+911234567891,,,,,,10000,0,pre active,open,unqualified,,2026-03-16,
+SRF2419,Rental Agreement,Arun Bindra - Sanchit,+919341232567,,,PI-2026-A4616,closed,2026-03-17,1000,1000,1000,1000,archived,open,To Close,Paid,2026-03-17,2026-04-17
+SRF2434,Khata Transfer,testacndetails,+912476764767,aikansh,+917776665553,,,,,,10000,0,pre active,open,unqualified,,2026-03-17,
+SRF2469,Bescom,acntestingohhh,+913332221123,priyanshu,+918888999989,,,,,,5000,0,pre active,open,unqualified,,2026-03-17,
+SRF2556,Property Tax Name Change,Harish - Agent,+918904279890,,,,,,,,1500,0,pre active,open,unqualified,,2026-03-17,
+SRF2621,Address name correction,Shilpi - Kareem,+919920388209,,,PI-2026-A4635,closed,2026-03-18,0,0,0,0,archived,open,To Close,Paid,2026-03-18,2026-06-10
+SRF2628,Sale Deed Drafting,testacngst,+916565665656,parthsarthi,+911234567891,,,,,,2,0,blocked,lost,Doc,To Validate,2026-03-18,
+SRF2676,E-Khata,testingacnx - priyanshu,+913344221212,priyanshu,+918888999989,,,,,,3000,0,pre active,open,unqualified,,2026-03-18,
+SRF2677,Bescom,testingacnx - priyanshu,+913344221212,priyanshu,+918888999989,,,,,,5000,0,pre active,open,unqualified,,2026-03-18,
+SRF2679,Bescom,testicy,+911234567894,priyanshu,+918888999989,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2686,E-Khata,ISOTOPETEST,+911234561234,priyanshu,+918888999989,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2725,Sale Deed Drafting,testacnflowfbp,+919898989889,parthsarthi,+911234567891,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2726,Release Deed Drafting,testacnflowfbp,+919898989889,parthsarthi,+911234567891,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2735,E-Khata,astriextest,+912345245252,priyanshu,+918888999989,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2736,Bescom,astriextest,+912345245252,priyanshu,+918888999989,,,,,,2,0,pre active,open,unqualified,,2026-03-18,
+SRF2824,E-Khata,acntesting2,+911234509876,aikansh,+917776665553,,,,,,2,0,pre active,open,unqualified,,2026-03-19,
+SRF2825,Bescom,acntesting2,+911234509876,aikansh,+917776665553,,,,,,2,0,pre active,open,unqualified,,2026-03-19,
+SRF2829,Bescom,actenstesting3,+911234567834,aikansh,+917776665553,,,,,,2,0,pre active,open,unqualified,,2026-03-19,
+SRF2830,E-E (Electronic Transfer),actenstesting3,+911234567834,aikansh,+917776665553,,,,,,2,0,pre active,open,unqualified,,2026-03-19,
+SRF2834,Khata Transfer,testfinal,+919842897683,,,,,,,,9,0,archived,open,To Close,Doc Shared,2026-03-19,2026-03-19
+SRF2836,Khata Transfer,zyxacntesting,+912323232224,aikansh,+917776665553,,,,,,6000,0,pre active,open,unqualified,,2026-03-19,
+SRF2837,Bescom,zyxacntesting,+912323232224,aikansh,+917776665553,,,,,,3000,0,pre active,open,unqualified,,2026-03-19,
+SRF2839,E-E (Electronic Transfer),test,+912233445566,parthsarthi,+911234567891,,,,,,3,0,blocked,lost,Filing,In Process,2026-03-19,
+SRF2853,Bescom,testfinalinvoice,+918372389758,parthsarthi,+911234567891,,,,,,5000,5000,archived,open,To Close,Doc Shared,2026-03-19,2026-03-19
+SRF2859,Gruha Jyoti Scheme,testfianlinvoice,+917853787899,parthsarthi,+911234567891,,,,,,10,0,archived,open,To Close,Doc Shared,2026-03-19,2026-03-19
+SRF2863,Bescom,testingfinalok,+911234567842,priyanshu,+918888999989,,,,,,5000,0,closed,open,To Close,Doc Shared,2026-03-19,2026-03-19
+SRF2871,E-E (Electronic Transfer),testfinalinvices,+918478623673,parthsarthi,+911234567891,,,,,,30,0,archived,open,To Close,Doc Shared,2026-03-19,2026-03-19
+SRF2872,Sale Deed Drafting,testfinalinvices,+918478623673,parthsarthi,+911234567891,,,,,,15,0,pre active,open,unqualified,,2026-03-19,
+SRF3134,Registry at SRO,Sumit - Akhilesh,+918920389080,,,PI-2026-A4785,open,2026-03-21,29000,27000,25000,25000,closed,open,To Close,Paid,2026-03-21,2026-04-15
+SRF3135,E-E (Electronic Transfer),Sumit - Akhilesh,+918920389080,,,PI-2026-A4785,open,2026-03-21,29000,27000,4000,0,active,lost,Doc,To Validate,2026-03-21,
+SRF3877,E-E (Electronic Transfer),Srikhant KS - Ramesh,+919448672139,,,PI-2026-A4897,closed,2026-03-23,4000,4000,4000,4000,closed,open,To Close,Paid,2026-03-23,2026-05-22
+SRF4048,Encumbrance Certificate,Shreey M - Agent,+916363313722,,,PI-2026-A4909,closed,2026-03-24,2000,2000,2000,2000,archived,open,To Close,Paid,2026-03-24,2026-07-03
+SRF4051,Due diligence,Raghav - Prabhakar,+919176706192,,,PI-2026-A4914,closed,2026-03-24,13500,13500,13500,13500,archived,open,Filing,Paid,2026-03-24,2026-04-27
+SRF4105,Agreement to Sale Drafting,Azhar Fayaz - Agent,+917006646528,,,PI-2026-A4919,closed,2026-03-24,4000,4000,4000,4000,archived,open,To Close,Doc Shared,2026-03-24,2026-03-25
+SRF4149,Agreement to Sale Drafting,Maavi - Agent,+919980549321,,,PI-2026-A4930,open,2026-03-24,25000,0,2000,0,active,open,To Close,Doc Shared,2026-03-24,
+SRF4150,Registry at SRO,Maavi - Agent,+919980549321,,,PI-2026-A4930,open,2026-03-24,25000,0,23000,0,active,paused,Doc,To Validate,2026-03-24,
+SRF4251,E-Khata,acntest,,aikansh,+917776665553,,,,,,10000,0,active,lost,Doc,To Validate,2026-03-24,
+SRF4252,E-Khata,acntest,,aikansh,+917776665553,,,,,,7000,0,active,lost,Doc,To Validate,2026-03-24,
+SRF4392,Address name correction,SUBHRO KAR -Neerabh,+917091318473,,,PI-2026-A5274,lost,2026-03-30,0,0,0,0,closed,open,To Close,Paid,2026-03-25,2026-06-19
+SRF4739,Agreement to Sale Drafting,Shreey M - Agent,+916363313722,,,PI-2026-A4980,open,2026-03-25,30000,0,5000,0,pre active,open,qualified,,2026-03-25,
+SRF4740,Registry at SRO,Shreey M - Agent,+916363313722,,,PI-2026-A4980,open,2026-03-25,30000,0,25000,0,pre active,open,qualified,,2026-03-25,
+SRF4794,Bescom,TESTINGGFEEDBACK,+911212121234,,,,,,,,5000,0,archived,open,To Close,Doc Shared,2026-03-25,2026-05-08
+SRF5047,Rental Agreement,Amrit Raj - Pankaj Kumar,+918539095797,,,PI-2026-A4989,closed,2026-03-26,1500,1500,1500,1500,archived,open,To Close,Paid,2026-03-26,2026-04-17
+SRF6061,Gift Deed,Shreey M - Agent,+916363313722,,,PI-2026-A5104,open,2026-03-28,25000,0,25000,0,pre active,open,qualified,,2026-03-28,
+SRF6157,Khata Transfer,Srividya - Samir Kumar,+919980711336,,,PI-2026-A5122,open,2026-03-28,23000,11500,23000,11500,blocked,open,Filing,EC Applied,2026-03-28,
+SRF7780,E-Khata,Balamurugan N,,Lalitha,+918971794348,PI-2026-A5509,closed,2026-04-02,3000,3000,3000,3000,archived,open,To Close,Paid,2026-04-02,2026-04-23
+SRF7801,E-Khata,Binay,,Lalitha,+918971794348,PI-2026-A5511,closed,2026-04-02,3000,3000,3000,3000,archived,open,To Close,Paid,2026-04-02,2026-04-14
+SRF7808,Khata Transfer,Ilan ,,Lalitha,+918971794348,PI-2026-A5512,closed,2026-04-02,10000,10000,10000,10000,archived,open,To Close,Paid,2026-04-02,2026-06-12
+SRF7820,Encumbrance Certificate,Prabhat,+919663378250,Prabhat - YourOwnRoom,+919663378250,PI-2026-A5514,closed,2026-04-02,2000,2000,2000,2000,archived,open,To Close,Paid,2026-04-02,2026-04-04
+SRF7821,Sale Deed Drafting,testacn,+914545454545,aikansh,+917776665553,,,,,,1,0,pre active,open,unqualified,,2026-04-02,
+SRF7822,Release Deed Drafting,testacn,+914545454545,aikansh,+917776665553,,,,,,1,0,pre active,open,unqualified,,2026-04-02,
+SRF7824,Sale Deed Drafting,testacn,+914545454545,aikansh,+917776665553,,,,,,30,0,pre active,open,unqualified,,2026-04-02,
+SRF7825,Release Deed Drafting,testacn,+914545454545,aikansh,+917776665553,,,,,,1,0,pre active,open,unqualified,,2026-04-02,
+SRF7829,New Khata,Manohar,+919916870055,Shivaji N,+917760707073,PI-2026-A5516,open,2026-04-02,20000,10000,20000,10000,active,open,Applied,Awaiting,2026-04-02,
+SRF7832,New Khata,Sandeep Kumar,,Ruchi Govil,+919845413513,PI-2026-A5521,lost,2026-04-02,12500,0,12500,0,active,lost,Filing,EC Approved,2026-04-02,
+SRF7835,Agreement to Sale Drafting,NN Varma,+919810368897,Sayyam Jain,+917483422099,PI-2026-A5517,closed,2026-04-02,4000,4000,4000,4000,closed,open,Doc,Paid,2026-04-02,2026-04-10
+SRF7836,Khata Transfer,Dean A Cunha,,Vasu Jain,+919964985128,PI-2026-A5518,open,2026-04-02,10000,10000,10000,10000,closed,open,To Close,Paid,2026-04-02,2026-05-28
+SRF7838,Khata Transfer,Dean A Cunha Gomes,,Vasu Jain,+919964985128,PI-2026-A5519,open,2026-04-02,10000,10000,10000,10000,closed,open,To Close,Paid,2026-04-02,2026-06-12
+SRF7840,Bescom,testacn,+912222233333,aikansh,+917776665553,,,,,,5000,0,blocked,lost,Doc,To Validate,2026-04-02,
+SRF7841,E-Khata,testacn,+912222233333,aikansh,+917776665553,,,,,,3000,0,pre active,open,qualified,,2026-04-02,
+SRF7843,Khata Transfer,Dean A C Gomes,,Vasu Jain,+919964985128,PI-2026-A5520,open,2026-04-02,10000,10000,10000,10000,closed,open,To Close,Paid,2026-04-02,2026-07-22
+SRF7922,Agreement to Sale Drafting,Apka Complex,,Apka Complex,+918971521806,PI-2026-A5529,open,2026-04-03,21000,0,1000,0,pre active,open,qualified,,2026-04-03,
+SRF7923,Registry at SRO,Apka Complex,,Apka Complex,+918971521806,PI-2026-A5529,open,2026-04-03,21000,0,20000,0,pre active,open,qualified,,2026-04-03,
+SRF7936,E-E (Electronic Transfer),Rajesh Lalla,,Syed Ahmed,+919036307703,PI-2026-A5540,open,2026-04-03,3000,0,3000,0,pre active,open,qualified,,2026-04-03,
+SRF7941,E-Khata,Venkatesha Reddy,+919886640162,Ashok Kumar,+918431060493,PI-2026-A5542,open,2026-04-03,4000,2000,4000,2000,active,lost,Doc,To Validate,2026-04-03,
+SRF8098,Agreement to Sale Drafting,Ramesh,,Abhishek Dey,+919686454200,PI-2026-A5563,open,2026-04-04,30000,0,5000,0,pre active,open,qualified,,2026-04-04,
+SRF8099,Registry at SRO,Ramesh,,Abhishek Dey,+919686454200,PI-2026-A5563,open,2026-04-04,30000,0,25000,0,pre active,open,qualified,,2026-04-04,
+SRF8101,E-E (Electronic Transfer),Ramesh,,Abhishek Dey,+919686454200,PI-2026-A5564,open,2026-04-04,3000,0,3000,0,pre active,open,qualified,,2026-04-04,
+SRF8431,Khata Transfer,Tulsi Das Patel,,Binit,+918310381667,PI-2026-A5595,closed,2026-04-06,9000,9000,9000,9000,archived,open,To Close,Paid,2026-04-06,2026-05-06
+SRF8433,Encumbrance Certificate,Smruti Satpathy,+917022005540,Prashant Ashok,+919900211224,PI-2026-A5596,closed,2026-04-06,1500,1500,1500,1500,archived,open,Applied,Paid,2026-04-06,2026-04-17
+SRF8434,E-Khata,Priya ,+14046608591,Dhiren Talreja,+919845599026,PI-2026-A5597,open,2026-04-06,21500,10750,20000,10000,closed,open,To Close,Doc Shared,2026-04-06,2026-07-09
+SRF8435,Encumbrance Certificate,Priya ,+14046608591,Dhiren Talreja,+919845599026,PI-2026-A5597,open,2026-04-06,21500,10750,1500,750,closed,open,To Close,Doc Shared,2026-04-06,2026-07-09
+SRF8436,Due diligence,Aman Singh,+919560804148,Lakshminarayan,+917204775957,PI-2026-A5598,open,2026-04-06,50000,23750,9000,9000,archived,open,To Close,Doc Shared,2026-04-06,2026-04-30
+SRF8437,Agreement to Sale Drafting,Aman Singh,+919560804148,Lakshminarayan,+917204775957,PI-2026-A5598,open,2026-04-06,50000,23750,3500,3500,archived,open,To Close,Paid,2026-04-06,2026-04-12
+SRF8438,Registry at SRO,Aman Singh,+919560804148,Lakshminarayan,+917204775957,PI-2026-A5598,open,2026-04-06,50000,23750,33500,10050,active,paused,Doc,To Validate,2026-04-06,
+SRF8439,E-E (Electronic Transfer),Aman Singh,+919560804148,Lakshminarayan,+917204775957,PI-2026-A5598,open,2026-04-06,50000,23750,4000,1200,active,paused,Doc,To Validate,2026-04-06,
+SRF8561,New Khata,Shrinath,+919845138253,Lakshminarayan,+917204775957,PI-2026-A5617,closed,2026-04-07,20000,20000,20000,20000,closed,open,To Close,Paid,2026-04-07,2026-05-09
+SRF8562,Due diligence,Noor Ahmed,+919886768141,Noor Ahmed,+919886768141,PI-2026-A5618,open,2026-04-07,6000,3000,6000,3000,active,open,To Close,Doc Shared,2026-04-07,
+SRF8564,MODT Removal,Jyoti,+918553801199,Surajit Pal,+919980056474,PI-2026-A5619,open,2026-04-07,10000,0,10000,0,pre active,open,qualified,,2026-04-07,
+SRF8819,POA Drafting,Vineet Kabra,,Vineet Kabra,+919830026567,PI-2026-A5645,open,2026-04-09,1500,0,1500,0,pre active,open,qualified,,2026-04-09,
+SRF8821,POA Drafting,Vineet Kabra.,,Vineet Kabra,+919830026567,PI-2026-A5647,open,2026-04-09,1500,0,1500,0,pre active,open,qualified,,2026-04-09,
+SRF8830,Due diligence,Shyam Gupta,+919886226538,Akhilesh,+919803330688,PI-2026-A5650,closed,2026-04-09,10000,10000,10000,10000,archived,open,To Close,Paid,2026-04-09,2026-04-27
+SRF8831,POA Drafting,Nishant,+6582051461,Raza,+919880092127,PI-2026-A5652,closed,2026-04-09,10000,10000,10000,10000,archived,open,To Close,Paid,2026-04-09,2026-04-23
+SRF9034,Bescom,Prashant Mishra,+917795716362,Moti Lal,+919916768919,PI-2026-A5671,closed,2026-04-10,9000,9000,9000,9000,closed,open,To Close,Paid,2026-04-10,2026-07-27
+SRF9043,New Khata,Suganyalakshmi,,Zubair,+917892066321,PI-2026-A5673,open,2026-04-10,19000,9500,19000,9500,active,open,Applied,Awaiting,2026-04-10,
+SRF9916,Encumbrance Certificate,Rose,+919886696910,Prabhat - YourOwnRoom,+919663378250,PI-2026-A5779,closed,2026-04-14,2000,2000,2000,2000,closed,open,To Close,Paid,2026-04-14,2026-05-15
+SRF9918,Due diligence,Rahul,+918527403170,Vijay B,+918310964897,PI-2026-A5780,closed,2026-04-14,11000,11000,11000,11000,archived,open,To Close,Paid,2026-04-14,2026-04-28
+SRF9920,Due diligence,Arka Chowdary,+919051444161,Salman,+918867797297,PI-2026-A5781,open,2026-04-14,25000,13500,13500,13500,closed,open,To Close,Paid,2026-04-14,2026-04-25
+SRF9921,E-E (Electronic Transfer),Arka Chowdary,+919051444161,Salman,+918867797297,PI-2026-A5781,open,2026-04-14,25000,13500,4000,0,pre active,lost,qualified,,2026-04-14,
+SRF9922,Bescom,Arka Chowdary,+919051444161,Salman,+918867797297,PI-2026-A5781,open,2026-04-14,25000,13500,7500,0,active,open,Doc,To Validate,2026-04-14,
+SRG1105,E-Khata,Ranjita Yadav,+919980662233,Prashant,+919071116167,PI-2026-A5816,closed,2026-04-15,4000,4000,4000,4000,archived,open,To Close,Paid,2026-04-15,2026-05-04
+SRG1106,Encumbrance Certificate,Surashree S,,Sandhya,+919738094998,PI-2026-A5817,closed,2026-04-15,2000,2000,2000,2000,archived,open,Doc,Paid,2026-04-15,2026-04-16
+SRG1251,E-Khata,Elsie Thomas,,Syed Tauseef,+919739457386,PI-2026-A5844,closed,2026-04-16,3000,3000,3000,3000,closed,open,To Close,Paid,2026-04-16,2026-05-08
+SRG1257,E-Khata,Bharani Kumar,,Lalitha,+918971794348,PI-2026-A5845,closed,2026-04-16,3000,3000,3000,3000,closed,open,To Close,Paid,2026-04-16,2026-05-22
+SRG1585,Legal Consultation,Lalitha,+917972964959,Sayyam Jain,+917483422099,PI-2026-A5911,closed,2026-04-18,5000,5000,5000,5000,archived,open,Filing,Paid,2026-04-18,2026-04-25
+SRG1619,E-Khata,Mohan Samuel,,Info Asset Makers,+919243024730,PI-2026-A5933,closed,2026-04-18,11000,11000,3000,3000,closed,open,To Close,Paid,2026-04-18,2026-05-28
+SRG1620,Bescom,Mohan Samuel,,Info Asset Makers,+919243024730,PI-2026-A5933,closed,2026-04-18,11000,11000,8000,8000,closed,open,To Close,Doc Shared,2026-04-18,2026-07-31
+SRG1625,Legal Consultation,Rakesh,+919845636970,Samuel,+918095293198,PI-2026-A5936,closed,2026-04-18,4000,4000,4000,4000,archived,open,Doc,Paid,2026-04-18,2026-04-25
+SRG1884,MODT Removal,Hiren Dixit,+919033283963,Rohan Kulkarni,+919964440090,PI-2026-A5987,closed,2026-04-20,10500,10500,10500,10500,closed,open,To Close,Paid,2026-04-20,2026-05-05
+SRG1914,Registry at SRO,Sangram Mohapatra,,Sangram Mohapatra,+919886690815,PI-2026-A5997,closed,2026-04-20,25000,25000,25000,25000,closed,open,To Close,Paid,2026-04-20,2026-05-08
+SRG1917,E-Khata,Harish Lalchand,+919845040033,Dhiren Talreja,+919845599026,PI-2026-A6001,closed,2026-04-20,6000,6000,4000,4000,closed,open,To Close,Paid,2026-04-20,2026-05-23
+SRG1918,Encumbrance Certificate,Harish Lalchand,+919845040033,Dhiren Talreja,+919845599026,PI-2026-A6001,closed,2026-04-20,6000,6000,2000,2000,closed,open,To Close,Paid,2026-04-20,2026-05-26
+SRG1922,E-Khata,Mrinalini Menon,,Grace,+919738461850,PI-2026-A6002,closed,2026-04-20,3000,3000,3000,3000,closed,open,To Close,Paid,2026-04-20,2026-05-28
+SRG2063,Due diligence,Ashok,+919972756320,Arjun,+919965489085,PI-2026-A6035,closed,2026-04-21,12000,12000,12000,12000,closed,open,To Close,Paid,2026-04-21,2026-05-09
+SRG2065,Bescom,Prasad Potdar,+918007976137,Azhar Fayaz,+917006646528,PI-2026-A6036,open,2026-04-21,10000,5000,10000,5000,active,open,Doc,To Validate,2026-04-21,
+SRG2111,Memorandum of Understanding (MoU),Naz Warsi,,Prateek Kadam,+918861987965,PI-2026-A6039,closed,2026-04-22,800,800,800,800,archived,open,Applied,Paid,2026-04-22,2026-04-25
+SRG2124,Bescom,Sumit - Akhilesh,+918920389080,Akhilesh,+919803330688,PI-2026-A6042,open,2026-04-22,10000,5000,10000,5000,active,open,Ground,Subm Pending,2026-04-22,
+SRG2134,Rental Agreement,Shivsant,,Shivsant,+917411482894,PI-2026-A6045,open,2026-04-22,400,400,400,400,active,lost,Doc,To Validate,2026-04-22,
+SRG2223,Bescom,Testacn,+914545454545,,,,,,,,5,0,active,lost,Applied,Awaiting,2026-04-23,
+SRG2293,Memorandum of Understanding (MoU),Naresh,,Prateek Kadam,+918861987965,PI-2026-A6097,closed,2026-04-23,800,800,800,800,archived,open,To Close,Paid,2026-04-23,2026-04-29
+SRG2294,Agreement to Sale Drafting,Apkacomplex,,Apka Complex,+918971521806,PI-2026-A6098,open,2026-04-23,21000,0,1000,0,active,open,To Close,Doc Shared,2026-04-23,
+SRG2295,Registry at SRO,Apkacomplex,,Apka Complex,+918971521806,PI-2026-A6098,open,2026-04-23,21000,0,20000,0,active,open,Applied,Awaiting,2026-04-23,
+SRG2298,Khata Transfer,Harish,,Rajesh,+919686189799,PI-2026-A6101,open,2026-04-23,15000,7500,15000,7500,active,open,Applied,Awaiting,2026-04-23,
+SRG2381,E-E (Electronic Transfer),Puneetha Rao,+919886638227,Joe Godwin,+919686774201,PI-2026-A6144,closed,2026-04-25,6000,6000,6000,6000,closed,open,To Close,Paid,2026-04-25,2026-06-06
+SRG2503,E-Khata,Pawandeep Singh,+919833578883,Vishu Kumar,+919886404680,PI-2026-A6181,open,2026-04-27,12000,8000,4000,4000,closed,open,To Close,Paid,2026-04-27,2026-05-26
+SRG2504,Bescom,Pawandeep Singh,+919833578883,Vishu Kumar,+919886404680,PI-2026-A6181,open,2026-04-27,12000,8000,8000,4000,active,open,Applied,Awaiting,2026-04-27,
+SRG2513,Khata Transfer,Tuhin Sarkar,,Apka Complex,+918971521806,PI-2026-A6188,open,2026-04-27,10000,0,10000,0,blocked,open,Applied,Approved,2026-04-27,
+SRG2524,Khata Transfer,Aarya Mansukhani,+918130030502,Abhishek Saha,+919513408626,PI-2026-A6193,open,2026-04-27,18500,0,6500,0,active,lost,Filing,EC Approved,2026-04-27,
+SRG2525,Bescom,Aarya Mansukhani,+918130030502,Abhishek Saha,+919513408626,PI-2026-A6193,open,2026-04-27,18500,0,12000,0,active,lost,Doc,To Validate,2026-04-27,
+SRG2605,E-Khata,Senthilnathan,,Prem Gupta,+919845558549,PI-2026-A6219,closed,2026-04-28,3000,3000,3000,3000,closed,open,To Close,Paid,2026-04-28,2026-05-26
+SRG2606,Encumbrance Certificate,Mrinalini Menon,,Grace,+919738461850,PI-2026-A6220,open,2026-04-28,1000,500,1000,500,active,open,Applied,Awaiting,2026-04-28,
+SRG2607,E-Khata,Vandana Sarovar,,Naresh Vithal Bathija,+919845207846,PI-2026-A6222,closed,2026-04-28,2500,2500,2500,2500,closed,open,To Close,Paid,2026-04-28,2026-05-25
+SRG2614,Memorandum of Understanding (MoU),Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A6224,open,2026-04-28,88500,44250,3500,1750,active,open,To Close,Doc Shared,2026-04-28,
+SRG2615,Due diligence,Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A6224,open,2026-04-28,88500,44250,13500,6750,active,open,To Close,Doc Shared,2026-04-28,
+SRG2616,Agreement to Sale Drafting,Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,,,,,,7000,0,pre active,lost,qualified,,2026-04-28,
+SRG2617,Deed Drafting and Registration,Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A6224,open,2026-04-28,88500,44250,65000,32500,active,paused,Doc,To Validate,2026-04-28,
+SRG2618,E-E (Electronic Transfer),Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A6224,open,2026-04-28,88500,44250,4000,2000,active,paused,Doc,To Validate,2026-04-28,
+SRG2619,Other,Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A6224,open,2026-04-28,88500,44250,2500,1250,active,open,Filing,In Queue,2026-04-28,
+SRG2620,E-Khata,Manisha,,Rhythm,+919902711138,PI-2026-A6225,open,2026-04-28,4500,0,4500,0,pre active,open,qualified,,2026-04-28,
+SRG2621,Encumbrance Certificate,Asif Ahmed,,Raza,+919880092127,PI-2026-A6226,closed,2026-04-28,2000,2000,2000,2000,active,closed,Doc,To Validate,2026-04-28,
+SRG2622,Encumbrance Certificate,Ashkarali,,Raza,+919880092127,PI-2026-A6227,closed,2026-04-28,2000,2000,2000,2000,closed,open,To Close,Doc Shared,2026-04-28,2026-07-21
+SRG2687,Memorandum of Understanding (MoU),Sumanth,,Prateek Kadam,+918861987965,PI-2026-A6240,closed,2026-04-29,800,800,800,800,closed,open,To Close,Paid,2026-04-29,2026-05-27
+SRG2815,POA Drafting,Anil,+18582259089,Prashant Ashok,+919900211224,PI-2026-A6281,closed,2026-04-30,7500,7500,7500,7500,closed,open,To Close,Paid,2026-04-30,2026-05-19
+SRG3181,Property Tax Name Change,Deepak Sharma - Sunil Asset,+919910994193,Info Asset Makers,+919243024730,PI-2026-A6324,closed,2026-05-05,2000,2000,2000,2000,closed,open,To Close,Paid,2026-05-05,2026-06-09
+SRG3183,E-E (Electronic Transfer),Rohan Kelkar,+919423207920,Vaishak,+919341277071,PI-2026-A6325,closed,2026-05-05,16000,13882,6000,6000,closed,open,To Close,Paid,2026-05-05,2026-06-02
+SRG3184,Bescom,Rohan Kelkar,+919423207920,Vaishak,+919341277071,PI-2026-A6325,closed,2026-05-05,16000,13882,10000,7882,closed,open,To Close,Paid,2026-05-05,2026-06-23
+SRG3527,Encumbrance Certificate,Nn Varma,+919810368897,Sayyam Jain,+917483422099,PI-2026-A6375,closed,2026-05-08,2000,2000,2000,2000,closed,open,To Close,Paid,2026-05-08,2026-05-18
+SRG3678,Agreement to Sale Drafting,Prateek Kadam,,Prateek Kadam,+918861987965,PI-2026-A6396,closed,2026-05-09,1500,1500,1500,1500,closed,open,To Close,Paid,2026-05-09,2026-05-16
+SRG3987,E-Khata,Wasim Dar,,Cityblocks,+919900409831,PI-2026-A6484,closed,2026-05-11,4500,4500,4500,4500,closed,open,To Close,Paid,2026-05-11,2026-06-16
+SRG4002,Due diligence,Archana,+919019286414,Mohan JK,+918884441368,PI-2026-A6485,closed,2026-05-11,13500,13500,13500,13500,closed,open,To Close,Paid,2026-05-11,2026-06-26
+SRG4018,Khata Transfer,Akshay Sharma,+919916120601,Neerabh,+918970107101,PI-2026-A6486,open,2026-05-11,26000,21000,16000,16000,closed,open,To Close,Doc Shared,2026-05-11,2026-06-15
+SRG4019,Bescom,Akshay Sharma,+919916120601,Neerabh,+918970107101,PI-2026-A6486,open,2026-05-11,26000,21000,10000,5000,active,open,Doc,To Validate,2026-05-11,
+SRG4027,E-Khata,Virender,,Apka Complex,+918971521806,PI-2026-A6488,open,2026-05-11,3000,0,3000,0,active,open,To Close,Doc Shared,2026-05-11,
+SRG4036,Due diligence,Athmanand,+918790671330,Arjun Raj,+919901660888,PI-2026-A6489,closed,2026-05-11,10500,10500,10500,10500,closed,open,To Close,Doc Shared,2026-05-11,2026-07-31
+SRG4047,E-Khata,Abhinav Pandya,+918197683369,Amit Kumar Shah,+918197683369,PI-2026-A6490,open,2026-05-11,15000,15000,15000,15000,closed,open,To Close,Paid,2026-05-11,2026-07-15
+SRG4498,Khata Transfer,Viswanath,,Apka Complex,+918971521806,PI-2026-A6525,open,2026-05-13,10000,0,10000,0,active,open,Applied,Awaiting,2026-05-13,
+SRG4513,E-Khata,Sankalp,,Marshal D Henry,+919742333557,PI-2026-A6529,closed,2026-05-13,4500,4500,4500,4500,closed,open,To Close,Paid,2026-05-13,2026-07-31
+SRG4652,Khata Transfer,Sujeesh,+919980999224,Raza,+919880092127,PI-2026-A6544,closed,2026-05-13,10000,10000,10000,10000,closed,open,To Close,Paid,2026-05-13,2026-06-09
+SRG4856,Khata Transfer,Indira,,Apka Complex,+918971521806,PI-2026-A6561,open,2026-05-14,10000,0,10000,0,active,open,Applied,Awaiting,2026-05-14,
+SRG4858,E-Khata,Deepak,,Hemraj Mehra,+918660070887,PI-2026-A6562,open,2026-05-14,20000,20000,20000,20000,closed,open,To Close,Paid,2026-05-14,2026-07-15
+SRG4865,Family Tree Drafting,Sumit Agarwal,+918101450727,Sumit Kumar Jhunjhunwala,+918095444494,PI-2026-A6564,open,2026-05-14,18000,5400,18000,5400,active,open,Filing,In Process,2026-05-14,
+SRG5042,E-Khata,Jasmeen Kaur,,Arif Iqbal,+919886322800,PI-2026-A6596,open,2026-05-15,22000,11000,22000,11000,blocked,open,Doc,To Validate,2026-05-15,
+SRG5333,E-Khata,Devanga Prithviraj Rishiraj,,Naresh Vithal Bathija,+919845207846,PI-2026-A6600,closed,2026-05-15,3000,3000,3000,3000,closed,open,To Close,Paid,2026-05-15,2026-06-03
+SRG5355,New Khata,Mayur Kumar,,Abdul Azeem,+919148502930,PI-2026-A6604,open,2026-05-15,15000,0,15000,0,pre active,open,qualified,,2026-05-15,
+SRG5365,E-Khata,Irfan,,Bharath,+918420835767,PI-2026-A6605,closed,2026-05-15,7000,7000,7000,7000,closed,open,To Close,Paid,2026-05-15,2026-06-18
+SRG5915,E-Khata,Suneel Dutta - Agent,+919035825889,Suneel Dutta,+919035825889,PI-2026-A6890,closed,2026-05-18,4500,4500,4500,4500,closed,open,To Close,Paid,2026-05-18,2026-07-31
+SRG5961,Khata Transfer,Ravi,+919676612039,Ravi,+919036411252,PI-2026-A6911,open,2026-05-18,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-05-18,
+SRG5965,Legal Consultation,Prashant Ambastha,+919035072874,Mujeeb,+919036201193,PI-2026-A6914,closed,2026-05-18,2500,2500,2500,2500,closed,open,To Close,Doc Shared,2026-05-18,2026-05-30
+SRG5966,Encumbrance Certificate,Harish Lalchand,+919845040033,Dhiren Talreja,+919845599026,PI-2026-A6916,closed,2026-05-18,7000,7000,7000,7000,closed,open,To Close,Paid,2026-05-18,2026-07-05
+SRG5968,Agreement to Sale Drafting,George,+919705200302,Kranthi,+919880532556,PI-2026-A6917,open,2026-05-18,50000,25390,7000,3890,active,open,To Close,Doc Shared,2026-05-18,
+SRG5969,Registry at SRO,George,+919705200302,Kranthi,+919880532556,PI-2026-A6917,open,2026-05-18,50000,25390,27000,13500,active,open,Doc,To Validate,2026-05-18,
+SRG5970,E-E (Electronic Transfer),George,+919705200302,Kranthi,+919880532556,PI-2026-A6917,open,2026-05-18,50000,25390,6000,3000,active,paused,Doc,To Validate,2026-05-18,
+SRG5971,Bescom,George,+919705200302,Kranthi,+919880532556,PI-2026-A6917,open,2026-05-18,50000,25390,10000,5000,active,paused,Doc,To Validate,2026-05-18,
+SRG6042,E-Khata,Rajaram,+919880046664,Ish Venaik,+919044746484,PI-2026-A6935,closed,2026-05-19,6000,6000,6000,6000,closed,open,To Close,Paid,2026-05-19,2026-06-12
+SRG6046,Khata Transfer,Smitha,,Illiyaz Ahmed,+919380563996,PI-2026-A6937,closed,2026-05-19,12000,12000,12000,12000,closed,open,To Close,Paid,2026-05-19,2026-06-13
+SRG6088,Memorandum of Understanding (MoU),Pintu Sutradhar,,Pintu Sutradhar,+919513431219,PI-2026-A6947,closed,2026-05-19,4500,4500,4500,4500,closed,open,To Close,Paid,2026-05-19,2026-06-20
+SRG6097,Address name correction,Ankit Sinha,+917895370111,Pathan Abdul Kareem,+917829980041,PI-2026-A6948,open,2026-05-19,17500,8750,6500,3250,blocked,open,Doc,To Validate,2026-05-19,
+SRG6098,MODT Removal,Ankit Sinha,+917895370111,Pathan Abdul Kareem,+917829980041,PI-2026-A6948,open,2026-05-19,17500,8750,11000,5500,active,paused,Doc,To Validate,2026-05-19,
+SRG6192,Agreement to Sale Drafting,Testingggacntestt,+911274839289,aikansh,+917776665553,,,,,,3,0,pre active,open,unqualified,,2026-05-20,
+SRG6208,MODT Removal,Testingtuesrr,+9112312121212,aikansh,+917776665553,,,,,,3,0,pre active,open,qualified,,2026-05-20,
+SRG6223,Encumbrance Certificate,Mrinalini Menon,,Grace,+919738461850,PI-2026-A6980,open,2026-05-20,2500,1250,2500,1250,active,open,Applied,Awaiting,2026-05-20,
+SRG6285,Khata Transfer,Sumit - Akhilesh,+918920389080,Akhilesh,+919803330688,PI-2026-A6981,open,2026-05-20,21000,6300,21000,8300,active,open,Applied,Awaiting,2026-05-20,
+SRG6513,Agreement to Sale Drafting,Neethu,+917090700733,Venkatesh,+919632495522,PI-2026-A7030,open,2026-05-22,27000,2000,2000,2000,closed,open,To Close,Paid,2026-05-22,2026-06-26
+SRG6514,Registry at SRO,Neethu,+917090700733,Venkatesh,+919632495522,PI-2026-A7030,open,2026-05-22,27000,2000,25000,0,active,lost,Doc,To Validate,2026-05-22,
+SRG6547,Due diligence,Mudit,+919810739267,Prabhat - YourOwnRoom,+919663378250,PI-2026-A7039,closed,2026-05-22,13500,13500,13500,13500,closed,open,To Close,Paid,2026-05-22,2026-06-06
+SRG6552,E-Khata,Swaroop Rai,,Imran,+919108143439,PI-2026-A7041,open,2026-05-22,25000,12500,25000,12500,active,lost,Doc,To Validate,2026-05-22,
+SRG6738,Due diligence,Qazi Hasan,+919899773060,Ayan,+919113945873,PI-2026-A7094,closed,2026-05-23,13500,13500,13500,13500,closed,open,To Close,Paid,2026-05-23,2026-06-09
+SRG7130,E-Khata,Pawan Uppuluri,,Info Asset Makers,+919243024730,PI-2026-A7233,open,2026-05-25,22000,11000,22000,11000,active,open,Applied,Awaiting,2026-05-25,
+SRG7140,Registry at SRO,Niranjan Sabhahit,+919757041097,Ashok Kumar,+918431060493,PI-2026-A7242,open,2026-05-25,27000,0,27000,0,pre active,open,qualified,,2026-05-25,
+SRG7147,Khata Transfer,Pradeep Reddy,,Radhakrishnan,+919663933100,PI-2026-A7245,closed,2026-05-25,12000,12000,12000,12000,closed,open,To Close,Paid,2026-05-25,2026-06-12
+SRG7187,E-Khata,Mehek,+919945167430,Dhiren Talreja,+919845599026,PI-2026-A7270,closed,2026-05-25,14500,14500,12000,12000,closed,open,To Close,Paid,2026-05-25,2026-06-12
+SRG7188,Encumbrance Certificate,Mehek,+919945167430,Dhiren Talreja,+919845599026,PI-2026-A7270,closed,2026-05-25,14500,14500,2500,2500,closed,open,To Close,Paid,2026-05-25,2026-06-12
+SRG7253,New Khata,Bhanu Prakash,,Bharath,+918420835767,PI-2026-A7287,open,2026-05-26,15000,7500,15000,7500,active,open,Applied,Awaiting,2026-05-26,
+SRG7477,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A7319,closed,2026-05-27,6000,6000,6000,6000,closed,open,To Close,Paid,2026-05-27,2026-06-17
+SRG7483,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A7320,closed,2026-05-27,6000,6000,6000,6000,closed,open,To Close,Paid,2026-05-27,2026-06-17
+SRG7636,Khata Transfer,Amritanshu Ranjan,+917381175286,Abhishek Saha,+919513408626,PI-2026-A7376,open,2026-05-29,40000,20000,30000,15000,active,open,Applied,Awaiting,2026-05-29,
+SRG7637,Bescom,Amritanshu Ranjan,+917381175286,Abhishek Saha,+919513408626,PI-2026-A7376,open,2026-05-29,40000,20000,10000,5000,active,open,Doc,To Validate,2026-05-29,
+SRG7743,Due diligence,Sujeeth,+919945987276,Sujeeth,+919945987276,PI-2026-A7412,closed,2026-05-30,8000,8000,8000,8000,closed,open,To Close,Paid,2026-05-30,2026-06-27
+SRG7890,E-Khata,Radha Krishnan - Agent,+919663933100,Radhakrishnan,+919663933100,,,,,,3000,0,pre active,open,unqualified,,2026-06-01,
+SRG7891,E-Khata,Radha Krishnan - Agent,+919663933100,Radhakrishnan,+919663933100,,,,,,3000,0,pre active,open,unqualified,,2026-06-01,
+SRG7899,Family Tree Drafting,Sasinas,+917305342610,Yashwanth,+919943999033,PI-2026-A7493,open,2026-06-01,60500,30250,25000,0,active,open,Applied,Awaiting,2026-06-01,
+SRG7900,Khata Transfer,Sasinas,+917305342610,Yashwanth,+919943999033,PI-2026-A7493,open,2026-06-01,60500,30250,33500,0,active,paused,Filing,EC Approved,2026-06-01,
+SRG7901,Encumbrance Certificate,Sasinas,+917305342610,Yashwanth,+919943999033,PI-2026-A7493,open,2026-06-01,60500,30250,2000,0,active,open,Filing,In Process,2026-06-01,
+SRG7903,Bescom,Test_acn,,aikansh,+917776665553,PI-2026-A7492,open,2026-06-01,5,0,5,0,active,open,Applied,Awaiting,2026-06-01,
+SRG7917,Bescom,Rohit Goyal,+917838373333,Info Asset Makers,+919243024730,PI-2026-A7497,open,2026-06-01,7500,7500,7500,7500,active,open,Applied,Awaiting,2026-06-01,
+SRG7920,E-Khata,Radha Krishnan - Agent,+919663933100,Radhakrishnan,+919663933100,,,,,,3000,0,pre active,open,unqualified,,2026-06-01,
+SRG7922,E-Khata,Radhakrishnan,,Radhakrishnan,+919663933100,PI-2026-A7498,open,2026-06-01,22000,12000,22000,12000,active,open,Applied,Awaiting,2026-06-01,
+SRG7981,Deed Drafting and Registration,Prateek Kadam,,Prateek Kadam,+918861987965,PI-2026-A7517,closed,2026-06-02,30000,30000,30000,30000,closed,open,To Close,Paid,2026-06-02,2026-06-06
+SRG8012,Other,P S Narayanswamy,+919840060226,chandrashekar,+919742521323,PI-2026-A7526,closed,2026-06-03,2000,2000,2000,2000,closed,open,To Close,Paid,2026-06-03,2026-07-11
+SRG8018,Due diligence,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A7529,closed,2026-06-03,13500,13500,13500,13500,closed,open,To Close,Paid,2026-06-03,2026-06-26
+SRG8022,E-Khata,Syed Imran,+917259700226,Syed Imran,+917259700226,,,,,,4500,0,pre active,lost,unqualified,,2026-06-03,
+SRG8023,Bescom,Syed Imran,+917259700226,Syed Imran,+917259700226,,,,,,7500,0,pre active,lost,unqualified,,2026-06-03,
+SRG8024,Property Tax Name Change,Syed Imran,+917259700226,Syed Imran,+917259700226,,,,,,1500,0,pre active,lost,unqualified,,2026-06-03,
+SRG8031,E-Khata,Mohan Kakarla,+918618799127,Sachin Dinde,+919901055002,PI-2026-A7531,closed,2026-06-04,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-04,2026-06-09
+SRG8035,Property Tax Payment Assistance,Prateek Kadam,,Prateek Kadam,+918861987965,,,,,,500,0,pre active,lost,unqualified,,2026-06-04,
+SRG8036,E-Khata,Sachin,,Sachin Dinde,+919901055002,PI-2026-A7539,lost,2026-06-04,20000,10000,20000,10000,blocked,open,To Close,Doc Shared,2026-06-04,
+SRG8040,Bescom,Syed Imran,+917975337676,Syed Imran,+917259700226,PI-2026-A7541,open,2026-06-04,23000,23000,7500,7500,active,open,Doc,To Validate,2026-06-04,
+SRG8041,Khata Transfer,Syed Imran,+917975337676,Syed Imran,+917259700226,PI-2026-A7541,open,2026-06-04,23000,23000,12000,12000,closed,open,To Close,Paid,2026-06-04,2026-06-30
+SRG8042,Property Tax Name Change,Syed Imran,+917975337676,Syed Imran,+917259700226,PI-2026-A7855,open,2026-06-03,9000,0,1500,1500,closed,open,To Close,Paid,2026-06-04,2026-07-04
+SRG8043,Address name correction,Syed Imran,+917975337676,Syed Imran,+917259700226,PI-2026-A7855,open,2026-06-03,9000,0,2000,2000,active,paused,Doc,To Validate,2026-06-04,
+SRG8063,Property Tax Payment Assistance,Prateek Kadam,,Prateek Kadam,+918861987965,PI-2026-A7554,closed,2026-06-04,2000,2000,2000,2000,closed,open,To Close,Paid,2026-06-04,2026-07-21
+SRG8088,New Khata,Zublon-agent,+916360885163,zublon,+916360885163,PI-2026-A7560,lost,2026-06-05,25000,0,25000,0,pre active,lost,qualified,,2026-06-05,
+SRG8124,Due diligence,Margaret Sorensangbam,+917005705129,Bharath,+918420835767,PI-2026-A7562,closed,2026-06-05,13000,13000,13000,13000,closed,open,To Close,Paid,2026-06-05,2026-08-08
+SRG8154,E-Khata,Prashant D,,Prashanth D,+919986500805,PI-2026-A7578,open,2026-06-05,4500,2250,4500,2250,active,open,Applied,Awaiting,2026-06-05,
+SRG8195,E-Khata,P S Narayanswamy,+919840060226,chandrashekar,+919742521323,PI-2026-A7590,open,2026-06-06,5000,2500,5000,2500,active,open,Applied,Awaiting,2026-06-06,
+SRG8200,New Khata,Madan Marg,+918050072225,Sachin Dinde,+919901055002,PI-2026-A7593,open,2026-06-06,19500,9750,18000,9000,active,open,Applied,Awaiting,2026-06-06,
+SRG8201,Property Tax Payment Assistance,Madan Marg,+918050072225,Sachin Dinde,+919901055002,PI-2026-A7593,open,2026-06-06,19500,9750,1500,750,active,open,Applied,Awaiting,2026-06-06,
+SRG8218,Legal Consultation,Prashant Ambastha,+919035072874,Mujeeb,+919036201193,PI-2026-A7611,open,2026-06-06,5000,5000,5000,5000,active,open,Doc,To Validate,2026-06-06,
+SRG8227,E-Khata,Juned Shiekh,+916361969497,Juned,+916361969497,PI-2026-A7613,lost,2026-06-06,25000,0,25000,0,pre active,lost,unqualified,,2026-06-06,
+SRG8230,Khata Transfer,Anand Shiv,+919920495223,Prabhat - YourOwnRoom,+919663378250,PI-2026-A7614,closed,2026-06-06,15000,15000,15000,15000,closed,open,To Close,Paid,2026-06-06,2026-07-03
+SRG8298,POA Drafting,Harish Lalchand,+919845040033,Dhiren Talreja,+919845599026,PI-2026-A7615,lost,2026-06-08,5000,0,5000,0,pre active,lost,unqualified,,2026-06-08,
+SRG8376,E-Khata,Sathya Nehru,+917530020479,Nehru,+917530020479,PI-2026-A7649,lost,2026-06-08,75000,0,25000,0,pre active,lost,unqualified,,2026-06-08,
+SRG8377,E-Khata,Sathya Nehru,+917530020479,Nehru,+917530020479,PI-2026-A7649,lost,2026-06-08,75000,0,25000,0,pre active,lost,unqualified,,2026-06-08,
+SRG8378,E-Khata,Sathya Nehru,+917530020479,Nehru,+917530020479,PI-2026-A7649,lost,2026-06-08,75000,0,25000,0,pre active,lost,unqualified,,2026-06-08,
+SRG8408,Encumbrance Certificate,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A7656,closed,2026-06-09,2000,2000,2000,2000,closed,open,To Close,Paid,2026-06-09,2026-07-27
+SRG8425,Bescom,Sangram Mohanpatra,+919886690815,Sangram Mohapatra,+919886690815,,,,,,5000,0,pre active,open,unqualified,,2026-06-09,
+SRG8426,E-E (Electronic Transfer),Sangram Mohanpatra,+919886690815,Sangram Mohapatra,+919886690815,,,,,,3000,0,pre active,open,unqualified,,2026-06-09,
+SRG8427,Bescom,Sangram Mohanpatra,,Sangram Mohapatra,+919886690815,PI-2026-A7662,open,2026-06-09,10000,5450,6500,1950,active,open,Doc,To Validate,2026-06-09,
+SRG8428,E-E (Electronic Transfer),Sangram Mohanpatra,,Sangram Mohapatra,+919886690815,PI-2026-A7662,open,2026-06-09,10000,5450,3500,3500,closed,open,To Close,Paid,2026-06-09,2026-06-23
+SRG8429,Memorandum of Understanding (MoU),Dhiren Talreja,,Dhiren Talreja,+919845599026,,,,,,3000,0,pre active,open,unqualified,,2026-06-09,
+SRG8499,Deed Drafting and Registration,Akhilesh,+919803330688,Akhilesh,+919803330688,,,,,,25000,0,pre active,open,unqualified,,2026-06-10,
+SRG8500,Agreement to Sale Drafting,Akhilesh,+919803330688,Akhilesh,+919803330688,,,,,,7000,0,pre active,open,unqualified,,2026-06-10,
+SRG8501,Agreement to Sale Drafting,Akhilesh Upneja,+919803330688,Akhilesh,+919803330688,,,,,,7000,0,pre active,open,unqualified,,2026-06-10,
+SRG8502,Deed Drafting and Registration,Akhilesh Upneja,+919803330688,Akhilesh,+919803330688,,,,,,25000,0,pre active,open,unqualified,,2026-06-10,
+SRG8503,Agreement to Sale Drafting,Akhilesh Upneja,,Akhilesh,+919803330688,PI-2026-A7674,open,2026-06-10,35000,20000,5000,5000,closed,open,To Close,Paid,2026-06-10,2026-06-18
+SRG8504,Deed Drafting and Registration,Akhilesh Upneja,,Akhilesh,+919803330688,PI-2026-A7674,open,2026-06-10,35000,20000,30000,15000,active,open,Applied,Awaiting,2026-06-10,
+SRG8520,Khata Transfer,Franklin Titus,+917303222110,Abhishek Dey,+919686454200,PI-2026-A7677,closed,2026-06-10,30000,30000,30000,30000,closed,open,To Close,Paid,2026-06-10,2026-06-25
+SRG8522,New Khata,Zublon,,zublon,+916360885163,PI-2026-A7680,open,2026-06-10,15000,7500,15000,7500,active,paused,Filing,EC Approved,2026-06-10,
+SRG8549,Deed Drafting and Registration,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A7686,closed,2026-06-10,30000,30000,30000,30000,closed,open,To Close,Paid,2026-06-10,2026-06-26
+SRG8872,E-Khata,Sachin,+919901055002,Sachin Dinde,+919901055002,,,,,,3000,0,pre active,open,unqualified,,2026-06-11,
+SRG8884,E-Khata,Sachin Dinde,+919901055002,Sachin Dinde,+919901055002,,,,,,3000,0,pre active,open,unqualified,,2026-06-11,
+SRG8885,E-Khata,Raja,,Sachin Dinde,+919901055002,PI-2026-A7712,closed,2026-06-11,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-11,2026-07-20
+SRG9004,New Khata,Testing Don't remove ,+919279479392,,,,,,,,10000,0,pre active,open,Applied,Awaiting,2026-06-12,
+SRG9022,New Khata,Ravi,,Ravi M,+919945022432,PI-2026-A7754,open,2026-06-12,55000,27500,55000,27500,active,open,Applied,Awaiting,2026-06-12,
+SRG9024,Property Tax Payment Assistance,Ravi,,Ravi M,+919945022432,PI-2026-A7755,open,2026-06-12,2000,0,2000,0,pre active,open,qualified,,2026-06-12,
+SRG9025,Property Tax Payment Assistance,Ravi,,Ravi M,+919945022432,,,,,,500,0,pre active,lost,unqualified,,2026-06-12,
+SRG9053,E-Khata,Sunil,+919243024730,Info Asset Makers,+919243024730,,,,,,3000,0,pre active,open,unqualified,,2026-06-13,
+SRG9055,E-Khata,Sunil,,Info Asset Makers,+919243024730,PI-2026-A7760,closed,2026-06-13,4500,4500,4500,4500,closed,open,To Close,Paid,2026-06-13,2026-06-22
+SRG9196,Rental Agreement,Shivsant,,Shivsant,+917411482894,PI-2026-A7785,closed,2026-06-15,1000,1000,1000,1000,closed,open,To Close,Paid,2026-06-15,2026-06-19
+SRG9199,Rental Agreement,Naresh,,Naresh Vithal Bathija,+919845207846,PI-2026-A7788,closed,2026-06-15,1000,1000,1000,1000,closed,open,To Close,Paid,2026-06-15,2026-06-25
+SRG9210,E-Khata,Radhakrishnan,,Radhakrishnan,+919663933100,PI-2026-A7792,open,2026-06-15,38000,25500,38000,25500,active,open,Filing,EC Approved,2026-06-15,
+SRG9219,New Khata,Rahul Patet,+9117189713161,Prabhat - YourOwnRoom,+919663378250,PI-2026-A7796,open,2026-06-15,29500,0,23500,0,pre active,open,qualified,,2026-06-15,
+SRG9220,Property Tax Payment Assistance,Rahul Patet,+9117189713161,Prabhat - YourOwnRoom,+919663378250,PI-2026-A7796,open,2026-06-15,29500,0,2000,0,pre active,open,qualified,,2026-06-15,
+SRG9221,Encumbrance Certificate,Rahul Patet,+9117189713161,Prabhat - YourOwnRoom,+919663378250,PI-2026-A7796,open,2026-06-15,29500,0,4000,0,pre active,open,qualified,,2026-06-15,
+SRG9304,Property Tax Payment Assistance,Luv,+919978254184,Shree M,+916363313722,PI-2026-A7816,closed,2026-06-16,2500,2500,2500,2500,closed,open,To Close,Paid,2026-06-16,2026-06-18
+SRG9308,Agreement to Sale Drafting,Zublon-agent,+916360885163,zublon,+916360885163,,,,,,7000,0,pre active,open,unqualified,,2026-06-16,
+SRG9309,Deed Drafting and Registration,Zublon-agent,+916360885163,zublon,+916360885163,,,,,,25000,0,pre active,open,unqualified,,2026-06-16,
+SRG9311,Agreement to Sale Drafting,Zublon,+916360885163,zublon,+916360885163,,,,,,7000,0,pre active,open,unqualified,,2026-06-16,
+SRG9312,Deed Drafting and Registration,Zublon,+916360885163,zublon,+916360885163,,,,,,25000,0,pre active,open,unqualified,,2026-06-16,
+SRG9313,Agreement to Sale Drafting,Zublon,,zublon,+916360885163,PI-2026-A7818,open,2026-06-16,33500,5500,5500,5500,closed,open,To Close,Paid,2026-06-16,2026-06-26
+SRG9314,Deed Drafting and Registration,Zublon,,zublon,+916360885163,PI-2026-A7818,open,2026-06-16,33500,5500,28000,0,pre active,open,qualified,,2026-06-16,
+SRG9319,New Khata,Haris Hamza Consultancy,,Haris Hamza,+918792404212,PI-2026-A7822,lost,2026-06-16,15000,0,15000,0,pre active,lost,qualified,,2026-06-16,
+SRG9748,Due diligence,Saptarshi Ray,+919903995636,Chirag,+917003132059,PI-2026-A7842,closed,2026-06-17,13000,13000,13000,13000,closed,open,To Close,Paid,2026-06-17,2026-06-30
+SRG9916,Property Tax Slab Change,Prashant Ashok,+919900211224,Prashant Ashok,+919900211224,PI-2026-A7886,closed,2026-06-17,2000,2000,2000,2000,closed,open,To Close,Paid,2026-06-17,2026-07-08
+SRH1060,Khata Transfer,Aman,+919970446533,Abhishek Saha,+919513408626,PI-2026-A7919,open,2026-06-18,31000,15500,31000,15500,active,open,Applied,Awaiting,2026-06-18,
+SRH1063,Due diligence,Satish Banka,+919934770675,Danish Ahmed,+918877995881,PI-2026-A7920,closed,2026-06-18,12500,12500,12500,12500,closed,open,To Close,Paid,2026-06-18,2026-07-03
+SRH1151,Khata Transfer,Testingacnproforma,+914985783787,aikansh,+917776665553,,,,,,10000,0,pre active,open,unqualified,,2026-06-19,
+SRH1156,Khata Transfer,Testacn,+919378648648,aikansh,+917776665553,,,,,,10000,0,pre active,open,unqualified,,2026-06-19,
+SRH1160,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A7947,open,2026-06-19,6000,0,6000,0,active,lost,Doc,To Validate,2026-06-19,
+SRH1180,Agreement to Sale Drafting,Gautam Bajaj,+919880406568,Vinod Parwani,+919880406568,PI-2026-A7957,open,2026-06-19,40500,23750,7000,7000,closed,open,To Close,Paid,2026-06-19,2026-07-03
+SRH1181,Deed Drafting and Registration,Gautam Bajaj,+919880406568,Vinod Parwani,+919880406568,PI-2026-A7957,open,2026-06-19,40500,23750,33500,16750,active,open,Doc,To Validate,2026-06-19,
+SRH1188,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A7959,closed,2026-06-19,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-19,2026-07-21
+SRH1206,Encumbrance Certificate,Satish Banka,+919934770675,Danish Ahmed,+918877995881,PI-2026-A7967,lost,2026-06-19,6000,0,6000,0,active,lost,Doc,To Validate,2026-06-19,
+SRH1256,Encumbrance Certificate,Marshal D Henry,+919742333557,Marshal D Henry,+919742333557,PI-2026-A7988,closed,2026-06-19,1750,1750,1750,1750,closed,open,To Close,Paid,2026-06-19,2026-07-28
+SRH1263,E-Khata,Pradeep Mogha,+9118507581720,Shree M,+916363313722,PI-2026-A7990,closed,2026-06-19,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-19,2026-06-29
+SRH1309,Property Tax Payment Assistance,Kushal Deep,+919871167394,Shree M,+916363313722,PI-2026-A7999,open,2026-06-20,3500,3500,3500,3500,active,open,Doc,To Validate,2026-06-20,
+SRH1335,Other,Praveen,+919900054077,Shree M,+916363313722,PI-2026-A8017,open,2026-06-20,12000,6000,12000,6000,active,paused,Doc,To Validate,2026-06-20,
+SRH1348,Deed Drafting and Registration,Neerabh,+918970107101,Neerabh,+918970107101,PI-2026-A8028,closed,2026-06-20,30000,30000,30000,30000,closed,open,To Close,Paid,2026-06-20,2026-07-17
+SRH1349,Deed Drafting and Registration,Neerabh,+918970107101,Neerabh,+918970107101,,,,,,25000,0,pre active,lost,unqualified,,2026-06-20,
+SRH1351,Deed Drafting and Registration,Neerabh,+918970107101,Neerabh,+918970107101,,,,,,25000,0,pre active,lost,unqualified,,2026-06-20,
+SRH1353,Deed Drafting and Registration,Neerabh,+918970107101,Neerabh,+918970107101,,,,,,25000,0,pre active,lost,unqualified,,2026-06-20,
+SRH1354,Deed Drafting and Registration,Neerabh,+918970107101,Neerabh,+918970107101,,,,,,25000,0,pre active,lost,unqualified,,2026-06-20,
+SRH1367,Bescom,Srikhant Ks - Ramesh,+919448672139,Ramesh,+919886192220,PI-2026-A8035,open,2026-06-20,8500,4250,8500,4250,active,open,Applied,Awaiting,2026-06-20,
+SRH1455,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8048,open,2026-06-22,6000,3000,6000,6000,active,open,Applied,Awaiting,2026-06-22,
+SRH1457,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8050,open,2026-06-22,6000,3000,6000,3000,blocked,open,Applied,Approved,2026-06-22,
+SRH1463,E-Khata,Radha Krishnan - Agent,+919663933100,Radhakrishnan,+919663933100,PI-2026-A8052,open,2026-06-22,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-22,
+SRH1497,Assignment Agreement,Rahul Sharma,+919742178737,Bilal Ahmed,+919986225430,PI-2026-A8073,open,2026-06-22,13000,3000,10000,0,pre active,open,qualified,,2026-06-22,
+SRH1498,Memorandum of Understanding (MoU),Rahul Sharma,+919742178737,Bilal Ahmed,+919986225430,PI-2026-A8073,open,2026-06-22,13000,3000,3000,3000,closed,open,To Close,Paid,2026-06-22,2026-07-17
+SRH1532,Agreement to Sale Drafting,Sawan Agarwal,+918444818943,Abhishek Dey,+919686454200,PI-2026-A8088,open,2026-06-22,34500,2250,4500,2250,active,open,To Close,Doc Shared,2026-06-22,
+SRH1533,Deed Drafting and Registration,Sawan Agarwal,+918444818943,Abhishek Dey,+919686454200,PI-2026-A8088,open,2026-06-22,34500,2250,30000,0,pre active,open,qualified,,2026-06-22,
+SRH1563,E-Khata,Mithun,+919916539271,Sachin Dinde,+919901055002,PI-2026-A8095,closed,2026-06-23,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-23,2026-06-29
+SRH1585,E-Khata,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8107,closed,2026-06-23,6000,6000,6000,6000,closed,open,To Close,Paid,2026-06-23,2026-07-09
+SRH1590,MODT Removal,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A8112,closed,2026-06-23,10000,10000,10000,10000,closed,open,To Close,Paid,2026-06-23,2026-06-26
+SRH1595,Address name correction,Radha Krishnan - Agent,+919663933100,Radhakrishnan,+919663933100,PI-2026-A8113,closed,2026-06-23,3000,3000,3000,3000,closed,open,To Close,Paid,2026-06-23,2026-07-08
+SRH1644,New Khata,Wil Fred.p,+916360885163,zublon,+916360885163,PI-2026-A8135,lost,2026-06-24,30000,0,30000,0,active,lost,Doc,To Validate,2026-06-24,
+SRH1738,Rental Agreement,Alim Basha,+919849970070,Sreekanth,+919741700645,PI-2026-A8170,closed,2026-06-25,1100,1100,1100,1100,closed,open,To Close,Paid,2026-06-25,2026-07-03
+SRH1818,Khata Transfer,Mahesh,+919886346748,Abhishek Dey,+919686454200,PI-2026-A8201,open,2026-06-26,30000,15000,30000,15000,active,open,Filing,In Process,2026-06-26,
+SRH2099,Rental Agreement,Ravi D,+919892408332,Ravi D souza,+919892408332,PI-2026-A8261,closed,2026-06-28,1000,1000,1000,1000,closed,open,To Close,Paid,2026-06-28,2026-08-06
+SRH2102,Legal Consultation,Pankaj,+918017233105,Abhishek Dey,+919686454200,PI-2026-A8264,closed,2026-06-28,3000,3000,3000,3000,closed,open,To Close,Paid,2026-06-28,2026-07-17
+SRH2222,E-Khata,Sadasivam,+918792404212,Haris Hamza,+918792404212,PI-2026-A8305,closed,2026-06-29,4500,4500,4500,4500,closed,open,To Close,Paid,2026-06-29,2026-07-09
+SRH2230,E-Khata,Jaswinder Kaur,+919845207846,Naresh Vithal Bathija,+919845207846,PI-2026-A8318,open,2026-06-29,4000,2000,4000,2000,active,open,Applied,Awaiting,2026-06-29,
+SRH2243,E-Khata,Ish Pglu,+9112345678890,Naresh Vithal Bathija,+919845207846,,,,,,3,0,pre active,open,unqualified,,2026-06-29,
+SRH2248,Partition Deed,Savithri Krishnan,+919916009854,Chethan,+918880846666,PI-2026-A8324,open,2026-06-29,33500,0,33500,0,pre active,open,qualified,,2026-06-29,
+SRH2446,Bescom,Krishna K,+919741144418,Reema Kumari,+918660347718,PI-2026-A8336,open,2026-06-30,10000,5000,10000,5000,active,open,Doc,To Validate,2026-06-30,
+SRH2518,Khata Transfer,Luv,,Shree M,+916363313722,PI-2026-A8351,open,2026-06-30,12000,6000,12000,6000,active,open,To Close,Doc Shared,2026-06-30,
+SRH2524,E-Khata,Deepak Rohidekar -sunil,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8355,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2525,E-Khata,Arun Barad - Sunil,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8356,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2526,E-Khata,Arun Barad - Sunil,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8357,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2527,E-Khata,Sharad Suri,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8359,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2531,E-Khata,Upma Suri - Sunil,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8360,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2532,E-Khata,Samar Suri,+919243024730,Info Asset Makers,+919243024730,PI-2026-A8361,open,2026-06-30,25000,12500,25000,12500,active,open,Applied,Awaiting,2026-06-30,
+SRH2589,Bescom,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A8365,open,2026-07-01,16000,6000,10000,0,active,open,Doc,To Validate,2026-07-01,
+SRH2590,E-E (Electronic Transfer),Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A8365,open,2026-07-01,16000,6000,6000,6000,closed,open,To Close,Paid,2026-07-01,2026-07-13
+SRH2626,Khata Transfer,Chaya,+918310530746,Pramod,+918236823601,PI-2026-A8374,lost,2026-07-01,18000,0,16000,0,pre active,lost,qualified,,2026-07-01,
+SRH2627,Property Tax Name Change,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8374,lost,2026-07-01,18000,0,2000,0,pre active,lost,qualified,,2026-07-01,
+SRH2630,Khata Transfer,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8375,open,2026-07-01,14000,7000,12000,6000,active,open,Filing,EC Applied,2026-07-01,
+SRH2631,Encumbrance Certificate,Chaya Shree,+918310530746,Pramod,+918236823601,PI-2026-A8375,open,2026-07-01,14000,7000,2000,1000,active,open,Applied,Awaiting,2026-07-01,
+SRH2728,Khata Transfer,Sarabjit Mehra,+919844012847,Anand Nachaya,+917259246329,PI-2026-A8387,open,2026-07-02,45000,22500,20000,10000,active,paused,Doc,To Validate,2026-07-02,
+SRH2729,Family Tree Drafting,Sarabjit Mehra,+919844012847,Anand Nachaya,+917259246329,PI-2026-A8387,open,2026-07-02,45000,22500,25000,12500,active,open,Filing,In Process,2026-07-02,
+SRH2747,Rental Agreement,Anand - Abhishek,+917568865531,Abhishek Dey,+919686454200,PI-2026-A8393,closed,2026-07-02,1200,1200,1200,1200,closed,open,To Close,Paid,2026-07-02,2026-07-24
+SRH2785,Memorandum of Understanding (MoU),Surya,+919508507621,Abhishek Dey,+919686454200,PI-2026-A8405,closed,2026-07-02,3000,3000,3000,3000,closed,open,To Close,Paid,2026-07-02,2026-07-08
+SRH2795,Encumbrance Certificate,Keerthi Kumar,+919980010027,Mujeeb,+919036201193,PI-2026-A8411,open,2026-07-02,7000,3500,7000,3500,active,open,To Close,Doc Shared,2026-07-02,
+SRH2970,Khata Transfer,Vinuth,+918147771427,Vinuth Nayak,+918147771427,PI-2026-A8436,closed,2026-07-04,12000,12000,12000,12000,closed,open,To Close,Paid,2026-07-04,2026-08-10
+SRH2982,E-Khata,Robin,+919742581155,Junaid Ahmed,+919845012053,PI-2026-A8438,closed,2026-07-04,6000,6000,6000,6000,blocked,open,To Close,Paid,2026-07-04,2026-07-22
+SRH3289,Legal Consultation,Rohan,+919717311159,Abhishek Dey,+919686454200,PI-2026-A8467,closed,2026-07-06,3000,3000,3000,3000,closed,open,To Close,Paid,2026-07-06,2026-08-07
+SRH3299,Khata Transfer,Zeba Abdullah,+919902497457,Abhishek Dey,+919686454200,PI-2026-A8472,lost,2026-07-06,28000,0,28000,0,active,lost,Applied,Awaiting,2026-07-06,
+SRH3473,Khata Transfer,Bharath,+919844057681,Haneefa zakiya,+917204867070,PI-2026-A8496,closed,2026-07-07,16000,16000,16000,16000,closed,open,To Close,Paid,2026-07-07,2026-07-30
+SRH3501,E-Khata,Nilesh,+917406372273,Channappa,+919739777791,PI-2026-A8501,open,2026-07-07,20000,10000,20000,10000,blocked,open,Doc,To Validate,2026-07-07,
+SRH3684,Khata Transfer,Hitesh,,Shivlingaiaha,+919880389256,PI-2026-A8515,open,2026-07-08,20000,10000,20000,10000,blocked,open,Applied,Awaiting,2026-07-08,
+SRH3685,E-Khata,Testing Don't Remove,+919279479392,aikansh,+917776665553,,,,,,3000,0,pre active,open,unqualified,Incomplete,2026-07-08,
+SRH3910,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,PI-2026-A8528,open,2026-07-09,14000,7000,3500,1750,active,paused,Filing,In Queue,2026-07-09,
+SRH3929,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,PI-2026-A8528,open,2026-07-09,14000,7000,3500,1750,active,open,To Close,Doc Shared,2026-07-09,
+SRH3932,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,,,,,,3000,0,pre active,lost,unqualified,,2026-07-09,
+SRH3934,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,PI-2026-A8528,open,2026-07-09,14000,7000,3500,1750,active,open,To Close,Doc Shared,2026-07-09,
+SRH3935,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,,,,,,3000,0,pre active,open,qualified,,2026-07-09,
+SRH3936,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,,,,,,3000,0,pre active,open,qualified,,2026-07-09,
+SRH3938,E-Khata,Sudhir,+919739457386,Syed Tauseef,+919739457386,PI-2026-A8528,open,2026-07-09,14000,7000,3500,1750,active,paused,Filing,In Queue,2026-07-09,
+SRH3964,Due diligence,Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,12000,0,active,lost,Doc,To Validate,2026-07-09,
+SRH3965,Memorandum of Understanding (MoU),Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,2000,0,pre active,open,qualified,,2026-07-09,
+SRH3966,Deed Drafting and Registration,Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,30000,0,pre active,open,qualified,,2026-07-09,
+SRH3967,Agreement to Sale Drafting,Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,5000,0,pre active,open,qualified,,2026-07-09,
+SRH3968,E-E (Electronic Transfer),Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,4500,0,pre active,open,qualified,,2026-07-09,
+SRH3969,Bescom,Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8532,open,2026-07-09,60000,0,6500,0,pre active,open,qualified,,2026-07-09,
+SRH4228,Address name correction,Sunil Gowda,+919880166161,Sunil Gowda,+919880166161,PI-2026-A8562,open,2026-07-11,5000,2500,5000,2500,active,open,Applied,Awaiting,2026-07-11,
+SRH4253,Agreement to Sale Drafting,Sudhanshu,+918585904360,Kundan Mishra,+918585904360,PI-2026-A8610,open,2026-07-13,50000,7500,5000,0,pre active,open,qualified,,2026-07-11,
+SRH4254,Deed Drafting and Registration,Sudhanshu,+918585904360,Kundan Mishra,+918585904360,PI-2026-A8610,open,2026-07-13,50000,7500,30000,0,pre active,open,qualified,,2026-07-11,
+SRH4255,New Khata,Sudhanshu,+918585904360,Kundan Mishra,+918585904360,PI-2026-A8610,open,2026-07-13,50000,7500,15000,7500,active,open,Applied,Awaiting,2026-07-11,
+SRH4330,Khata Transfer,Anu,+918080614982,Prasad,+919966696397,PI-2026-A8596,open,2026-07-11,20000,10000,12000,6000,active,open,Filing,EC Applied,2026-07-11,
+SRH4331,Bescom,Anu,+918080614982,Prasad,+919966696397,PI-2026-A8596,open,2026-07-11,20000,10000,8000,4000,active,paused,Doc,To Validate,2026-07-11,
+SRH4354,Property Tax Name Change,Ankur - Neerabh,+918970107101,Neerabh,+918970107101,PI-2026-A8604,open,2026-07-11,12000,8750,1500,1500,active,open,Applied,Awaiting,2026-07-11,
+SRH4355,E-Khata,Ankur - Neerabh,+918970107101,Neerabh,+918970107101,PI-2026-A8604,open,2026-07-11,12000,8750,4000,4000,closed,open,To Close,Paid,2026-07-11,2026-08-03
+SRH4356,Bescom,Ankur - Neerabh,+918970107101,Neerabh,+918970107101,PI-2026-A8604,open,2026-07-11,12000,8750,6500,3250,active,open,Doc,To Validate,2026-07-11,
+SRH4589,Encumbrance Certificate,Dheeraj,+919803330688,Akhilesh,+919803330688,,,,,,500,0,pre active,open,unqualified,,2026-07-13,
+SRH4591,Encumbrance Certificate,Dheeraj,+919803330688,Akhilesh,+919803330688,,,,,,500,0,pre active,open,unqualified,,2026-07-13,
+SRH4596,Encumbrance Certificate,Dheeraj,+919803330688,Akhilesh,+919803330688,,,,,,500,0,pre active,open,unqualified,,2026-07-13,
+SRH4598,Encumbrance Certificate,Akhilesh,+919803330688,Akhilesh,+919803330688,,,,,,500,0,pre active,open,unqualified,,2026-07-13,
+SRH4603,Encumbrance Certificate,Dheeraj,,Akhilesh,+919803330688,PI-2026-A8612,open,2026-07-13,1000,500,1000,500,active,open,Applied,Awaiting,2026-07-13,
+SRH4660,Encumbrance Certificate,Hardik,+918108345011,Ashutosh,+916366905339,PI-2026-A8629,closed,2026-07-13,1500,1500,1500,1500,closed,open,To Close,Paid,2026-07-13,2026-07-20
+SRH4776,Rental Agreement,Rajashekaran,+919886073233,Rajashekaran,+919886073233,PI-2026-A8645,lost,2026-07-14,1200,0,1200,0,pre active,lost,unqualified,,2026-07-14,
+SRH4779,Rental Agreement,Proptech Solutions - Vinod Podar,+919343538197,Rajashekaran,+919886073233,PI-2026-A8646,open,2026-07-14,1200,0,1200,0,pre active,open,qualified,,2026-07-14,
+SRH4928,Legal Consultation,Samiran Ganguly,+919884464079,Varun Sharma,+917676858353,PI-2026-A8666,closed,2026-07-15,4000,4000,4000,4000,closed,open,To Close,Paid,2026-07-15,2026-07-20
+SRH5338,Gift Deed,Hemraj Mehra,+918660070887,Hemraj Mehra,+918660070887,PI-2026-A8720,open,2026-07-17,25000,12500,25000,12500,active,open,Filing,In Process,2026-07-17,
+SRH5453,Due diligence,Radeesh,+919686199863,Shahzaib Talha,+918861382479,PI-2026-A8741,closed,2026-07-18,13500,13500,13500,13500,closed,open,To Close,Paid,2026-07-18,2026-08-09
+SRH5455,Memorandum of Understanding (MoU),Margaret,+917005705129,Bharath,+918420835767,PI-2026-A8742,closed,2026-07-18,2000,2000,2000,2000,closed,open,To Close,Paid,2026-07-18,2026-07-24
+SRH5857,E-Khata,Sam Chandy,+919742176000,Sachin Dinde,+919901055002,PI-2026-A8773,closed,2026-07-20,6000,6000,6000,6000,closed,open,To Close,Paid,2026-07-20,2026-08-04
+SRH5860,Due diligence,Naren,+447545465655,Prabhakar,+918050942425,PI-2026-A8774,open,2026-07-20,13500,6750,13500,6750,active,open,Filing,In Queue,2026-07-20,
+SRH5936,Due diligence,Khaja Naseer Ahmed,+919663353141,Mujeeb,+919036201193,PI-2026-A8784,open,2026-07-20,12000,6000,12000,6000,active,open,Filing,In Queue,2026-07-20,
+SRH6020,Property Tax Name Change,Abhijit,+918530629990,Radhakrishnan,+919663933100,PI-2026-A8793,open,2026-07-21,17500,16750,1500,750,active,open,Applied,Awaiting,2026-07-21,
+SRH6021,Khata Transfer,Abhijit,+918530629990,Radhakrishnan,+919663933100,PI-2026-A8793,open,2026-07-21,17500,16750,16000,16000,closed,open,To Close,Paid,2026-07-21,2026-08-03
+SRH6035,Due diligence,Rohit Dabhade,+919769925448,Hitesh,+919665116781,PI-2026-A8798,open,2026-07-21,12000,6000,12000,6000,active,open,To Close,Doc Shared,2026-07-21,
+SRH6078,Property Tax Payment Assistance,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,1500,750,active,open,Applied,Awaiting,2026-07-21,
+SRH6079,Encumbrance Certificate,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,5000,2500,active,open,Applied,Awaiting,2026-07-21,
+SRH6080,E-Khata,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,4500,2250,active,open,Applied,Awaiting,2026-07-21,
+SRH6081,Property Tax Payment Assistance,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,1500,750,active,open,Applied,Awaiting,2026-07-21,
+SRH6082,Encumbrance Certificate,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,5000,2500,active,open,To Close,Doc Shared,2026-07-21,
+SRH6083,E-Khata,Binita,+919738461850,Grace,+919738461850,PI-2026-A8806,open,2026-07-21,22000,11000,4500,2250,active,open,To Close,Doc Shared,2026-07-21,
+SRH6101,E-Khata,Arun,+919738461850,Grace,+919738461850,PI-2026-A8811,open,2026-07-21,6500,3250,4500,2250,active,open,Doc,To Validate,2026-07-21,
+SRH6102,Encumbrance Certificate,Arun,+919738461850,Grace,+919738461850,PI-2026-A8811,open,2026-07-21,6500,3250,2000,1000,active,open,Applied,Awaiting,2026-07-21,
+SRH6113,Deed Drafting and Registration,Prateek Kadam,+918861987965,Prateek Kadam,+918861987965,PI-2026-A8815,lost,2026-07-21,26500,0,26500,0,pre active,lost,qualified,,2026-07-21,
+SRH6241,Sale Deed Drafting,Prateek Kadam,+918861987965,Prateek Kadam,+918861987965,PI-2026-A8820,open,2026-07-22,26500,2500,5000,2500,active,open,Filing,In Process,2026-07-22,
+SRH6242,Registry at SRO,Prateek Kadam,+918861987965,Prateek Kadam,+918861987965,PI-2026-A8820,open,2026-07-22,26500,2500,21500,0,pre active,open,qualified,,2026-07-22,
+SRH6270,Khata Transfer,Shinder Pal Kaur,+919845207846,Naresh Vithal Bathija,+919845207846,PI-2026-A8825,open,2026-07-22,12000,6000,12000,6000,active,open,Filing,EC Applied,2026-07-22,
+SRH6325,Deed Drafting and Registration,Pon Rajesh,+919442972413,Vishnu,+919620366131,PI-2026-A8832,open,2026-07-22,37000,0,27000,0,pre active,open,qualified,,2026-07-22,
+SRH6326,E-E (Electronic Transfer),Pon Rajesh,+919442972413,Vishnu,+919620366131,PI-2026-A8832,open,2026-07-22,37000,0,4500,0,pre active,open,qualified,,2026-07-22,
+SRH6327,Bescom,Pon Rajesh,+919442972413,Vishnu,+919620366131,PI-2026-A8832,open,2026-07-22,37000,0,5500,0,pre active,open,qualified,,2026-07-22,
+SRH6530,E-Khata,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,,,,,,3000,0,pre active,lost,qualified,,2026-07-23,
+SRH6531,Bescom,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,PI-2026-A8861,open,2026-07-23,42500,23750,5000,2500,active,lost,Doc,To Validate,2026-07-23,
+SRH6532,Agreement to Sale Drafting,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,PI-2026-A8861,open,2026-07-23,42500,23750,5000,5000,closed,open,To Close,Doc Shared,2026-07-23,2026-07-30
+SRH6533,Deed Drafting and Registration,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,PI-2026-A8861,open,2026-07-23,42500,23750,28000,14000,active,lost,Doc,To Validate,2026-07-23,
+SRH6534,Other,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,PI-2026-A8861,open,2026-07-23,42500,23750,4500,2250,active,lost,Doc,To Validate,2026-07-23,
+SRH6599,E-Khata,Aniruddh,+919739777791,Channappa,+919739777791,PI-2026-A8855,closed,2026-07-23,4500,4500,4500,4500,closed,open,To Close,Paid,2026-07-23,2026-08-05
+SRH6620,Deed Drafting and Registration,Apka Complex,+918971521806,Apka Complex,+918971521806,PI-2026-A8858,open,2026-07-23,20000,0,20000,0,pre active,open,qualified,,2026-07-23,
+SRH6624,E-Khata,Apka Complex,+918971521806,Apka Complex,+918971521806,PI-2026-A8859,open,2026-07-23,12000,0,12000,0,pre active,open,qualified,,2026-07-23,
+SRH6626,Bescom,Amit Bakhru,+919302929286,Abhishek Dey,+919686454200,PI-2026-A8860,open,2026-07-23,6000,3000,6000,3000,active,open,Doc,To Validate,2026-07-23,
+SRH6647,E-Khata,Balasubramaniam,+919035044455,Balasubramaniam,+919035044455,PI-2026-A8862,lost,2026-07-23,4500,2000,4500,2000,active,lost,Doc,To Validate,2026-07-23,
+SRH6666,E-Khata,Hiremath R.s,+919900409831,Cityblocks,+919900409831,PI-2026-A8867,open,2026-07-23,4500,2250,4500,2250,active,open,To Close,Doc Shared,2026-07-23,
+SRH6955,Will Deed Drafting,Hemraj Mehra,+918660070887,Hemraj Mehra,+918660070887,PI-2026-A8901,open,2026-07-25,12000,6000,12000,6000,active,open,Doc,To Validate,2026-07-25,
+SRH6970,Due diligence,Aditya Nath Jha,+918697708625,Abhishek Dey,+919686454200,PI-2026-A8905,open,2026-07-25,12000,6000,12000,6000,active,open,Filing,In Queue,2026-07-25,
+SRH7287,MODT Removal,Sumanth,+918762049885,Sumanth chandrashekar,+918762049885,PI-2026-A8918,open,2026-07-27,8500,0,8500,0,pre active,open,qualified,,2026-07-27,
+SRH7488,POA Drafting,Rahul Gupta,+971545657652,Bilal Ahmed,+919986225430,PI-2026-A8947,open,2026-07-28,10000,5000,4000,2000,active,open,To Close,Doc Shared,2026-07-28,
+SRH7489,Other,Rahul Gupta,+971545657652,Bilal Ahmed,+919986225430,PI-2026-A8947,open,2026-07-28,10000,5000,6000,3000,active,open,Doc,To Validate,2026-07-28,
+SRH7491,Encumbrance Certificate,Sumanth,+918762049885,Sumanth chandrashekar,+918762049885,PI-2026-A8948,lost,2026-07-28,2000,1000,2000,1000,active,lost,Doc,To Validate,2026-07-28,
+SRH7493,Encumbrance Certificate,Sumanth,+918762049885,Sumanth chandrashekar,+918762049885,,,,,,500,0,pre active,lost,unqualified,,2026-07-28,
+SRH7538,E-Khata,Aruna,+917487876103,Dhiren Talreja,+919845599026,PI-2026-A8958,open,2026-07-28,23000,0,23000,0,pre active,open,qualified,,2026-07-28,
+SRH7545,Other,Prabhat,+919663378250,Prabhat - YourOwnRoom,+919663378250,,,,,,10000,0,pre active,lost,qualified,,2026-07-28,
+SRH7547,Property Tax Payment Assistance,Dheeraj,+918884578719,Akhilesh,+919803330688,PI-2026-A8961,open,2026-07-28,3500,3500,3500,3500,closed,open,To Close,Paid,2026-07-28,2026-07-28
+SRH7552,Other,Prabhat - Yourown Rooms,+919663378250,Prabhat - YourOwnRoom,+919663378250,PI-2026-A8966,open,2026-07-28,1000,1000,1000,1000,closed,open,To Close,Paid,2026-07-28,2026-08-04
+SRH7580,MODT Removal,Gautam,+919880406568,Vinod Parwani,+919880406568,PI-2026-A8968,open,2026-07-28,12000,6000,12000,6000,active,open,Doc,To Validate,2026-07-28,
+SRH7693,Due diligence,Junaid Ahmed,+919845012053,Junaid Ahmed,+919845012053,PI-2026-A8977,open,2026-07-29,10000,5000,10000,5000,active,open,Filing,In Queue,2026-07-29,
+SRH7756,Due diligence,Vijay John Bennet,+919986613613,Mohammed Siddiq,+919740297901,PI-2026-A8996,open,2026-07-29,13500,0,13500,0,pre active,open,qualified,,2026-07-29,
+SRH8169,E-Khata,Hemantha Katuri,+17245544924,Radhakrishnan,+919663933100,PI-2026-A9053,open,2026-08-01,6000,3000,6000,3000,active,open,Applied,Awaiting,2026-08-01,
+SRH8476,Due diligence,Ashutosh,+916366905339,Ashutosh,+916366905339,PI-2026-A9087,open,2026-08-03,10500,5250,10500,5250,active,open,Doc,To Validate,2026-08-03,
+SRH8541,Other,Abhishek Dey,+919686454200,Abhishek Dey,+919686454200,PI-2026-A9101,open,2026-08-04,5000,2500,5000,2500,active,open,Doc,To Validate,2026-08-04,
+SRH8570,Khata Transfer,Roshan Hegde,+919611757977,Ish Venaik,+919044746484,PI-2026-A9110,open,2026-08-04,16000,16000,12000,12000,active,open,Doc,To Validate,2026-08-04,
+SRH8571,Bescom,Roshan Hegde,+919611757977,Ish Venaik,+919044746484,PI-2026-A9110,open,2026-08-04,16000,16000,4000,4000,active,paused,Doc,To Validate,2026-08-04,
+SRH8575,New Khata,Deepak,+919900409831,Cityblocks,+919900409831,PI-2026-A9111,open,2026-08-04,16500,8250,15000,7500,active,open,Filing,EC Applied,2026-08-04,
+SRH8576,Property Tax Payment Assistance,Deepak,+919900409831,Cityblocks,+919900409831,PI-2026-A9111,open,2026-08-04,16500,8250,1500,750,active,open,Applied,Awaiting,2026-08-04,
+SRH8607,Agreement to Sale Drafting,Sangram,+919886690815,Sangram Mohapatra,+919886690815,PI-2026-A9119,open,2026-08-04,5000,1500,5000,1500,active,open,Doc,To Validate,2026-08-04,
+SRH8620,Property Tax Payment Assistance,Paul Antony,+919900409831,Cityblocks,+919900409831,PI-2026-A9121,closed,2026-08-04,2000,2000,2000,2000,closed,open,To Close,Paid,2026-08-04,2026-08-07
+SRH8654,Encumbrance Certificate,Prasad,+918007976137,Azhar Fayaz,+917006646528,PI-2026-A9131,open,2026-08-04,2000,1000,2000,1000,active,open,Applied,Awaiting,2026-08-04,
+SRH8685,Deed Drafting and Registration,Ramya,+919148023518,Anand Nachaya,+917259246329,PI-2026-A9143,open,2026-08-05,40000,20000,30000,15000,active,open,Doc,To Validate,2026-08-05,
+SRH8686,MODT Removal,Ramya,+919148023518,Anand Nachaya,+917259246329,PI-2026-A9143,open,2026-08-05,40000,20000,10000,5000,active,open,Doc,To Validate,2026-08-05,
+SRH8696,E-Khata,Dheeraj Khanna,+918553540919,Srinath Reddy,+918553540919,PI-2026-A9148,open,2026-08-05,22000,0,22000,0,pre active,open,qualified,,2026-08-05,
+SRH8772,E-Khata,Ruth,+918904531173,Haneefa zakiya,+917204867070,PI-2026-A9180,open,2026-08-06,6500,3250,4500,2250,active,open,Applied,Awaiting,2026-08-06,
+SRH8773,Encumbrance Certificate,Ruth,+918904531173,Haneefa zakiya,+917204867070,PI-2026-A9180,open,2026-08-06,6500,3250,2000,1000,active,open,Applied,Awaiting,2026-08-06,
+SRH8796,Rental Agreement,Archana Kapoor,+919811166297,Dhiren Talreja,+919845599026,PI-2026-A9190,open,2026-08-06,0,0,0,0,pre active,open,qualified,,2026-08-06,
+SRH8806,Khata Transfer,Aarya Mansukhani,+918130030502,Ish Venaik,+919044746484,PI-2026-A9195,open,2026-08-06,18000,18000,12000,12000,active,open,Filing,EC Applied,2026-08-06,
+SRH8807,Bescom,Aarya Mansukhani,+918130030502,Ish Venaik,+919044746484,PI-2026-A9195,open,2026-08-06,18000,18000,6000,6000,active,paused,Doc,To Validate,2026-08-06,
+SRH8919,Legal Consultation,Khaja Naseer Ahmed,+919663353141,Mujeeb,+919036201193,PI-2026-A9236,open,2026-08-08,1200,1200,1200,1200,active,open,Doc,To Validate,2026-08-08,
+SRH8921,Bescom,Hari,+919902044008,Karthik,+919980289720,PI-2026-A9237,open,2026-08-08,4000,4000,4000,4000,active,open,Doc,To Validate,2026-08-08,
+SRH8973,Due diligence,Margaret,+917005705129,Bharath,+918420835767,PI-2026-A9262,open,2026-08-08,13000,6500,13000,6500,active,open,Doc,To Validate,2026-08-08,
+SRH9070,Khata Transfer,Rakesh Kumar,+919243024730,Info Asset Makers,+919243024730,PI-2026-A9286,open,2026-08-10,10000,5000,10000,5000,active,open,Doc,To Validate,2026-08-10,
+SRH9072,New Khata,Sunita,+919873239270,Radhakrishnan,+919663933100,PI-2026-A9290,open,2026-08-10,18000,9000,18000,9000,active,open,Doc,To Validate,2026-08-10,

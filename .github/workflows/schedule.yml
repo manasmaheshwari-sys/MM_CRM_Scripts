@@ -1,0 +1,27 @@
+name: Run Scheduled CRM Script
+
+on:
+  schedule:
+    # This example runs every day at midnight UTC.
+    # Change the cron syntax to match your desired schedule.
+    - cron: "0 0 * * *"
+  workflow_dispatch: # Allows you to also trigger the script manually from GitHub
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Matches a modern, stable Node version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Execute script
+        run: node path/to/your/script.js # Replace this with the actual path to your file
