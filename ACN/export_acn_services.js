@@ -9,9 +9,10 @@
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getFirestore } = require("firebase-admin/firestore");
 const { google } = require("googleapis");
+const path = require("path");
 
 // ---- CONFIG ----
-const SERVICE_ACCOUNT_PATH = "../service_account_key.json";
+const SERVICE_ACCOUNT_PATH = path.resolve(__dirname, "../service_account_key.json");
 const SHEET_ID = "1c8JyxzCiIWM1ANkSDJyOl-wkJJ89QSS6Yc1d4fMdQlk";
 const SHEET_TAB_NAME = "Manas Data";
 const SERVICE_SOURCE_VALUES = ["Partners", "partners"];
