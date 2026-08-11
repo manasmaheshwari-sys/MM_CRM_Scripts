@@ -4,15 +4,16 @@
 // Enriches each service with:
 //   - agent info from vaultAcnAgents (via acnAgentId as doc id)
 //   - proforma info from vaultProforma (matched via proformaServices[].serviceId)
-// Outputs CSV with Service Id, Customer, Agent, Proforma, and Service status/date fields.
+// Writes to the "Manas Data" tab of the Google Sheet with Service Id, Customer, Agent, Proforma, and Service status/date fields.
 
 const { initializeApp, cert } = require("firebase-admin/app");
 const { getFirestore } = require("firebase-admin/firestore");
-const fs = require("fs");
+const { google } = require("googleapis");
 
 // ---- CONFIG ----
-const SERVICE_ACCOUNT_PATH = "./service_account_key.json";
-const OUTPUT_CSV_PATH = "./acn_services_export.csv";
+const SERVICE_ACCOUNT_PATH = "../service_account_key.json";
+const SHEET_ID = "1c8JyxzCiIWM1ANkSDJyOl-wkJJ89QSS6Yc1d4fMdQlk";
+const SHEET_TAB_NAME = "Manas Data";
 const SERVICE_SOURCE_VALUES = ["Partners", "partners"];
 
 const serviceAccount = require(SERVICE_ACCOUNT_PATH);
@@ -24,13 +25,13 @@ initializeApp({
 const db = getFirestore();
 db.settings({ preferRest: true });
 
-function csvEscape(value) {
-  if (value === null || value === undefined) return "";
-  const str = String(value);
-  if (str.includes(",") || str.includes('"') || str.includes("\n")) {
-    return `"${str.replace(/"/g, '""')}"`;
-  }
-  return str;
+async function getSheetsClient() {
+  const auth = new google.auth.GoogleAuth({
+    keyFile: SERVICE_ACCOUNT_PATH,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+  const client = await auth.getClient();
+  return google.sheets({ version: "v4", auth: client });
 }
 
 function toDate(unix) {
@@ -192,10 +193,22 @@ async function main() {
     ]);
   }
 
-  const csvContent = rows.map((row) => row.map(csvEscape).join(",")).join("\n");
-  fs.writeFileSync(OUTPUT_CSV_PATH, csvContent, "utf8");
+  console.log(`Writing ${rows.length} rows to "${SHEET_TAB_NAME}" tab...`);
+  const sheets = await getSheetsClient();
 
-  console.log(`Done. Wrote ${services.length} rows to ${OUTPUT_CSV_PATH}`);
+  await sheets.spreadsheets.values.clear({
+    spreadsheetId: SHEET_ID,
+    range: `${SHEET_TAB_NAME}!A:Z`,
+  });
+
+  await sheets.spreadsheets.values.update({
+    spreadsheetId: SHEET_ID,
+    range: `${SHEET_TAB_NAME}!A1`,
+    valueInputOption: "RAW",
+    requestBody: { values: rows },
+  });
+
+  console.log(`Done. Wrote ${services.length} rows to the "${SHEET_TAB_NAME}" tab.`);
 }
 
 main().catch((err) => {

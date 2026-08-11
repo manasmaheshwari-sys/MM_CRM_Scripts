@@ -1,0 +1,35 @@
+name: Scheduled CRM Run
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy Repository Code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      # exportSubtasks.js does require("./service_account_key.json") relative
+      # to its own folder, so the key file must live in Subtasks/, not the repo root.
+      - name: Create Firebase Service Account File
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_KEY }}
+        run: echo "$SERVICE_ACCOUNT_KEY" > Subtasks/service_account_key.json
+
+      - name: Run Script
+        run: node Subtasks/exportSubtasks.js
+
+      - name: Clean up service account key
+        if: always()
+        run: rm -f Subtasks/service_account_key.json
