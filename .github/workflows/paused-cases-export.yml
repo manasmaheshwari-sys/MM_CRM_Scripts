@@ -1,0 +1,33 @@
+name: Paused Cases Export
+
+on:
+  schedule:
+    - cron: "30 5 * * *"  # 05:30 UTC = 11:00 IST
+    - cron: "30 9 * * *"  # 09:30 UTC = 15:00 IST
+    - cron: "30 12 * * *" # 12:30 UTC = 18:00 IST
+  workflow_dispatch: {}
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Write service account key
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_KEY }}
+        run: echo "$SERVICE_ACCOUNT_KEY" > service_account_key.json
+
+      - name: Run paused cases export
+        run: node exportPausedCases.js
+
+      - name: Clean up service account key
+        if: always()
+        run: rm -f service_account_key.json
