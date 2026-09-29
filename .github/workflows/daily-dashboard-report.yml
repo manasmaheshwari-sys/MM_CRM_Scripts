@@ -1,0 +1,49 @@
+name: SD New Flow Dashboard — Daily Report
+
+on:
+  schedule:
+    # IST = UTC+5:30. Runs at 11 AM, 1 PM, 3 PM, 5 PM, 6 PM, 7 PM IST daily.
+    - cron: "30 5,7,9,11,12,13 * * *"
+  workflow_dispatch: # lets you trigger it manually from the Actions tab too
+
+jobs:
+  run-daily-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # run_daily_report.js expects ./service_account_key.json at the repo
+      # root (same key already used by the other scheduled exports here —
+      # reusing the FIREBASE_KEY secret, since it has both Firestore and
+      # Sheets API access).
+      - name: Create Firebase/Sheets service account file
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_KEY }}
+        run: echo "$SERVICE_ACCOUNT_KEY" > service_account_key.json
+
+      # CI=true is set automatically by GitHub Actions, which makes
+      # run_daily_report.js skip the Windows-only Excel-COM recalc step —
+      # see the SKIP_RECALC comment in that file for why that's safe.
+      - name: Run the daily report
+        run: node run_daily_report.js
+
+      - name: Clean up service account key
+        if: always()
+        run: rm -f service_account_key.json
