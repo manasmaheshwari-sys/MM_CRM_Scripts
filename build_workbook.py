@@ -8,13 +8,20 @@ from openpyxl.formatting.rule import CellIsRule, ColorScaleRule
 from openpyxl.comments import Comment
 
 import datetime
+import os
 
-RAW_CSV = r"C:\Users\manas\Downloads\MM_CRM_Scripts\serviceFlow_raw_data.csv"
-POC_CSV = r"C:\Users\manas\Downloads\MM_CRM_Scripts\poc_leaderboard.csv"
-POC_TODAY_CSV = r"C:\Users\manas\Downloads\MM_CRM_Scripts\poc_leaderboard_today.csv"
-QW_CSV = r"C:\Users\manas\Downloads\MM_CRM_Scripts\queue_waiting.csv"
-ORPHANED_CSV = r"C:\Users\manas\Downloads\MM_CRM_Scripts\orphaned_cases.csv"
-OUT_XLSX = r"C:\Users\manas\Downloads\MM_CRM_Scripts\Queue_Flow_Data_Analysis.xlsx"
+# Relative to this script's own directory, not a hardcoded machine path —
+# this file runs both locally (Windows) and in GitHub Actions (Linux), where
+# the repo lives at a different absolute path. Found 29 Sep 2026 when the
+# scheduled workflow failed with FileNotFoundError on the old hardcoded
+# C:\Users\... paths.
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_CSV = os.path.join(SCRIPT_DIR, "serviceFlow_raw_data.csv")
+POC_CSV = os.path.join(SCRIPT_DIR, "poc_leaderboard.csv")
+POC_TODAY_CSV = os.path.join(SCRIPT_DIR, "poc_leaderboard_today.csv")
+QW_CSV = os.path.join(SCRIPT_DIR, "queue_waiting.csv")
+ORPHANED_CSV = os.path.join(SCRIPT_DIR, "orphaned_cases.csv")
+OUT_XLSX = os.path.join(SCRIPT_DIR, "Queue_Flow_Data_Analysis.xlsx")
 
 df = pd.read_csv(RAW_CSV, dtype=str, keep_default_na=False)
 n_rows = len(df)

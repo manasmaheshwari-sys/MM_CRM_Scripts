@@ -1,9 +1,10 @@
 import sys
 import time
+import os
 import pythoncom
 import win32com.client as win32
 
-path = r"C:\Users\manas\Downloads\MM_CRM_Scripts\Queue_Flow_Data_Analysis.xlsx"
+path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Queue_Flow_Data_Analysis.xlsx")
 
 
 def with_retry(fn, attempts=5, delay=1.5, label=""):
