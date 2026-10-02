@@ -41,7 +41,11 @@ print(f"Loaded queue-waiting snapshot: {qw_totals}")
 orphaned_df = pd.read_csv(ORPHANED_CSV, dtype=str, keep_default_na=False)
 print(f"Loaded {len(orphaned_df)} orphaned-case alerts")
 
-BUILD_TIME_STR = datetime.datetime.now().strftime("%d %b %Y, %I:%M %p")
+# Explicit IST (fixed +5:30, no DST) rather than the machine's local timezone —
+# this runs on Windows, GitHub runners and Cloud Run (both UTC), and the labels
+# below are shown to the team as IST.
+IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+BUILD_TIME_STR = datetime.datetime.now(IST).strftime("%d %b %Y, %I:%M %p")
 print(f"Loaded {n_rows} rows")
 
 FONT = "Arial"
@@ -366,7 +370,7 @@ big_tile(snap, kpi_row, 12, "SLA ADHERENCE", f'=IFERROR(COUNTIFS({rng("P")},"Yes
 
 # ---------------- Today's performance (own row, refreshes daily) ----------------
 today_row = kpi_row + 5
-snap.cell(row=today_row - 1, column=2, value=f"Today — {datetime.date.today().strftime('%d %b %Y')} (IST)").font = Font(name=FONT, bold=True, size=13, color=navy)
+snap.cell(row=today_row - 1, column=2, value=f"Today — {datetime.datetime.now(IST).strftime('%d %b %Y')} (IST)").font = Font(name=FONT, bold=True, size=13, color=navy)
 big_tile(snap, today_row, 2, "FILED TODAY", int(today_filed), "cases moved to Applied today", color=teal)
 big_tile(snap, today_row, 4, "REVENUE TODAY", float(today_revenue), "closed-case revenue, today", numfmt='"₹"#,##0', color="2F7D4F")
 big_tile(snap, today_row, 6, "CLOSED TODAY", int(today_closed), "cases closed today", color="2F7D4F")
