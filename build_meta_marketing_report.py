@@ -363,7 +363,7 @@ wd = wb.create_sheet("Definitions")
 wd.append(["Metric", "Firestore source / rule"])
 style_header(wd, 1, 1, 2)
 defs = [
-    ("Lead (Total leads)", "vaultServices with serviceSource = Meta / facebook / instagram (any case) that are, or have been, in bucket 'pre active' (current bucket or bucketTransitions). One row per service. Lead date = vaultServices.added (IST)."),
+    ("Lead (Total leads)", "vaultServices with serviceSource = Meta / facebook / instagram (any case) that are, or have been, in bucket 'pre active' (current bucket or bucketTransitions). Only services whose owning vaultUsers.acquisitionPOC = 'Manas Pandit'. One row per service. Lead date = vaultServices.added (IST)."),
     ("Test leads", "Excluded everywhere: owning user's userName contains 'test' (Is Test = 1 on Data tab)."),
     ("Interest marking", "Owning vaultUsers.userInterest (interested / super interested / not interested; 'on hold' or blank falls in Other)."),
     ("Connected by: Sales team", "Owning vaultUsers.connectedAttempts > 0 OR callStatus = 'connected' (CRM status). Takes priority over the bot."),

@@ -7,7 +7,8 @@
  *
  * A lead is a vaultServices doc with serviceSource = Meta / facebook / instagram (any
  * case) that is, or has been, in bucket "pre active" (current bucket or any
- * bucketTransitions entry). Lead date = the service's `added` (IST).
+ * bucketTransitions entry), and whose owning vaultUsers.acquisitionPOC is
+ * ACQUISITION_POC (Manas Pandit). Lead date = the service's `added` (IST).
  *   - Interest / Connected by come from the owning vaultUsers doc (CRM status only).
  *   - Qualified = this service's serviceStage is "qualified" (vs "unqualified"), or it
  *     has already moved on to bucket active.
@@ -31,6 +32,7 @@ const db = getFirestore();
 db.settings({ preferRest: true });
 
 const OUTPUT = path.resolve(process.argv[2] || path.join(__dirname, "Meta_Leads_Data.json"));
+const ACQUISITION_POC = "Manas Pandit";
 const META_SOURCES = ["Meta", "meta", "META", "facebook", "Facebook", "instagram", "Instagram"];
 
 const istDate = (ts) => (ts ? new Date(Number(ts) * 1000 + 5.5 * 3600 * 1000).toISOString().slice(0, 10) : "");
@@ -78,9 +80,18 @@ async function main() {
   // ---------- Owning users (CRM interest / call status)
   const userIds = [...new Set(services.map((s) => s.userId).filter(Boolean))];
   const users = new Map();
-  for (const u of await inChunks("vaultUsers", "userId", userIds, ["userId", "userName", "userInterest", "callStatus", "connectedAttempts", "callAttempts", "whatsappConversationInitiated", "salesPOC"])) {
+  for (const u of await inChunks("vaultUsers", "userId", userIds, ["userId", "userName", "userInterest", "callStatus", "connectedAttempts", "callAttempts", "whatsappConversationInitiated", "salesPOC", "acquisitionPOC"])) {
     users.set(u.userId || u._id, u);
   }
+
+  // Only leads whose user was acquired by ACQUISITION_POC (trim / case-insensitive)
+  const pocKey = ACQUISITION_POC.toLowerCase();
+  const before = services.length;
+  for (let i = services.length - 1; i >= 0; i--) {
+    const u = users.get(services[i].userId);
+    if (!u || String(u.acquisitionPOC || "").trim().toLowerCase() !== pocKey) services.splice(i, 1);
+  }
+  console.log(`acquisitionPOC = ${ACQUISITION_POC}: ${services.length} of ${before} leads kept`);
 
   // ---------- Proforma lines per service
   const pfByService = new Map();
@@ -127,6 +138,7 @@ async function main() {
       "Paid Amount": paid,
       Paid: paid > 0 ? 1 : 0,
       "Sales POC": u.salesPOC || "",
+      "Acquisition POC": u.acquisitionPOC || "",
       "Is Test": /test/i.test(u.userName || "") ? 1 : 0,
     };
   });
