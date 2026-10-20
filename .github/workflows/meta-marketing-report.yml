@@ -1,0 +1,54 @@
+name: Meta Marketing Report — Daily Refresh
+
+# Rebuilds the Meta leads funnel report from Firestore and mirrors it into the
+# Google Sheet once a day. GitHub's cron is best-effort, so it is scheduled at an
+# off-the-hour minute; a late tick just means a slightly later refresh.
+# 02:17 UTC = 07:47 IST, so the sheet is fresh before the working day.
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: meta-marketing-report
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # Scripts read ./service_account_key.json at the repo root. The key lives
+      # only in the FIREBASE_KEY secret and is deleted again at the end.
+      - name: Create Firebase/Sheets service account file
+        env:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_KEY }}
+        run: echo "$SERVICE_ACCOUNT_KEY" > service_account_key.json
+
+      - name: Refresh the Meta marketing report
+        run: node run_meta_marketing_report.js
+
+      - name: Clean up service account key
+        if: always()
+        run: rm -f service_account_key.json
