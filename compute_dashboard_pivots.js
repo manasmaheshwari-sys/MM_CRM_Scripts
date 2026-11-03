@@ -831,20 +831,26 @@ async function computeProductivity() {
   rows.forEach(({ c }) => ["new", "old"].forEach((fl) => ["khata", "ec", "bescom"].forEach((k) => (totals[fl][k] += c[fl][k]))));
 
   const nowIST = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
-  const line = (label, c) => [label, c.new.khata, c.new.ec, c.new.bescom, sum(c.new), c.old.khata, c.old.ec, c.old.bescom, sum(c.old), sum(c.new) + sum(c.old)];
+  // Old and new flow are combined in one set of columns (per PM, 3 Nov 2026).
+  const line = (label, c) => {
+    const k = c.new.khata + c.old.khata, e = c.new.ec + c.old.ec, b = c.new.bescom + c.old.bescom;
+    return [label, k, e, b, k + e + b];
+  };
   return [
-    [`Last updated at: ${nowIST} IST — filings by the person who made the move, today`],
-    ["", "New Flow (serviceFlow = queue)", "", "", "", "Old Flow (all other services)", "", "", "", ""],
-    ["POC Name", "Khata Filing", "EC", "BESCOM", "New Flow Total", "Khata Filing", "EC", "BESCOM", "Old Flow Total", "Grand Total"],
+    [`Last updated at: ${nowIST} IST — filings by the person who made the move, today, all services (old + new flow)`],
+    ["POC Name", "Khata Filing", "EC", "BESCOM", "Total"],
     ...rows.map(({ poc, c }) => line(poc, c)),
     line("Total", totals),
   ];
 }
 
 async function writeProductivityTab(sheets, values) {
-  await writeTab(sheets, "productivity", values);
+  // Unmerge first: values written into a still-merged range are dropped (this is what
+  // blanked the header cells after the layout change on 3 Nov 2026).
   const sheetId = await ensureSheet(sheets, "productivity");
-  const cols = 10;
+  await sheets.spreadsheets.batchUpdate({ spreadsheetId: SPREADSHEET_ID, requestBody: { requests: [{ unmergeCells: { range: { sheetId } } }] } });
+  await writeTab(sheets, "productivity", values);
+  const cols = 5;
   const bold = { textFormat: { bold: true }, horizontalAlignment: "CENTER" };
   const fill = (r0, r1, rgb) => ({
     repeatCell: {
@@ -861,13 +867,10 @@ async function writeProductivityTab(sheets, values) {
         { unmergeCells: { range: { sheetId } } },
         { updateCells: { range: { sheetId }, fields: "userEnteredFormat" } },
         { repeatCell: { range: { sheetId, startRowIndex: 0, endRowIndex: 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { italic: true } } }, fields: "userEnteredFormat.textFormat" } },
-        fill(1, 2, { red: 0.99, green: 0.9, blue: 0.8 }),
-        fill(2, 3, { red: 0.81, green: 0.89, blue: 0.95 }),
+        fill(1, 2, { red: 0.81, green: 0.89, blue: 0.95 }),
         fill(last - 1, last, { red: 0.93, green: 0.93, blue: 0.93 }),
-        { mergeCells: { range: { sheetId, startRowIndex: 1, endRowIndex: 2, startColumnIndex: 1, endColumnIndex: 5 }, mergeType: "MERGE_ALL" } },
-        { mergeCells: { range: { sheetId, startRowIndex: 1, endRowIndex: 2, startColumnIndex: 5, endColumnIndex: 9 }, mergeType: "MERGE_ALL" } },
-        { repeatCell: { range: { sheetId, startRowIndex: 3, endRowIndex: last - 1, startColumnIndex: 1, endColumnIndex: cols }, cell: { userEnteredFormat: { horizontalAlignment: "CENTER" } }, fields: "userEnteredFormat.horizontalAlignment" } },
-        { repeatCell: { range: { sheetId, startRowIndex: 3, endRowIndex: last - 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { bold: true } } }, fields: "userEnteredFormat.textFormat" } },
+        { repeatCell: { range: { sheetId, startRowIndex: 2, endRowIndex: last - 1, startColumnIndex: 1, endColumnIndex: cols }, cell: { userEnteredFormat: { horizontalAlignment: "CENTER" } }, fields: "userEnteredFormat.horizontalAlignment" } },
+        { repeatCell: { range: { sheetId, startRowIndex: 2, endRowIndex: last - 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { bold: true } } }, fields: "userEnteredFormat.textFormat" } },
         { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 0, endIndex: 1 }, properties: { pixelSize: 200 }, fields: "pixelSize" } },
         { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 1, endIndex: cols }, properties: { pixelSize: 110 }, fields: "pixelSize" } },
       ],
