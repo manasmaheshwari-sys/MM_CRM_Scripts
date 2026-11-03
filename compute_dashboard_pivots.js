@@ -741,8 +741,142 @@ async function ensureSheet(sheets, tabName) {
 
 // ---------------------------------------------------------------- main
 
+// ---------------------------------------------------------------- Productivity tab (all POCs, new vs old flow)
+
+// Every POC's Khata Filing / EC / BESCOM count for today, split by serviceFlow
+// (queue = new flow, anything else = old flow). Credited to the person who made the
+// move (the activity entry's own `user`), counted once per service per category.
+// Rules (service names case-insensitive):
+//   Khata Filing: E-Khata / Khata Transfer / New Khata moved from Doc, Filing or
+//     Applied-Correction Required to Applied-Awaiting / Approved / Correction Applied.
+//   EC: any service Doc/Filing -> Filing-EC Applied; or Encumbrance Certificate
+//     Doc/Filing -> Applied-Awaiting.
+//   BESCOM: Bescom / Bescom Name Change from Doc, Filing or Ground into Applied.
+const KHATA_NAMES = new Set(["e-khata", "khata transfer", "new khata"]);
+const BESCOM_NAMES = new Set(["bescom", "bescom name change"]);
+const DOC_OR_FILING = new Set(["doc", "filing"]);
+const lcTrim = (s) => String(s || "").trim().toLowerCase();
+
+function classifyFiling(name, b, a) {
+  const out = [];
+  if (b.stage === a.stage && b.sub === a.sub) return out;
+  if (KHATA_NAMES.has(name)) {
+    const fromOk = DOC_OR_FILING.has(b.stage) || (b.stage === "applied" && b.sub === "correction required");
+    const toOk = a.stage === "applied" && ["awaiting", "approved", "correction applied"].includes(a.sub);
+    if (fromOk && toOk) out.push("khata");
+  }
+  if (DOC_OR_FILING.has(b.stage) && a.stage === "filing" && a.sub === "ec applied") out.push("ec");
+  else if (name === "encumbrance certificate" && DOC_OR_FILING.has(b.stage) && a.stage === "applied" && a.sub === "awaiting") out.push("ec");
+  if (BESCOM_NAMES.has(name) && (DOC_OR_FILING.has(b.stage) || b.stage === "ground") && a.stage === "applied" && b.stage !== "applied") out.push("bescom");
+  return out;
+}
+
+async function computeProductivity() {
+  const svc = new Map(); // serviceId -> { name, flow }
+  await new Promise((resolve, reject) =>
+    db.collection("vaultServices").select("serviceId", "serviceName", "serviceFlow").stream()
+      .on("data", (d) => {
+        const x = d.data();
+        if (x.serviceId) svc.set(x.serviceId, { name: lcTrim(x.serviceName), flow: x.serviceFlow === "queue" ? "new" : "old" });
+      })
+      .on("end", resolve).on("error", reject));
+
+  const toSec = (t) => (Number(t) > 1e12 ? Number(t) / 1000 : Number(t));
+  const seen = new Set();
+  const counts = {}; // actor -> { new: {khata, ec, bescom}, old: {...} }
+  await new Promise((resolve, reject) =>
+    db.collection("vaultUsers").select("activity").stream()
+      .on("data", (doc) => {
+        const act = doc.data().activity;
+        if (!act) return;
+        const arr = (Array.isArray(act) ? act : Object.values(act)).filter((e) => e && (e.target === "service stage" || e.target === "sub-stage"));
+        if (!arr.some((e) => toSec(e.time) >= TODAY_START && toSec(e.time) < TODAY_END)) return;
+        const bySvc = {};
+        for (const e of arr) (bySvc[e.serviceId || "?"] ||= []).push(e);
+        for (const sid in bySvc) {
+          const info = svc.get(sid);
+          if (!info) continue;
+          const byTime = new Map();
+          for (const e of bySvc[sid]) {
+            const t = toSec(e.time);
+            if (!byTime.has(t)) byTime.set(t, []);
+            byTime.get(t).push(e);
+          }
+          let cur = { stage: null, sub: null };
+          for (const t of [...byTime.keys()].sort((x, y) => x - y)) {
+            const before = { ...cur };
+            for (const e of byTime.get(t)) {
+              if (e.target === "service stage") cur.stage = lcTrim(e.to);
+              else cur.sub = lcTrim(e.to);
+            }
+            if (t < TODAY_START || t >= TODAY_END || !before.stage) continue;
+            for (const cat of classifyFiling(info.name, before, cur)) {
+              const actor = byTime.get(t)[0].user || "unknown";
+              const key = `${cat}|${sid}|${actor}`;
+              if (seen.has(key)) continue;
+              seen.add(key);
+              const c = (counts[actor] ||= { new: { khata: 0, ec: 0, bescom: 0 }, old: { khata: 0, ec: 0, bescom: 0 } });
+              c[info.flow][cat]++;
+            }
+          }
+        }
+      })
+      .on("end", resolve).on("error", reject));
+
+  const sum = (f) => f.khata + f.ec + f.bescom;
+  const rows = Object.entries(counts)
+    .map(([poc, c]) => ({ poc, c, total: sum(c.new) + sum(c.old) }))
+    .sort((a, b) => b.total - a.total || a.poc.localeCompare(b.poc));
+  const totals = { new: { khata: 0, ec: 0, bescom: 0 }, old: { khata: 0, ec: 0, bescom: 0 } };
+  rows.forEach(({ c }) => ["new", "old"].forEach((fl) => ["khata", "ec", "bescom"].forEach((k) => (totals[fl][k] += c[fl][k]))));
+
+  const nowIST = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
+  const line = (label, c) => [label, c.new.khata, c.new.ec, c.new.bescom, sum(c.new), c.old.khata, c.old.ec, c.old.bescom, sum(c.old), sum(c.new) + sum(c.old)];
+  return [
+    [`Last updated at: ${nowIST} IST — filings by the person who made the move, today`],
+    ["", "New Flow (serviceFlow = queue)", "", "", "", "Old Flow (all other services)", "", "", "", ""],
+    ["POC Name", "Khata Filing", "EC", "BESCOM", "New Flow Total", "Khata Filing", "EC", "BESCOM", "Old Flow Total", "Grand Total"],
+    ...rows.map(({ poc, c }) => line(poc, c)),
+    line("Total", totals),
+  ];
+}
+
+async function writeProductivityTab(sheets, values) {
+  await writeTab(sheets, "productivity", values);
+  const sheetId = await ensureSheet(sheets, "productivity");
+  const cols = 10;
+  const bold = { textFormat: { bold: true }, horizontalAlignment: "CENTER" };
+  const fill = (r0, r1, rgb) => ({
+    repeatCell: {
+      range: { sheetId, startRowIndex: r0, endRowIndex: r1, startColumnIndex: 0, endColumnIndex: cols },
+      cell: { userEnteredFormat: { ...bold, backgroundColor: rgb } },
+      fields: "userEnteredFormat(textFormat,horizontalAlignment,backgroundColor)",
+    },
+  });
+  const last = values.length;
+  await sheets.spreadsheets.batchUpdate({
+    spreadsheetId: SPREADSHEET_ID,
+    requestBody: {
+      requests: [
+        { unmergeCells: { range: { sheetId } } },
+        { updateCells: { range: { sheetId }, fields: "userEnteredFormat" } },
+        { repeatCell: { range: { sheetId, startRowIndex: 0, endRowIndex: 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { italic: true } } }, fields: "userEnteredFormat.textFormat" } },
+        fill(1, 2, { red: 0.99, green: 0.9, blue: 0.8 }),
+        fill(2, 3, { red: 0.81, green: 0.89, blue: 0.95 }),
+        fill(last - 1, last, { red: 0.93, green: 0.93, blue: 0.93 }),
+        { mergeCells: { range: { sheetId, startRowIndex: 1, endRowIndex: 2, startColumnIndex: 1, endColumnIndex: 5 }, mergeType: "MERGE_ALL" } },
+        { mergeCells: { range: { sheetId, startRowIndex: 1, endRowIndex: 2, startColumnIndex: 5, endColumnIndex: 9 }, mergeType: "MERGE_ALL" } },
+        { repeatCell: { range: { sheetId, startRowIndex: 3, endRowIndex: last - 1, startColumnIndex: 1, endColumnIndex: cols }, cell: { userEnteredFormat: { horizontalAlignment: "CENTER" } }, fields: "userEnteredFormat.horizontalAlignment" } },
+        { repeatCell: { range: { sheetId, startRowIndex: 3, endRowIndex: last - 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { bold: true } } }, fields: "userEnteredFormat.textFormat" } },
+        { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 0, endIndex: 1 }, properties: { pixelSize: 200 }, fields: "pixelSize" } },
+        { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 1, endIndex: cols }, properties: { pixelSize: 110 }, fields: "pixelSize" } },
+      ],
+    },
+  });
+}
+
 async function main() {
-  console.log(`Dashboard pivots — ${new Date(TODAY_START * 1000).toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" })} (IST)`);
+  console.log(`Dashboard pivots —${new Date(TODAY_START * 1000).toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" })} (IST)`);
 
   console.log("1/6 Pipeline breakdown + workable cases...");
   const { table1, table2, totalQb } = await computeTable1AndWorkable();
@@ -902,10 +1036,17 @@ async function main() {
     requestBody: { requests: [{ updateSheetProperties: { properties: { sheetId, index: 0 }, fields: "index" } }] },
   });
 
+  console.log("Productivity tab (all POCs, new vs old flow)...");
+  await writeProductivityTab(sheets, await computeProductivity());
+
   console.log(`\nDone — "${SNAPSHOT_TAB}" tab updated with all 6 tables, formatted, and pinned to position 1.`);
 }
 
-main().catch((err) => {
+// node compute_dashboard_pivots.js --productivity-dry  -> prints the productivity table only, writes nothing
+const mainFn = process.argv.includes("--productivity-dry")
+  ? async () => { (await computeProductivity()).forEach((r) => console.log(r.join("	"))); }
+  : main;
+mainFn().catch((err) => {
   console.error("Error:", err);
   process.exitCode = 1;
 });
