@@ -741,21 +741,32 @@ async function ensureSheet(sheets, tabName) {
 
 // ---------------------------------------------------------------- main
 
-// ---------------------------------------------------------------- Productivity tab (all POCs, new vs old flow)
+// ---------------------------------------------------------------- Productivity tab (all POCs, old + new flow combined)
 
-// Every POC's Khata Filing / EC / BESCOM count for today, split by serviceFlow
-// (queue = new flow, anything else = old flow). Credited to the person who made the
-// move (the activity entry's own `user`), counted once per service per category.
-// Rules (service names case-insensitive):
-//   Khata Filing: E-Khata / Khata Transfer / New Khata moved from Doc, Filing or
-//     Applied-Correction Required to Applied-Awaiting / Approved / Correction Applied.
-//   EC: any service Doc/Filing -> Filing-EC Applied; or Encumbrance Certificate
-//     Doc/Filing -> Applied-Awaiting.
+// Three blocks on one "productivity" tab:
+//   1. Summary by category (Khata Filing / EC / BESCOM / Other): filed today, pending filing,
+//      correction required, paused.
+//   2. Paused cases by bucket x category.
+//   3. POC-wise table grouped by department (color coded), roster = the agents the PM listed.
+// "Filed today" credits the person who made the move (activity entry's `user`); pending /
+// correction / paused / open are by the case's assigned servicePOC. Old and new flow are combined.
+// Filing rules (service names case-insensitive):
+//   Khata Filing: E-Khata / Khata Transfer / New Khata moved from Doc, Filing or Applied-Correction
+//     Required to Applied-Awaiting / Approved / Correction Applied.
+//   EC: any service Doc/Filing -> Filing-EC Applied; or Encumbrance Certificate Doc/Filing ->
+//     Applied-Awaiting.
 //   BESCOM: Bescom / Bescom Name Change from Doc, Filing or Ground into Applied.
+// Pending filing = status open, bucket active, stage/sub-stage in FILEABLE_PAIRS.
+// Correction required = status open, bucket active, Applied / Correction Required.
+// Paused = serviceStatus "paused" (any stage). Open cases = status open, bucket active.
 const KHATA_NAMES = new Set(["e-khata", "khata transfer", "new khata"]);
 const BESCOM_NAMES = new Set(["bescom", "bescom name change"]);
 const DOC_OR_FILING = new Set(["doc", "filing"]);
 const lcTrim = (s) => String(s || "").trim().toLowerCase();
+const NO_POC = "__no_poc__";
+const CATS = ["khata", "ec", "bescom", "other"];
+const CAT_LABEL = { khata: "Khata Filing", ec: "EC", bescom: "BESCOM", other: "Other services" };
+const catOfName = (name) => (KHATA_NAMES.has(name) ? "khata" : name === "encumbrance certificate" ? "ec" : BESCOM_NAMES.has(name) ? "bescom" : "other");
 
 function classifyFiling(name, b, a) {
   const out = [];
@@ -771,19 +782,83 @@ function classifyFiling(name, b, a) {
   return out;
 }
 
+// Roster as listed by the PM (3 Nov 2026): [name shown on the sheet, name in vaultInternalAgents].
+const PROD_ROSTER = [
+  ["Daksh Rupani", "Daksh Rupani"], ["Atharva Dahesar", "Atharva"], ["Priyadarshini Moparty", "Priyadarshini Moparty"],
+  ["Yash Malik", "Yash Malik"], ["Vani Grover", "Vani"], ["Aniket Dubey", "Aniket"], ["Hamshita Lakshmi G", "Lakshmi Hamsitha"],
+  ["Om Somavanshi", "Om Somvanshi"], ["Soumya Gupta", "soumya Gupta"], ["Ritika S", "Ritika S"], ["Anusha Vipuri", "Anusha Vipuri"],
+  ["Kousar Shaik", "Kousar Shaik"], ["Harish Reddy", "Harish Reddy"], ["Shivam Raj Gupta", "Shivam Raj"], ["Anuraag Shukla", "Anuraag Shukla"],
+  ["Parth Sarthy Mohanty", "Parth"], ["Isha Verma", "Isha"], ["Ayush Kumar", "Ayush Kumar"], ["Tushita Gakkhar", "Tushita Gakkhar"],
+];
+
+const rgb = (r, g, b) => ({ red: r, green: g, blue: b });
+const DEPTS = [
+  { id: "newflow", label: "Service Delivery — New Flow (Queue)", band: rgb(0.52, 0.8, 0.55), tint: rgb(0.88, 0.96, 0.89) },
+  { id: "general", label: "Service Delivery — General (Old Flow)", band: rgb(0.55, 0.72, 0.93), tint: rgb(0.88, 0.93, 0.99) },
+  { id: "blocker", label: "Service Delivery — Blocker", band: rgb(0.97, 0.7, 0.4), tint: rgb(0.99, 0.92, 0.84) },
+  { id: "bescom", label: "Service Delivery — BESCOM", band: rgb(0.98, 0.85, 0.4), tint: rgb(1, 0.96, 0.82) },
+  { id: "legal", label: "Service Delivery — Legal", band: rgb(0.73, 0.6, 0.88), tint: rgb(0.93, 0.89, 0.97) },
+  { id: "panchayat", label: "Service Delivery — Panchayat", band: rgb(0.45, 0.78, 0.76), tint: rgb(0.85, 0.95, 0.94) },
+  { id: "ground", label: "Ground Team", band: rgb(0.78, 0.65, 0.5), tint: rgb(0.94, 0.9, 0.85) },
+  { id: "ct", label: "Control Tower", band: rgb(0.7, 0.7, 0.72), tint: rgb(0.91, 0.91, 0.92) },
+  { id: "other", label: "Other / Unmapped", band: rgb(0.85, 0.85, 0.85), tint: rgb(0.95, 0.95, 0.95) },
+];
+function deptIdOf(stream, dept) {
+  const s = `${stream || ""} ${dept || ""}`.toLowerCase().replace(/[\s_]+/g, "");
+  if (s.includes("ground")) return "ground";
+  if (s.includes("queue")) return "newflow";
+  if (s.includes("blocker")) return "blocker";
+  if (s.includes("bescom")) return "bescom";
+  if (s.includes("legal")) return "legal";
+  if (s.includes("panchayat")) return "panchayat";
+  if (s.includes("controltower")) return "ct";
+  if (s.includes("sales")) return "other";
+  if (s.includes("general")) return "general";
+  return "other";
+}
+
 async function computeProductivity() {
-  const svc = new Map(); // serviceId -> { name, flow }
+  // agents: lowercase name -> { stream, dept }, preferring the queue_flow doc when a name is duplicated
+  const agents = new Map();
+  (await db.collection("vaultInternalAgents").get()).forEach((doc) => {
+    const x = doc.data();
+    if (!x.name) return;
+    const k = lcTrim(x.name);
+    const isQ = /queue/i.test(x.stream || "");
+    if (!agents.has(k) || (isQ && !agents.get(k).isQ)) agents.set(k, { stream: x.stream, dept: x.department, isQ });
+  });
+
+  const svc = new Map(); // serviceId -> lowercase service name
+  const pocStats = {};
+  const blank = () => ({ khata: 0, ec: 0, bescom: 0, pending: 0, corr: 0, paused: 0, open: 0 });
+  const stat = (poc) => (pocStats[poc] ||= blank());
+  const catStats = {};
+  CATS.forEach((c) => (catStats[c] = { filed: 0, pending: 0, corr: 0, paused: 0 }));
+  const pausedByBucket = {};
+  const fileable = new Set(FILEABLE_PAIRS.map(([s, su]) => `${s}|${su}`));
   await new Promise((resolve, reject) =>
-    db.collection("vaultServices").select("serviceId", "serviceName", "serviceFlow").stream()
+    db.collection("vaultServices").select("serviceId", "serviceName", "servicePOC", "serviceStatus", "serviceStage", "subStage", "bucket").stream()
       .on("data", (d) => {
         const x = d.data();
-        if (x.serviceId) svc.set(x.serviceId, { name: lcTrim(x.serviceName), flow: x.serviceFlow === "queue" ? "new" : "old" });
+        const name = lcTrim(x.serviceName);
+        if (x.serviceId) svc.set(x.serviceId, name);
+        const cat = catOfName(name);
+        const poc = lcTrim(x.servicePOC) || NO_POC;
+        const bucket = lcTrim(x.bucket) || "unknown";
+        if (x.serviceStatus === "paused") {
+          catStats[cat].paused++;
+          (pausedByBucket[bucket] ||= {})[cat] = (pausedByBucket[bucket][cat] || 0) + 1;
+          stat(poc).paused++;
+        } else if (x.serviceStatus === "open" && bucket === "active") {
+          stat(poc).open++;
+          if (fileable.has(`${x.serviceStage}|${x.subStage}`)) { catStats[cat].pending++; stat(poc).pending++; }
+          else if (x.serviceStage === "Applied" && x.subStage === "Correction Required") { catStats[cat].corr++; stat(poc).corr++; }
+        }
       })
       .on("end", resolve).on("error", reject));
 
   const toSec = (t) => (Number(t) > 1e12 ? Number(t) / 1000 : Number(t));
   const seen = new Set();
-  const counts = {}; // actor -> { new: {khata, ec, bescom}, old: {...} }
   await new Promise((resolve, reject) =>
     db.collection("vaultUsers").select("activity").stream()
       .on("data", (doc) => {
@@ -794,8 +869,8 @@ async function computeProductivity() {
         const bySvc = {};
         for (const e of arr) (bySvc[e.serviceId || "?"] ||= []).push(e);
         for (const sid in bySvc) {
-          const info = svc.get(sid);
-          if (!info) continue;
+          if (!svc.has(sid)) continue;
+          const name = svc.get(sid);
           const byTime = new Map();
           for (const e of bySvc[sid]) {
             const t = toSec(e.time);
@@ -810,72 +885,125 @@ async function computeProductivity() {
               else cur.sub = lcTrim(e.to);
             }
             if (t < TODAY_START || t >= TODAY_END || !before.stage) continue;
-            for (const cat of classifyFiling(info.name, before, cur)) {
-              const actor = byTime.get(t)[0].user || "unknown";
+            for (const cat of classifyFiling(name, before, cur)) {
+              const actor = lcTrim(byTime.get(t)[0].user) || "unknown";
               const key = `${cat}|${sid}|${actor}`;
               if (seen.has(key)) continue;
               seen.add(key);
-              const c = (counts[actor] ||= { new: { khata: 0, ec: 0, bescom: 0 }, old: { khata: 0, ec: 0, bescom: 0 } });
-              c[info.flow][cat]++;
+              stat(actor)[cat]++;
+              catStats[cat].filed++;
             }
           }
         }
       })
       .on("end", resolve).on("error", reject));
 
-  const sum = (f) => f.khata + f.ec + f.bescom;
-  const rows = Object.entries(counts)
-    .map(([poc, c]) => ({ poc, c, total: sum(c.new) + sum(c.old) }))
-    .sort((a, b) => b.total - a.total || a.poc.localeCompare(b.poc));
-  const totals = { new: { khata: 0, ec: 0, bescom: 0 }, old: { khata: 0, ec: 0, bescom: 0 } };
-  rows.forEach(({ c }) => ["new", "old"].forEach((fl) => ["khata", "ec", "bescom"].forEach((k) => (totals[fl][k] += c[fl][k]))));
-
+  // ---- build rows
+  const values = [];
+  const meta = []; // parallel to values: { kind, color }
+  const push = (row, kind, color) => { values.push(row); meta.push({ kind, color }); };
+  const W = 10;
+  const pad = (row) => row.concat(Array(Math.max(0, W - row.length)).fill(""));
+  const titleCase = (s) => s.replace(/\b\w/g, (m) => m.toUpperCase());
   const nowIST = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
-  // Old and new flow are combined in one set of columns (per PM, 3 Nov 2026).
-  const line = (label, c) => {
-    const k = c.new.khata + c.old.khata, e = c.new.ec + c.old.ec, b = c.new.bescom + c.old.bescom;
-    return [label, k, e, b, k + e + b];
-  };
-  return [
-    [`Last updated at: ${nowIST} IST — filings by the person who made the move, today, all services (old + new flow)`],
-    ["POC Name", "Khata Filing", "EC", "BESCOM", "Total"],
-    ...rows.map(({ poc, c }) => line(poc, c)),
-    line("Total", totals),
-  ];
+  push(pad([`Last updated at: ${nowIST} IST — old + new flow combined. Filed today = by the person who made the move; pending / correction / paused / open = by assigned POC.`]), "stamp");
+  push(pad([]), "blank");
+
+  // Block 1: summary by category
+  push(pad(["Summary by service category (all POCs)"]), "title", rgb(0.99, 0.9, 0.8));
+  push(pad(["Category", "Filed Today", "Pending Filing", "Correction Required", "Paused (all buckets)"]), "header");
+  const sumRow = (label, getter) => [label, ...["filed", "pending", "corr", "paused"].map((k) => getter(k))];
+  CATS.forEach((c) => push(pad(sumRow(CAT_LABEL[c], (k) => catStats[c][k])), "body"));
+  push(pad(sumRow("Total", (k) => CATS.reduce((s, c) => s + catStats[c][k], 0))), "total");
+  push(pad([]), "blank");
+
+  // Block 2: paused by bucket
+  push(pad(["Paused cases by bucket"]), "title", rgb(0.99, 0.9, 0.8));
+  push(pad(["Bucket", "Total Paused", "Khata Filing", "BESCOM", "EC", "Other services"]), "header");
+  const BUCKET_ORDER = ["active", "pre active", "blocked", "closed", "archived"];
+  const buckets = [...BUCKET_ORDER.filter((b) => pausedByBucket[b]), ...Object.keys(pausedByBucket).filter((b) => !BUCKET_ORDER.includes(b))];
+  const bt = { khata: 0, bescom: 0, ec: 0, other: 0 };
+  buckets.forEach((b) => {
+    const r = pausedByBucket[b];
+    const n = (c) => r[c] || 0;
+    CATS.forEach((c) => (bt[c] += n(c)));
+    push(pad([titleCase(b), n("khata") + n("bescom") + n("ec") + n("other"), n("khata"), n("bescom"), n("ec"), n("other")]), "body");
+  });
+  push(pad(["Total", bt.khata + bt.bescom + bt.ec + bt.other, bt.khata, bt.bescom, bt.ec, bt.other]), "total");
+  push(pad([]), "blank");
+
+  // Block 3: POC-wise by department
+  push(pad(["POC-wise productivity by department"]), "title", rgb(0.99, 0.9, 0.8));
+  push(["POC Name", "Stream", "Khata Filing (today)", "EC (today)", "BESCOM (today)", "Total Filed Today", "Pending Filing", "Correction Required", "Paused", "Open Cases (active)"], "header");
+  const people = new Map(); // lowercase agent name -> { display, dept, stream, roster }
+  PROD_ROSTER.forEach(([display, agentName]) => {
+    const k = lcTrim(agentName);
+    const a = agents.get(k);
+    people.set(k, { display, stream: a ? a.stream : "", dept: a ? deptIdOf(a.stream, a.department || a.dept) : "other", roster: true });
+  });
+  Object.keys(pocStats).forEach((k) => {
+    if (people.has(k)) return;
+    const s = pocStats[k];
+    if (!(s.khata + s.ec + s.bescom + s.pending + s.corr + s.paused)) return; // off-roster people only if they have anything
+    const a = agents.get(k);
+    people.set(k, { display: k === NO_POC ? "No POC assigned" : `${titleCase(k)} (off roster)`, stream: a ? a.stream : "", dept: a ? deptIdOf(a.stream, a.dept) : "other", roster: false });
+  });
+  const personRow = (label, stream, s) => [label, stream, s.khata, s.ec, s.bescom, s.khata + s.ec + s.bescom, s.pending, s.corr, s.paused, s.open];
+  const grand = blank();
+  DEPTS.forEach((d) => {
+    const members = [...people.entries()].filter(([, p]) => p.dept === d.id).sort((a, b) => {
+      const sa = pocStats[a[0]] || blank(), sb = pocStats[b[0]] || blank();
+      return (sb.khata + sb.ec + sb.bescom) - (sa.khata + sa.ec + sa.bescom) || (b[1].roster - a[1].roster) || a[1].display.localeCompare(b[1].display);
+    });
+    if (!members.length) return;
+    push(pad([d.label]), "band", d.band);
+    const sub = blank();
+    members.forEach(([k, p]) => {
+      const s = pocStats[k] || blank();
+      Object.keys(sub).forEach((f) => { sub[f] += s[f]; grand[f] += s[f]; });
+      push(personRow(p.display, p.stream || "", s), "poc", d.tint);
+    });
+    push(personRow(`${d.label.replace("Service Delivery — ", "")} — subtotal`, "", sub), "subtotal", d.band);
+  });
+  push(personRow("Grand Total", "", grand), "total");
+  return { values, meta, width: W };
 }
 
-async function writeProductivityTab(sheets, values) {
-  // Unmerge first: values written into a still-merged range are dropped (this is what
-  // blanked the header cells after the layout change on 3 Nov 2026).
+async function writeProductivityTab(sheets, model) {
+  const { values, meta, width } = model;
+  // Unmerge first: values written into a still-merged range are dropped.
   const sheetId = await ensureSheet(sheets, "productivity");
   await sheets.spreadsheets.batchUpdate({ spreadsheetId: SPREADSHEET_ID, requestBody: { requests: [{ unmergeCells: { range: { sheetId } } }] } });
   await writeTab(sheets, "productivity", values);
-  const cols = 5;
-  const bold = { textFormat: { bold: true }, horizontalAlignment: "CENTER" };
-  const fill = (r0, r1, rgb) => ({
+  const HEADER_BLUE = rgb(0.81, 0.89, 0.95), TOTAL_GREY = rgb(0.9, 0.9, 0.9);
+  const rowFmt = (r, bg, bold, align) => ({
     repeatCell: {
-      range: { sheetId, startRowIndex: r0, endRowIndex: r1, startColumnIndex: 0, endColumnIndex: cols },
-      cell: { userEnteredFormat: { ...bold, backgroundColor: rgb } },
-      fields: "userEnteredFormat(textFormat,horizontalAlignment,backgroundColor)",
+      range: { sheetId, startRowIndex: r, endRowIndex: r + 1, startColumnIndex: 0, endColumnIndex: width },
+      cell: { userEnteredFormat: { ...(bg ? { backgroundColor: bg } : {}), textFormat: { bold: !!bold }, horizontalAlignment: align || "CENTER", verticalAlignment: "MIDDLE", wrapStrategy: "WRAP" } },
+      fields: "userEnteredFormat(backgroundColor,textFormat,horizontalAlignment,verticalAlignment,wrapStrategy)",
     },
   });
-  const last = values.length;
-  await sheets.spreadsheets.batchUpdate({
-    spreadsheetId: SPREADSHEET_ID,
-    requestBody: {
-      requests: [
-        { unmergeCells: { range: { sheetId } } },
-        { updateCells: { range: { sheetId }, fields: "userEnteredFormat" } },
-        { repeatCell: { range: { sheetId, startRowIndex: 0, endRowIndex: 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { italic: true } } }, fields: "userEnteredFormat.textFormat" } },
-        fill(1, 2, { red: 0.81, green: 0.89, blue: 0.95 }),
-        fill(last - 1, last, { red: 0.93, green: 0.93, blue: 0.93 }),
-        { repeatCell: { range: { sheetId, startRowIndex: 2, endRowIndex: last - 1, startColumnIndex: 1, endColumnIndex: cols }, cell: { userEnteredFormat: { horizontalAlignment: "CENTER" } }, fields: "userEnteredFormat.horizontalAlignment" } },
-        { repeatCell: { range: { sheetId, startRowIndex: 2, endRowIndex: last - 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { bold: true } } }, fields: "userEnteredFormat.textFormat" } },
-        { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 0, endIndex: 1 }, properties: { pixelSize: 200 }, fields: "pixelSize" } },
-        { updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: 1, endIndex: cols }, properties: { pixelSize: 110 }, fields: "pixelSize" } },
-      ],
-    },
+  const requests = [{ updateCells: { range: { sheetId }, fields: "userEnteredFormat" } }];
+  const tableRows = [];
+  meta.forEach((m, r) => {
+    if (m.kind === "stamp") requests.push({ repeatCell: { range: { sheetId, startRowIndex: r, endRowIndex: r + 1, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { textFormat: { italic: true } } }, fields: "userEnteredFormat.textFormat" } });
+    else if (m.kind === "title" || m.kind === "band") {
+      requests.push(rowFmt(r, m.color, true, "LEFT"));
+      requests.push({ mergeCells: { range: { sheetId, startRowIndex: r, endRowIndex: r + 1, startColumnIndex: 0, endColumnIndex: width }, mergeType: "MERGE_ALL" } });
+    } else if (m.kind === "header") requests.push(rowFmt(r, HEADER_BLUE, true));
+    else if (m.kind === "poc") requests.push(rowFmt(r, m.color, false));
+    else if (m.kind === "body") requests.push(rowFmt(r, null, false));
+    else if (m.kind === "subtotal") requests.push(rowFmt(r, m.color, true));
+    else if (m.kind === "total") requests.push(rowFmt(r, TOTAL_GREY, true));
+    if (["header", "poc", "body", "subtotal", "total"].includes(m.kind)) tableRows.push(r);
   });
+  // names in the first column left aligned (except the stamp row, which overflows to the right)
+  requests.push({ repeatCell: { range: { sheetId, startRowIndex: 1, endRowIndex: values.length, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { horizontalAlignment: "LEFT" } }, fields: "userEnteredFormat.horizontalAlignment" } });
+  const line = { style: "SOLID", color: rgb(0.8, 0.8, 0.8) };
+  tableRows.forEach((r) => requests.push({ updateBorders: { range: { sheetId, startRowIndex: r, endRowIndex: r + 1, startColumnIndex: 0, endColumnIndex: width }, top: line, bottom: line, innerVertical: line } }));
+  [230, 130, 110, 110, 110, 110, 110, 125, 100, 125].forEach((px, i) =>
+    requests.push({ updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: i, endIndex: i + 1 }, properties: { pixelSize: px }, fields: "pixelSize" } }));
+  await sheets.spreadsheets.batchUpdate({ spreadsheetId: SPREADSHEET_ID, requestBody: { requests } });
 }
 
 async function main() {
@@ -1047,7 +1175,7 @@ async function main() {
 
 // node compute_dashboard_pivots.js --productivity-dry  -> prints the productivity table only, writes nothing
 const mainFn = process.argv.includes("--productivity-dry")
-  ? async () => { (await computeProductivity()).forEach((r) => console.log(r.join("	"))); }
+  ? async () => { (await computeProductivity()).values.forEach((r) => console.log(r.join("	"))); }
   : main;
 mainFn().catch((err) => {
   console.error("Error:", err);
