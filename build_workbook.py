@@ -229,20 +229,29 @@ for col in "BCDEFGH":
 
 # ============================================================= TIER 2 (aging x stage/substage — was "Tier2b", now the only Tier2 tab; the old
 # "Tier2 - Pipeline Health" charts/breakdown tab was removed per user request, and this one renamed up to take its place)
+# Only stage/substage pairs that actually occur for bucket=active AND serviceStatus=open
+# (validated 2 Nov 2026). Pre-active "qualified", Doc/Incomplete, Applied/Submitted,
+# To Close/Paid and To Close/Approved never occur there, so they were dropped; any new
+# pair that appears later is caught by the "Other" row below instead of vanishing.
 stage_sub = [
-    ("Doc", "To Validate"), ("Doc", "Incomplete"),
+    ("Doc", "To Validate"),
     ("Filing", "EC Applied"), ("Filing", "In Queue"), ("Filing", "EC Approved"), ("Filing", "In Process"),
     ("Applied", "Awaiting"), ("Applied", "Correction Required"), ("Applied", "Correction Applied"),
-    ("Applied", "Approved"), ("Applied", "Submitted"),
-    ("To Close", "Paid"), ("To Close", "Doc Shared"), ("To Close", "Approved"),
-    ("qualified", ""), ("Ground", "E Stamp"),
+    ("Applied", "Approved"),
+    ("To Close", "Doc Shared"),
+    ("Ground", "E Stamp"),
 ]
 
 t2b = wb.create_sheet("Tier2 - Aging by Stage")
 t2b.sheet_view.showGridLines = False
-section_title(t2b, "B2", "Aging of active pipeline — by stage/substage")
-t2b["B3"] = "What stage each aging bucket's cases are actually stuck in. Rows = current stage/substage, columns = days since last touched."
+section_title(t2b, "B2", "Aging of active pipeline — bucket = active, serviceStatus = open")
+t2b["B3"] = ("Only cases with bucket = active AND serviceStatus = open (paused, lost, pre-active, blocked and closed are excluded). "
+             "Rows = current stage/substage. Columns = days since the case was last assigned to its current POC "
+             "(or since it started waiting, if never assigned) — NOT days since it was last edited.")
 t2b["B3"].font = Font(name=FONT, size=9, italic=True, color="5C6864")
+t2b["B4"] = ("Unknown = no assignment or waiting timestamp on the case (older cases that never went through the queue assignment), "
+             "so their age can't be computed.")
+t2b["B4"].font = Font(name=FONT, size=9, italic=True, color="5C6864")
 
 r_cross_header = 6
 cross_cols = ["0-1d", "1-3d", "3-7d", "7d+", "unknown"]
@@ -261,25 +270,42 @@ t2b.cell(row=r_cross_header, column=c_total).fill = PatternFill("solid", fgColor
 for i, (stage, sub) in enumerate(stage_sub):
     r = r_cross_header + 1 + i
     t2b.cell(row=r, column=2, value=stage).font = Font(name=FONT, size=9)
-    sub_display = sub if sub else "(none)"
-    t2b.cell(row=r, column=3, value=sub_display).font = Font(name=FONT, size=9)
-    sub_criteria = f'IF(C{r}="(none)","",C{r})'
+    t2b.cell(row=r, column=3, value=sub).font = Font(name=FONT, size=9)
     for j, cb in enumerate(cross_cols):
         col = 4 + j
+        # G = bucket, H = serviceStatus, I = serviceStage, J = subStage, AI = activePipelineAgingBucket
         t2b.cell(row=r, column=col,
-                 value=f'=COUNTIFS({rng("I")},B{r},{rng("J")},{sub_criteria},{rng("AI")},"{cb}")').font = Font(name=FONT, size=9)
+                 value=f'=COUNTIFS({rng("G")},"active",{rng("H")},"open",{rng("I")},B{r},{rng("J")},C{r},{rng("AI")},"{cb}")').font = Font(name=FONT, size=9)
     total_letter_from = get_column_letter(4)
     total_letter_to = get_column_letter(4 + len(cross_cols) - 1)
     t2b.cell(row=r, column=c_total, value=f"=SUM({total_letter_from}{r}:{total_letter_to}{r})").font = Font(name=FONT, size=9, bold=True)
 r_cross_end = r_cross_header + len(stage_sub)
 
-# grand-total row, cross-checkable against Tier2's simple aging table
-r_gt = r_cross_end + 1
+# "Other" row = every active+open case in that aging column minus the listed rows, so a
+# stage/substage missing from the hardcoded list shows up here instead of silently vanishing.
+r_other = r_cross_end + 1
+t2b.cell(row=r_other, column=2, value="Other").font = Font(name=FONT, size=9, italic=True)
+t2b.cell(row=r_other, column=3, value="(not listed above)").font = Font(name=FONT, size=9, italic=True)
+for j, cb in enumerate(cross_cols):
+    col = 4 + j
+    letter = get_column_letter(col)
+    t2b.cell(row=r_other, column=col,
+             value=f'=COUNTIFS({rng("G")},"active",{rng("H")},"open",{rng("AI")},"{cb}")-SUM({letter}{r_cross_header+1}:{letter}{r_cross_end})').font = Font(name=FONT, size=9, italic=True)
+t2b.cell(row=r_other, column=c_total, value=f"=SUM({get_column_letter(4)}{r_other}:{get_column_letter(4 + len(cross_cols) - 1)}{r_other})").font = Font(name=FONT, size=9, bold=True, italic=True)
+
+# grand-total row
+r_gt = r_other + 1
 t2b.cell(row=r_gt, column=2, value="TOTAL").font = Font(name=FONT, bold=True, size=9)
 for j in range(len(cross_cols) + 1):
     col = 4 + j
     letter = get_column_letter(col)
-    t2b.cell(row=r_gt, column=col, value=f"=SUM({letter}{r_cross_header+1}:{letter}{r_cross_end})").font = Font(name=FONT, bold=True, size=9)
+    t2b.cell(row=r_gt, column=col, value=f"=SUM({letter}{r_cross_header+1}:{letter}{r_other})").font = Font(name=FONT, bold=True, size=9)
+
+# Reconciliation: the table total must equal every active + open case in Raw Data.
+r_chk = r_gt + 1
+t2b.cell(row=r_chk, column=2, value="Check: TOTAL = all active + open cases in Raw Data").font = Font(name=FONT, size=9, italic=True, color="5C6864")
+t2b.cell(row=r_chk, column=c_total,
+         value=f'=IF({get_column_letter(c_total)}{r_gt}=COUNTIFS({rng("G")},"active",{rng("H")},"open"),"OK","MISMATCH")').font = Font(name=FONT, size=9, bold=True)
 
 t2b.column_dimensions["A"].width = 2
 t2b.column_dimensions["B"].width = 14

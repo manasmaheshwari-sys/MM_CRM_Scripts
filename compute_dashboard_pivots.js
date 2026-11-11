@@ -830,14 +830,14 @@ async function computeProductivity() {
 
   const svc = new Map(); // serviceId -> lowercase service name
   const pocStats = {};
-  const blank = () => ({ khata: 0, ec: 0, bescom: 0, pending: 0, corr: 0, paused: 0, open: 0 });
+  const blank = () => ({ khata: 0, ec: 0, bescom: 0, pending: 0, pendingNew: 0, pendingOld: 0, corr: 0, paused: 0, open: 0 });
   const stat = (poc) => (pocStats[poc] ||= blank());
   const catStats = {};
-  CATS.forEach((c) => (catStats[c] = { filed: 0, pending: 0, corr: 0, paused: 0 }));
+  CATS.forEach((c) => (catStats[c] = { filed: 0, pending: 0, pendingNew: 0, pendingOld: 0, corr: 0, paused: 0 }));
   const pausedByBucket = {};
   const fileable = new Set(FILEABLE_PAIRS.map(([s, su]) => `${s}|${su}`));
   await new Promise((resolve, reject) =>
-    db.collection("vaultServices").select("serviceId", "serviceName", "servicePOC", "serviceStatus", "serviceStage", "subStage", "bucket").stream()
+    db.collection("vaultServices").select("serviceId", "serviceName", "servicePOC", "serviceStatus", "serviceStage", "subStage", "bucket", "serviceFlow").stream()
       .on("data", (d) => {
         const x = d.data();
         const name = lcTrim(x.serviceName);
@@ -851,7 +851,7 @@ async function computeProductivity() {
           stat(poc).paused++;
         } else if (x.serviceStatus === "open" && bucket === "active") {
           stat(poc).open++;
-          if (fileable.has(`${x.serviceStage}|${x.subStage}`)) { catStats[cat].pending++; stat(poc).pending++; }
+          if (fileable.has(`${x.serviceStage}|${x.subStage}`)) { catStats[cat].pending++; catStats[cat][x.serviceFlow === "queue" ? "pendingNew" : "pendingOld"]++; stat(poc).pending++; stat(poc)[x.serviceFlow === "queue" ? "pendingNew" : "pendingOld"]++; }
           else if (x.serviceStage === "Applied" && x.subStage === "Correction Required") { catStats[cat].corr++; stat(poc).corr++; }
         }
       })
@@ -902,17 +902,17 @@ async function computeProductivity() {
   const values = [];
   const meta = []; // parallel to values: { kind, color }
   const push = (row, kind, color) => { values.push(row); meta.push({ kind, color }); };
-  const W = 10;
+  const W = 11;
   const pad = (row) => row.concat(Array(Math.max(0, W - row.length)).fill(""));
   const titleCase = (s) => s.replace(/\b\w/g, (m) => m.toUpperCase());
   const nowIST = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", dateStyle: "medium", timeStyle: "short" });
-  push(pad([`Last updated at: ${nowIST} IST — old + new flow combined. Filed today = by the person who made the move; pending / correction / paused / open = by assigned POC.`]), "stamp");
+  push(pad([`Last updated at: ${nowIST} IST — old + new flow combined. Filed today = by the person who made the move; pending / correction / paused / open = by assigned POC. Pending Filing New Flow = serviceFlow "queue"; Old Flow = everything else (not governed by the queue seat cap).`]), "stamp");
   push(pad([]), "blank");
 
   // Block 1: summary by category
   push(pad(["Summary by service category (all POCs)"]), "title", rgb(0.99, 0.9, 0.8));
-  push(pad(["Category", "Filed Today", "Pending Filing", "Correction Required", "Paused (all buckets)"]), "header");
-  const sumRow = (label, getter) => [label, ...["filed", "pending", "corr", "paused"].map((k) => getter(k))];
+  push(pad(["Category", "Filed Today", "Pending Filing (total)", "of which New Flow", "of which Old Flow", "Correction Required", "Paused (all buckets)"]), "header");
+  const sumRow = (label, getter) => [label, ...["filed", "pending", "pendingNew", "pendingOld", "corr", "paused"].map((k) => getter(k))];
   CATS.forEach((c) => push(pad(sumRow(CAT_LABEL[c], (k) => catStats[c][k])), "body"));
   push(pad(sumRow("Total", (k) => CATS.reduce((s, c) => s + catStats[c][k], 0))), "total");
   push(pad([]), "blank");
@@ -934,7 +934,7 @@ async function computeProductivity() {
 
   // Block 3: POC-wise by department
   push(pad(["POC-wise productivity by department"]), "title", rgb(0.99, 0.9, 0.8));
-  push(["POC Name", "Stream", "Khata Filing (today)", "EC (today)", "BESCOM (today)", "Total Filed Today", "Pending Filing", "Correction Required", "Paused", "Open Cases (active)"], "header");
+  push(["POC Name", "Stream", "Khata Filing (today)", "EC (today)", "BESCOM (today)", "Total Filed Today", "Pending Filing — New Flow", "Pending Filing — Old Flow", "Correction Required", "Paused", "Open Cases (active)"], "header");
   const people = new Map(); // lowercase agent name -> { display, dept, stream, roster }
   PROD_ROSTER.forEach(([display, agentName]) => {
     const k = lcTrim(agentName);
@@ -948,7 +948,7 @@ async function computeProductivity() {
     const a = agents.get(k);
     people.set(k, { display: k === NO_POC ? "No POC assigned" : `${titleCase(k)} (off roster)`, stream: a ? a.stream : "", dept: a ? deptIdOf(a.stream, a.dept) : "other", roster: false });
   });
-  const personRow = (label, stream, s) => [label, stream, s.khata, s.ec, s.bescom, s.khata + s.ec + s.bescom, s.pending, s.corr, s.paused, s.open];
+  const personRow = (label, stream, s) => [label, stream, s.khata, s.ec, s.bescom, s.khata + s.ec + s.bescom, s.pendingNew, s.pendingOld, s.corr, s.paused, s.open];
   const grand = blank();
   DEPTS.forEach((d) => {
     const members = [...people.entries()].filter(([, p]) => p.dept === d.id).sort((a, b) => {
@@ -1001,7 +1001,7 @@ async function writeProductivityTab(sheets, model) {
   requests.push({ repeatCell: { range: { sheetId, startRowIndex: 1, endRowIndex: values.length, startColumnIndex: 0, endColumnIndex: 1 }, cell: { userEnteredFormat: { horizontalAlignment: "LEFT" } }, fields: "userEnteredFormat.horizontalAlignment" } });
   const line = { style: "SOLID", color: rgb(0.8, 0.8, 0.8) };
   tableRows.forEach((r) => requests.push({ updateBorders: { range: { sheetId, startRowIndex: r, endRowIndex: r + 1, startColumnIndex: 0, endColumnIndex: width }, top: line, bottom: line, innerVertical: line } }));
-  [230, 130, 110, 110, 110, 110, 110, 125, 100, 125].forEach((px, i) =>
+  [230, 130, 110, 110, 110, 110, 120, 120, 125, 100, 125].forEach((px, i) =>
     requests.push({ updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: i, endIndex: i + 1 }, properties: { pixelSize: px }, fields: "pixelSize" } }));
   await sheets.spreadsheets.batchUpdate({ spreadsheetId: SPREADSHEET_ID, requestBody: { requests } });
 }
