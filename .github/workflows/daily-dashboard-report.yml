@@ -9,10 +9,22 @@ name: SD New Flow Dashboard — Daily Report
 # window ends it dispatches its own successor, so the chain runs all day and
 # night. The slow cron below is only a safety net that restarts the chain if it
 # ever breaks (a crash, a cancelled run). Public repo => runner minutes are free.
+#
+# Manual runs (Actions -> Run workflow) default to mode "refresh-now": refresh the
+# Sheet immediately (~4 min) and stop. It has its own concurrency group so it
+# starts right away instead of queueing behind the long-running loop job.
 on:
   schedule:
     - cron: "17 */3 * * *" # safety net only (UTC), off the top of the hour
-  workflow_dispatch: # start/restart the chain manually
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "refresh-now = refresh the Sheet right away (~4 min). start-loop = (re)start the all-day runner (rarely needed)."
+        type: choice
+        options:
+          - refresh-now
+          - start-loop
+        default: refresh-now
 
 # Needed so the job can dispatch its successor with the built-in token.
 permissions:
@@ -20,15 +32,16 @@ permissions:
   actions: write
 
 # One runner chain at a time. A newer queued run replaces an older queued one,
-# so ticks and hand-offs never pile up.
+# so ticks and hand-offs never pile up. Manual 'refresh-now' runs get their OWN
+# group so they never wait behind the ~5h loop job.
 concurrency:
-  group: dashboard-runner
+  group: ${{ inputs.mode == 'refresh-now' && 'dashboard-manual' || 'dashboard-runner' }}
   cancel-in-progress: false
 
 jobs:
   run-daily-report:
     runs-on: ubuntu-latest
-    timeout-minutes: 350 # hard cap under GitHub's 6h job limit; loop hands over at 5h20m
+    timeout-minutes: 350 # hard cap under GitHub's 6h job limit; the loop hands over at 5h20m (refresh-now takes ~4 min)
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
@@ -60,13 +73,22 @@ jobs:
 
       # CI=true (set by GitHub) makes run_daily_report.js skip the Windows-only
       # Excel recalc step; Google Sheets recalculates formulas itself on import.
+
+      # Manual 'refresh-now': run the pipeline once, immediately, then stop.
+      - name: Refresh the Sheet now
+        if: inputs.mode == 'refresh-now'
+        run: node run_daily_report.js
+
+      # Scheduled safety-net ticks and 'start-loop': the long-lived runner.
       - name: Run the refresh loop (checks every 2 min, refreshes when a slot is due)
+        if: inputs.mode != 'refresh-now'
         run: bash dashboard_runner_loop.sh
 
       - name: Hand over to the next run
+        if: inputs.mode != 'refresh-now'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run daily-dashboard-report.yml --ref "${{ github.ref_name }}"
+        run: gh workflow run daily-dashboard-report.yml --ref "${{ github.ref_name }}" -f mode=start-loop
 
       - name: Clean up service account key
         if: always()
