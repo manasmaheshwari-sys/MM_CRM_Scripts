@@ -783,6 +783,8 @@ function classifyFiling(name, b, a) {
 }
 
 // Roster as listed by the PM (3 Nov 2026): [name shown on the sheet, name in vaultInternalAgents].
+// People deliberately left out of the report when they are not on the roster (lowercase agent names).
+const HIDDEN_OFF_ROSTER = new Set(["aditya-test", "ayush raj", "sindhu", "aaditya sharma", "aliya", "shravya poojari", "vivek acharya", "lavanya"]);
 const PROD_ROSTER = [
   ["Daksh Rupani", "Daksh Rupani"], ["Atharva Dahesar", "Atharva"], ["Priyadarshini Moparty", "Priyadarshini Moparty"],
   ["Yash Malik", "Yash Malik"], ["Vani Grover", "Vani"], ["Aniket Dubey", "Aniket"], ["Hamshita Lakshmi G", "Lakshmi Hamsitha"],
@@ -942,7 +944,7 @@ async function computeProductivity() {
     people.set(k, { display, stream: a ? a.stream : "", dept: a ? deptIdOf(a.stream, a.department || a.dept) : "other", roster: true });
   });
   Object.keys(pocStats).forEach((k) => {
-    if (people.has(k)) return;
+    if (people.has(k) || HIDDEN_OFF_ROSTER.has(k)) return;
     const s = pocStats[k];
     if (!(s.khata + s.ec + s.bescom + s.pending + s.corr + s.paused)) return; // off-roster people only if they have anything
     const a = agents.get(k);
