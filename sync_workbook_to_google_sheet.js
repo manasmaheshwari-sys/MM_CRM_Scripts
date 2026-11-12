@@ -61,6 +61,9 @@ const STAGING_SHEET_ID = process.argv[4] || DEFAULT_STAGING_SHEET_ID;
 
 const XLSX_MIME = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
+// Tabs the sync must never delete or touch (e.g. the owner-locked audit log written by the sheet's own Apps Script).
+const PRESERVE_TABS = new Set(["Refresh log"]);
+
 async function replaceTabs(sheetsApi, targetId, newSheetIds) {
   const targetMeta = await sheetsApi.spreadsheets.get({ spreadsheetId: targetId, fields: "sheets.properties" });
   const targetSheetsBefore = targetMeta.data.sheets.map((s) => s.properties);
@@ -72,7 +75,7 @@ async function replaceTabs(sheetsApi, targetId, newSheetIds) {
   // to rename the new copies to, so deleting after would collide on name.
   // Keep at least one sheet in the file at all times (Sheets requires >=1
   // visible sheet), so if somehow ALL sheets would be deleted, skip the last one.
-  const deletable = oldSheets.length === targetSheetsBefore.length ? oldSheets.slice(1) : oldSheets;
+  const deletable = (oldSheets.length === targetSheetsBefore.length ? oldSheets.slice(1) : oldSheets).filter((s) => !PRESERVE_TABS.has(s.title));
   for (const s of deletable) {
     requests.push({ deleteSheet: { sheetId: s.sheetId } });
   }
