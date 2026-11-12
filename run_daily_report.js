@@ -94,7 +94,7 @@ function main() {
   } else {
     step("7/10 Recalculate formulas (Excel COM)", PYTHON, [RECALC_EXCEL_PY]);
   }
-  step("8/10 Mirror workbook into Google Sheet", "node", ["sync_workbook_to_google_sheet.js"]);
+  step("8/10 Mirror workbook into Google Sheet", "node", ["sync_workbook_to_google_sheet.js"], 2);
   step("9/10 Compute daily dashboard pivots (single 'Overview' tab)", "node", ["compute_dashboard_pivots.js"], 3);
   step("10/10 Recreate filtered view tabs (Missing Documents, Paused cases, RNR)", "node", ["update_filtered_tab_queries.js"], 3);
 
