@@ -26,6 +26,9 @@ const SERVICE_ACCOUNT_PATH = path.join(__dirname, "service_account_key.json");
 initializeApp({ credential: cert(require(SERVICE_ACCOUNT_PATH)) });
 const db = getFirestore();
 db.settings({ preferRest: true });
+// Full scans of vaultUsers must use the default (gRPC) transport: the REST stream silently stops
+// early and skipped ~9,500 of ~56,000 users, which undercounted "Filed Today" on the productivity tab.
+const dbFullScan = getFirestore(initializeApp({ credential: cert(require(SERVICE_ACCOUNT_PATH)) }, "full-scan"));
 
 const SPREADSHEET_ID = "1KPInrAhZVJiqyfNPXxXemIlB1qjsLUrxh2rMjRgFu1g";
 
@@ -863,7 +866,7 @@ async function computeProductivity() {
   const toSec = (t) => (Number(t) > 1e12 ? Number(t) / 1000 : Number(t));
   const seen = new Set();
   await new Promise((resolve, reject) =>
-    db.collection("vaultUsers").select("activity").stream()
+    dbFullScan.collection("vaultUsers").select("activity").stream()
       .on("data", (doc) => {
         const act = doc.data().activity;
         if (!act) return;
