@@ -36,11 +36,24 @@ const RECALC_EXCEL_PY =
   process.env.RECALC_EXCEL_PY ||
   path.join(DIR, "recalc_excel.py");
 
-function step(label, cmd, args) {
-  console.log(`\n=== ${label} ===`);
-  const start = Date.now();
-  execFileSync(cmd, args, { cwd: DIR, stdio: "inherit" });
-  console.log(`--- done in ${((Date.now() - start) / 1000).toFixed(1)}s ---`);
+// retries > 0: re-run the step after a short wait when it fails (Google occasionally answers 503 "service
+// unavailable"). Only used for steps that are safe to repeat; waits 20s, 40s, 80s... between attempts.
+function step(label, cmd, args, retries = 0) {
+  console.log(`
+=== ${label} ===`);
+  for (let attempt = 0; ; attempt++) {
+    const start = Date.now();
+    try {
+      execFileSync(cmd, args, { cwd: DIR, stdio: "inherit" });
+      console.log(`--- done in ${((Date.now() - start) / 1000).toFixed(1)}s ---`);
+      return;
+    } catch (err) {
+      if (attempt >= retries) throw err;
+      const waitSec = 20 * 2 ** attempt;
+      console.log(`!!! step failed (attempt ${attempt + 1} of ${retries + 1}) - retrying in ${waitSec}s`);
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, waitSec * 1000);
+    }
+  }
 }
 
 // The Excel-COM recalc step only works on Windows with a licensed local Excel
@@ -70,11 +83,11 @@ function main() {
   if (!SKIP_RECALC) pipPackages.push("pywin32");
   step("0/10 Ensure Python dependencies are installed", PYTHON, ["-m", "pip", "install", "--quiet", ...pipPackages]);
 
-  step("1/10 Pull raw case data (vaultServices, serviceFlow=queue)", "node", ["export_serviceFlow_raw_data.js"]);
-  step("2/10 Pull POC leaderboard, since launch", "node", ["export_poc_leaderboard.js"]);
-  step("3/10 Pull POC leaderboard, today only", "node", ["export_poc_leaderboard_today.js"]);
-  step("4/10 Pull Queue Waiting Cases snapshot", "node", ["export_queue_waiting.js"]);
-  step("5/10 Scan for orphaned cases (isWaiting stuck false)", "node", ["export_orphaned_cases.js"]);
+  step("1/10 Pull raw case data (vaultServices, serviceFlow=queue)", "node", ["export_serviceFlow_raw_data.js"], 3);
+  step("2/10 Pull POC leaderboard, since launch", "node", ["export_poc_leaderboard.js"], 3);
+  step("3/10 Pull POC leaderboard, today only", "node", ["export_poc_leaderboard_today.js"], 3);
+  step("4/10 Pull Queue Waiting Cases snapshot", "node", ["export_queue_waiting.js"], 3);
+  step("5/10 Scan for orphaned cases (isWaiting stuck false)", "node", ["export_orphaned_cases.js"], 3);
   step("6/10 Rebuild the Excel workbook", PYTHON, [BUILD_WORKBOOK_PY]);
   if (SKIP_RECALC) {
     console.log("\n=== 7/10 Recalculate formulas (Excel COM) — SKIPPED (not on Windows / CI) ===");
@@ -82,8 +95,8 @@ function main() {
     step("7/10 Recalculate formulas (Excel COM)", PYTHON, [RECALC_EXCEL_PY]);
   }
   step("8/10 Mirror workbook into Google Sheet", "node", ["sync_workbook_to_google_sheet.js"]);
-  step("9/10 Compute daily dashboard pivots (single 'Overview' tab)", "node", ["compute_dashboard_pivots.js"]);
-  step("10/10 Recreate filtered view tabs (Missing Documents, Paused cases, RNR)", "node", ["update_filtered_tab_queries.js"]);
+  step("9/10 Compute daily dashboard pivots (single 'Overview' tab)", "node", ["compute_dashboard_pivots.js"], 3);
+  step("10/10 Recreate filtered view tabs (Missing Documents, Paused cases, RNR)", "node", ["update_filtered_tab_queries.js"], 3);
 
   console.log("\nAll done. Queue_Flow_Data_Analysis.xlsx, the Google Sheet, the 'Overview' tab, and the 3 filtered-view tabs are all up to date.");
 }
