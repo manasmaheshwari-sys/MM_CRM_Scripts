@@ -518,11 +518,12 @@ async function computeTable5AndTable6() {
   const N = allSnap.size;
 
   const bucketCounts = { "pre active": 0, active: 0, blocked: 0, closedArch: 0 };
+  let pausedPreActive = 0; // paused pre-active cases are left out of the Pre-active row
   const activeDocs = [];
   allSnap.forEach((doc) => {
     const d = doc.data();
     const bucket = String(d.bucket || "").toLowerCase();
-    if (bucket === "pre active") bucketCounts["pre active"]++;
+    if (bucket === "pre active") { if (String(d.serviceStatus || "").toLowerCase() === "paused") pausedPreActive++; else bucketCounts["pre active"]++; }
     else if (bucket === "active") { bucketCounts.active++; activeDocs.push(d); }
     else if (bucket === "blocked") bucketCounts.blocked++;
     else if (bucket === "closed" || bucket === "archived") bucketCounts.closedArch++;
@@ -533,7 +534,7 @@ async function computeTable5AndTable6() {
   const table5 = [
     [`Where are all ${N.toLocaleString("en-IN")} cases in their lifecycle right now?`, "", "", ""],
     ["Bucket", "Meaning", "Count", "%"],
-    ["1. Pre-active", "Moved back - missing docs", bucketCounts["pre active"], pct1(bucketCounts["pre active"])],
+    ["1. Pre-active", pausedPreActive ? `Moved back - missing docs (excl. ${pausedPreActive} paused)` : "Moved back - missing docs", bucketCounts["pre active"], pct1(bucketCounts["pre active"])],
     ["2. Active", "Running services", bucketCounts.active, pct1(bucketCounts.active)],
     ["3. Blocked", "Moved to block", bucketCounts.blocked, pct1(bucketCounts.blocked)],
     ["4. Closed & Arch.", "Completed services", bucketCounts.closedArch, pct1(bucketCounts.closedArch)],
