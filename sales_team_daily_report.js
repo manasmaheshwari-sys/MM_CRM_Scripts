@@ -88,6 +88,64 @@ const mk = () => ({ leadsD: new Set(), leadsM: new Set(), talkD: 0, talkM: 0, pi
 const by = new Map();
 const get = (n) => { if (!by.has(n)) by.set(n, mk()); return by.get(n); };
 
+// ---------- formatting ----------
+const rgb = (h) => ({ red: parseInt(h.slice(1, 3), 16) / 255, green: parseInt(h.slice(3, 5), 16) / 255, blue: parseInt(h.slice(5, 7), 16) / 255 });
+const INR = '[>=10000000]"₹"##\\,##\\,##\\,##0;[>=100000]"₹"##\\,##\\,##0;"₹"##,##0';
+
+async function formatTab(sheets, spreadsheetId, tab, o) {
+  const meta = await sheets.spreadsheets.get({ spreadsheetId });
+  const sh = meta.data.sheets.find((s) => s.properties.title === tab);
+  const sheetId = sh.properties.sheetId;
+  // drop old conditional rules so reruns stay clean
+  const reqs = (sh.conditionalFormats || []).map(() => ({ deleteConditionalFormatRule: { sheetId, index: 0 } }));
+  const rg = (r0, r1, c0, c1) => ({ sheetId, startRowIndex: r0, endRowIndex: r1, startColumnIndex: c0, endColumnIndex: c1 });
+  const fmt = (range, f, fields) => reqs.push({ repeatCell: { range, cell: { userEnteredFormat: f }, fields: fields || "userEnteredFormat" } });
+  const NAVY = "#1F3A5F", BLUE = "#2F6DB5", BAND = "#EEF4FB", TOTAL = "#D6E4F5";
+  const left = (r, c) => fmt(rg(r, r + 1, c, c + 1), { horizontalAlignment: "LEFT" }, "userEnteredFormat.horizontalAlignment");
+
+  fmt(rg(0, 200, 0, 22), { backgroundColor: rgb("#FFFFFF"), textFormat: { fontFamily: "Arial", fontSize: 10 }, verticalAlignment: "MIDDLE" });
+  reqs.push({ updateSheetProperties: { properties: { sheetId, gridProperties: { hideGridlines: true } }, fields: "gridProperties.hideGridlines" } });
+  const widths = [14, 170, 130, 110, 100, 18, 170, 130, 110, 100, 18, 170, 120, 120, 110, 110, 18, 190, 130, 110];
+  widths.forEach((w, i) => reqs.push({ updateDimensionProperties: { range: { sheetId, dimension: "COLUMNS", startIndex: i, endIndex: i + 1 }, properties: { pixelSize: w }, fields: "pixelSize" } }));
+
+  const white = { foregroundColor: rgb("#FFFFFF") };
+  const title = (r, c0, c1) => fmt(rg(r, r + 1, c0, c1), { backgroundColor: rgb(NAVY), textFormat: { ...white, bold: true, fontSize: 11 }, horizontalAlignment: "LEFT" });
+  const head = (r, c0, c1) => fmt(rg(r, r + 1, c0, c1), { backgroundColor: rgb(BLUE), textFormat: { ...white, bold: true }, horizontalAlignment: "CENTER", wrapStrategy: "WRAP" });
+  const body = (r0, n, c0, c1) => {
+    for (let i = 0; i < n; i++) fmt(rg(r0 + i, r0 + i + 1, c0, c1), { backgroundColor: rgb(i % 2 ? BAND : "#FFFFFF") }, "userEnteredFormat.backgroundColor");
+    fmt(rg(r0, r0 + n, c0 + 1, c1), { horizontalAlignment: "CENTER" }, "userEnteredFormat.horizontalAlignment");
+  };
+  const total = (r, c0, c1) => {
+    fmt(rg(r, r + 1, c0, c1), { backgroundColor: rgb(TOTAL), textFormat: { bold: true }, borders: { top: { style: "SOLID_MEDIUM", color: rgb(NAVY) } } }, "userEnteredFormat(backgroundColor,textFormat,borders)");
+    fmt(rg(r, r + 1, c0 + 1, c1), { horizontalAlignment: "CENTER" }, "userEnteredFormat.horizontalAlignment");
+  };
+  const numfmt = (r0, r1, c, pattern, type) => fmt(rg(r0, r1, c, c + 1), { numberFormat: { type: type || "PERCENT", pattern } }, "userEnteredFormat.numberFormat");
+  const scale = (r0, r1, c, lo, hi, reverse) => reqs.push({ addConditionalFormatRule: { index: 0, rule: { ranges: [rg(r0, r1, c, c + 1)], gradientRule: {
+    minpoint: { color: rgb(reverse ? "#63BE7B" : "#F8696B"), type: "NUMBER", value: String(lo) },
+    midpoint: { color: rgb("#FFEB84"), type: "NUMBER", value: String((lo + hi) / 2) },
+    maxpoint: { color: rgb(reverse ? "#F8696B" : "#63BE7B"), type: "NUMBER", value: String(hi) } } } } });
+
+  const n = o.n, tot1 = 2 + n, r2 = o.r2, tot2 = r2 + 2 + n;
+  for (const c of [o.B, o.G]) {
+    title(0, c, c + 4); head(1, c, c + 4); body(2, n, c, c + 4); total(tot1, c, c + 4);
+    title(r2, c, c + 4); head(r2 + 1, c, c + 4); body(r2 + 2, n, c, c + 4); total(tot2, c, c + 4);
+    numfmt(2, tot1 + 1, c + 3, "0%"); numfmt(r2 + 2, tot2 + 1, c + 3, "0%");
+    scale(2, tot1, c + 3, 0, 0.25);        // PI %: red = low, green = 25%+
+    scale(r2 + 2, tot2, c + 3, 0, 1);      // Conversion %: red = 0, green = 100%
+    left(1, c); left(r2 + 1, c);
+  }
+  const L = o.L; title(0, L, L + 5); head(1, L, L + 5); body(2, n, L, L + 5); total(2 + n, L, L + 5);
+  numfmt(2, n + 3, L + 1, INR, "NUMBER"); numfmt(2, n + 3, L + 2, INR, "NUMBER");
+  numfmt(2, n + 3, L + 3, "0.0%"); numfmt(2, n + 3, L + 4, "0.0%");
+  scale(2, 2 + n, L + 3, 0, 1); scale(2, 2 + n, L + 4, 0, 1, true); // Achieved % green high, Deficit % red high
+  left(1, L);
+  const R = o.R; head(0, R, R + 3); body(1, o.m, R, R + 3); left(0, R);
+  numfmt(1, o.m + 1, R + 1, INR, "NUMBER"); numfmt(1, o.m + 1, R + 2, INR, "NUMBER");
+  fmt(rg(o.lastRow - 1, o.lastRow, 0, 10), { textFormat: { italic: true, fontSize: 9, foregroundColor: rgb("#777777") }, horizontalAlignment: "LEFT" });
+
+  await sheets.spreadsheets.batchUpdate({ spreadsheetId, requestBody: { requests: reqs } });
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const dry = args.includes("--dry");
@@ -139,7 +197,7 @@ async function main() {
   const salesSet = new Set(agentNames);
   const pocs = [...by.entries()].filter(([n, v]) => salesSet.has(n) &&
     (v.leadsM.size || v.piM || v.payM)).map(([n]) => n).sort();
-  const pct = (a, b) => (b ? Math.round((a / b) * 100) + "%" : "0%");
+  const pct = (a, b) => (b ? a / b : 0); // fraction; formatted as % in the sheet
   const sum = (f) => pocs.reduce((s, n) => s + f(by.get(n)), 0);
 
   const grid = [];
@@ -180,16 +238,16 @@ async function main() {
   const byAch = [...pocs].sort((a, b) => by.get(b).payM - by.get(a).payM);
   byAch.forEach((n, i) => {
     const t = config.targets[n] ?? config.defaultTarget, a = by.get(n).payM; tT += t; tA += a;
-    const p = t ? Math.round((a / t) * 100) : 0;
-    [n, t, a, p + "%", Math.max(0, 100 - p) + "%"].forEach((x, j) => put(2 + i, L + j, x));
+    const p = t ? a / t : 0;
+    [n, t, a, p, Math.max(0, 1 - p)].forEach((x, j) => put(2 + i, L + j, x));
   });
-  const tp = tT ? (tA / tT) * 100 : 0;
-  ["Total", tT, tA, tp.toFixed(2) + "%", (100 - tp).toFixed(2) + "%"].forEach((x, j) => put(2 + pocs.length, L + j, x));
+  const tp = tT ? tA / tT : 0;
+  ["Total", tT, tA, tp, Math.max(0, 1 - tp)].forEach((x, j) => put(2 + pocs.length, L + j, x));
 
   // Block 5: collected by (all agents, MTD)
   put(0, R, "Collected by (MTD)"); put(0, R + 1, "Amount (INR)"); put(0, R + 2, "Daily");
-  [...by.entries()].filter(([, v]) => v.payM).sort((a, b) => b[1].payM - a[1].payM)
-    .forEach(([n, v], i) => { put(1 + i, R, n); put(1 + i, R + 1, v.payM); put(1 + i, R + 2, v.payD); });
+  const collectors = [...by.entries()].filter(([, v]) => v.payM).sort((a, b) => b[1].payM - a[1].payM);
+  collectors.forEach(([n, v], i) => { put(1 + i, R, n); put(1 + i, R + 1, v.payM); put(1 + i, R + 2, v.payD); });
 
   // normalise holes
   const width = Math.max(...grid.filter(Boolean).map((r) => r.length));
@@ -213,6 +271,8 @@ async function main() {
   await sheets.spreadsheets.values.clear({ spreadsheetId: SHEET_ID, range: `'${SHEET_TAB}'` });
   await sheets.spreadsheets.values.update({ spreadsheetId: SHEET_ID, range: `'${SHEET_TAB}'!A1`, valueInputOption: "RAW", requestBody: { values } });
   console.log(`Wrote ${values.length} rows to tab "${SHEET_TAB}".`);
+  await formatTab(sheets, SHEET_ID, SHEET_TAB, { n: pocs.length, m: collectors.length, r2, B, G, L, R, lastRow: values.length });
+  console.log("Formatting applied.");
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
